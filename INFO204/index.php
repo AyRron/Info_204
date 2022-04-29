@@ -58,8 +58,6 @@ League of legends
 
 </footer>
 
-<p>random</p>
-
 <script src=""></script>
 
 
