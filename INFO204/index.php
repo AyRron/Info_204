@@ -47,7 +47,7 @@ League of legends
 
 
 
-<h2 class="sup"> Support <img src="image/support.jpg" /> </h2>
+<h2 class="sup"> Support <img src="image/support.png" /> </h2>
 
 <img class="sup" src="image/AatroxSquare.webp" />
 
@@ -57,8 +57,6 @@ League of legends
 <a href="admin/index_admin.php" >Page admin</a></br>
 
 </footer>
-
-<p>random</p>
 
 <script src=""></script>
 
