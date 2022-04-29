@@ -1,0 +1,59 @@
+
+header{
+	background-color:#ff8000;
+}
+
+#titre {
+    background-color: black;
+    color:white;
+    width:40em;
+}
+
+
+
+#text {
+	display:flex;
+	margin:2em;
+	padding:1em;
+}
+
+
+td {
+	height: 1.5em;
+	padding: 0.5em;
+	border: 2px solid black;
+	text-align: center;
+	margin:0;
+
+}
+
+tr:nth-child(odd){
+	background-color: lightgrey;
+}
+
+#prem{
+	display:flex;
+	padding:2em;
+}
+
+body{
+
+	font-family: Blippo,fantasy;
+	font-size: 1em;
+
+}
+
+table{
+	border-collapse: collapse ;
+}
+
+
+
+footer{
+    display:flex;
+	background-color:black;
+	color:white;
+	padding:2em;
+	margin:2em;
+
+}

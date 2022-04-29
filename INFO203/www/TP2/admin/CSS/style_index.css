@@ -1,0 +1,38 @@
+
+
+td {
+	width: 3em;
+	height: 3em;
+	padding: 0.5em;
+	border: 2px solid black;
+	text-align: center;
+	padding:0em;
+
+}
+
+tr:nth-child(odd){
+	background-color: lightgrey;
+}
+
+body{
+	font-family: Blippo,fantasy;
+	font-size: 1em;
+
+}
+
+table{
+	border-collapse: collapse ;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.gris {
+	background-color: grey;
+}
+
+img {
+	height: 29px;
+width: 29px;
+}

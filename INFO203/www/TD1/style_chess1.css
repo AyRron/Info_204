@@ -1,0 +1,29 @@
+
+
+td {
+
+height: 29px;
+width: 29px;
+max-height: 29px;
+max-width: 29px;
+padding: 1em;
+
+}
+
+
+img {
+	height: 29px;
+width: 29px;
+}
+
+
+
+
+
+.orange {
+	background-color: orange;
+}
+
+.gris {
+	background-color: grey;
+}

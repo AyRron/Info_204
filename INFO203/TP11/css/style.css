@@ -1,0 +1,49 @@
+body{
+	display:flex;
+	justify-content:space-between;
+}
+
+table {
+	border-collapse:collapse;
+	font-family:Blippo, fantasy;
+	font-size:1em;
+}
+
+td{
+	padding: 0;
+	margin: 0;
+	width: 5em;
+	height: 5em;
+	text-align: center;
+	border : 2px solid black ;
+}
+
+img {
+	width: 70%;
+	height: 80%;
+}
+tr:nth-child(even){
+	background-color:lightgrey;
+}
+.gris {
+	background-color:lightgrey;
+}
+.blanc {
+	background-color: orange;
+	padding: 0;
+	margin: 0;
+}
+.noir {
+	background-color: grey;
+	padding: 0;
+	margin: 0;
+
+}
+
+.tableau td{
+	text-align:center;
+	border:2px solid black;
+	width : 5em;
+	height : 2em;
+	padding : 1 ;
+}
