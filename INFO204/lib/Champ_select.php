@@ -40,4 +40,9 @@
 
     
 </body>
+
+<footer>
+<a href="../index.php" >Retourner a l'acceuil</a></br>
+
+</footer>
 </html>
