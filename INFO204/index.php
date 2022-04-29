@@ -49,7 +49,7 @@ League of legends
 
 <h2 class="sup"> Support <img src="image/support.png" /> </h2>
 
-<img class="sup" src="image/AatroxSquare.webp" />
+<img class="sup" src="image/AatroxSquare.webp" /></br>
 
 
 <a href="lib/Build.php" >Build</a></br>
