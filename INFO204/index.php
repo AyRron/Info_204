@@ -56,9 +56,9 @@ League of legends
 <footer>
 <a href="admin/index_admin.php" >Page admin</a></br>
 
-</footer
+</footer>
 
-
+<p>random</p>
 
 <script src=""></script>
 
