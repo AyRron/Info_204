@@ -51,11 +51,17 @@ League of legends
 
 <img class="sup" src="image/AatroxSquare.webp" />
 
+
+<a href="lib/Build.php" >Build</a></br>
+<a href="lib/Item.php" >Item</a></br>
+<a href="lib/Rune.php" >Rune</a></br>
+<a href="lib/Champ_select.php" >Champ_select</a></br>
+
+
 </body>
 
 <footer>
-<a href="admin/index_admin.php" >Page admin</a></br>
-
+    <a href="admin/index_admin.php" >Page admin</a></br>
 </footer>
 
 <script src=""></script>
