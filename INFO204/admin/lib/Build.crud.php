@@ -1,11 +1,11 @@
 <?php
 /*---------------------------------------
-CRUD: Gestion de l'entité étudiant
+CRUD: Gestion des Builds
 ---------------------------------------*/
 
 
 /*
-	Créé un nouvel enregistrement  
+	Créé un nouveau Champion avec son Build 
 	suppose un id auto-incrementé
 */
 function create_build($conn, $nom, $rune, $f1, $f2, $f3, $s1, $s2, $sup1, $sup2, $sup3){
@@ -15,7 +15,7 @@ function create_build($conn, $nom, $rune, $f1, $f2, $f3, $s1, $s2, $sup1, $sup2,
 }
 
 /*
-	Met à jour les valeurs de l'enregistrement 
+	Met à jour les valeurs du Build
 */
 function update_build($conn, $id, $nom, $rune, $f1, $f2, $f3, $s1, $s2, $sup1, $sup2, $sup3){
 	$sql="UPDATE `build` set `Nom_champ`='$nom', `Rune_f`='$rune', `F1`='$f1', `F2`='$f2', `F3`='$f3', `S1`='$s1', `S2`='$s2', `sup1`='$sup1', `sup2`='$sup2', `sup3`='$sup3' WHERE `id`=$id" ;
@@ -25,7 +25,7 @@ function update_build($conn, $id, $nom, $rune, $f1, $f2, $f3, $s1, $s2, $sup1, $
 
 
 /*
-	Supprime le champion avec son nom 
+	Supprime le Champion avec son nom 
 */
 function delete_build_nom($conn, $nom_champ){
 	$sql="DELETE FROM `build` WHERE `Nom_champ`='$nom_champ'" ;
@@ -34,7 +34,7 @@ function delete_build_nom($conn, $nom_champ){
 }
 
 /*
-	Supprime le champion avec l'id 
+	Supprime le Champion avec l'id 
 */
 function delete_build_id($conn, $id){
 	$sql="DELETE FROM `build` WHERE `id`='$id'" ;
@@ -45,7 +45,7 @@ function delete_build_id($conn, $id){
 
 
 /*
-	Selectionne un champion
+	Selectionne un Champion
 */
 function select_build($conn, $id){
 	$sql="SELECT * FROM `build` WHERE `id`=$id" ;
@@ -58,7 +58,7 @@ function select_build($conn, $id){
 
 
 /*
-	Selectionne tout les champions
+	Selectionne tout les Champions
 */
 function select_all_build($conn){
 	$sql="SELECT * FROM `build`" ;
@@ -71,7 +71,7 @@ function select_all_build($conn){
 
 
 /*
-	Trouve l'id d'un champion à partir de son nom
+	Trouve l'id d'un Champion à partir de son nom
 */
 function champ_id($conn, $nom_champ){
 	$sql="SELECT `id` FROM `build` WHERE `Nom_champ`='$nom_champ'" ;

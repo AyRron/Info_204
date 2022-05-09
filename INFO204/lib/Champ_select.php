@@ -50,6 +50,7 @@
 <a href="../index.php" >Retourner a l'acceuil</a>
 </footer>
 
+
 <script>
 document.addEventListener('DOMContentLoaded', () => {
      
@@ -67,14 +68,14 @@ document.addEventListener('DOMContentLoaded', () => {
     ))
 });
 
-<?php
- 
-$variable_php = '<script type="text/javascript">document.write(nom);</script>';
-echo($variable_php);
-?>
 
 </script>
 
+
+ <?php
+$variable_php = '<script type="text/javascript">document.write(nom);</script>';
+echo($variable_php);
+?>
 
 
 </body>
