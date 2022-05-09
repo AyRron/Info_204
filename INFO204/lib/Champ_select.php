@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
          
             const clickedImage = this;
             var nom = this.id;
-            window.open("http://os-vps418.infomaniak.ch:1180/l1_info_3/www_test_C/INFO204/lib/Build.php?id=nom");
+            window.open("http://os-vps418.infomaniak.ch:1180/l1_info_3/www_test_C/lib/Build.php?id=nom");
              
         })
     ))
