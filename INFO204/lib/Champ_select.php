@@ -16,37 +16,37 @@
 
 <div class="top">
 <h2>Toplane<img src="../image/top_lane-removebg-preview.png"/></h2>
-<img id="Aatrox" src="../image/champions/Aatrox.webp"/>
-<img id="Sett" src="../image/champions/Sett.webp"/>
-<img id="Garen" src="../image/champions/Garen.webp"/>
+<img id="Aatrox" class="image" src="../image/champions/Aatrox.webp"/>
+<img id="Sett" class="image" src="../image/champions/Sett.webp"/>
+<img id="Garen" class="image" src="../image/champions/Garen.webp"/>
 </div>
 
 <div class="jgl">
 <h2>Jungle<img src="../image/jungle-removebg-preview.png"/></h2>
-<img id="Kayn" src="../image/champions/Kayn.webp"/>
-<img id="Lee_Sin" src="../image/champions/Lee_Sin.webp"/>
-<img id="Graves" src="../image/champions/Graves.webp"/>
+<img id="Kayn" class="image" src="../image/champions/Kayn.webp"/>
+<img id="Lee_Sin" class="image" src="../image/champions/Lee_Sin.webp"/>
+<img id="Graves" class="image" src="../image/champions/Graves.webp"/>
 </div>
 
 <div class="mid">
 <h2>Midlane<img src="../image/mid_lane-removebg-preview.png"/></h2>
-<img id="Vladimir" src="../image/champions/Vladimir.webp" />
-<img id="Katarina" src="../image/champions/Katarina.webp" />
-<img id="Heimerdinger" src="../image/champions/Heimerdinger.webp"/>
+<img id="Vladimir" class="image" src="../image/champions/Vladimir.webp" />
+<img id="Katarina" class="image" src="../image/champions/Katarina.webp" />
+<img id="Heimerdinger" class="image" src="../image/champions/Heimerdinger.webp"/>
 </div>
 
 <div class="bot">
 <h2>Botlane<img src="../image/bot_lane.webp"/></h2>
-<img id="Jinx" src="../image/champions/Jinx.webp"/>
-<img id="MissFortune" src="../image/champions/MissFortune.webp"/>
-<img id="Kalista" src="../image/champions/Kalista.webp"/>
+<img id="Jinx" class="image" src="../image/champions/Jinx.webp"/>
+<img id="MissFortune" class="image" src="../image/champions/MissFortune.webp"/>
+<img id="Kalista" class="image" src="../image/champions/Kalista.webp"/>
 </div>
 
 <div class="sup">
 <h2>Support<img src="../image/support-removebg-preview.png"/></h2>
-<img id="Tresh" src="../image/champions/Tresh.webp"/>
-<img id="Morgana" src="../image/champions/Morgana.webp"/>
-<img id="Leona" src="../image/champions/Leona.webp"/>
+<img id="Tresh" class="image" src="../image/champions/Tresh.webp"/>
+<img id="Morgana" class="image" src="../image/champions/Morgana.webp"/>
+<img id="Leona" class="image" src="../image/champions/Leona.webp"/>
 </div>
 
 </section>
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
          
             const clickedImage = this;
             var nom = this.id;
-            window.open("http://os-vps418.infomaniak.ch:1180/l1_info_3/www_test_A/INFO204/lib/Build.php?id=nom");
+            window.open("http://os-vps418.infomaniak.ch:1180/l1_info_3/www_test_C/INFO204/lib/Build.php?id=nom");
              
         })
     ))

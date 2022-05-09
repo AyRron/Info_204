@@ -11,17 +11,18 @@
     
 
     <?php
-
+        include 'connect.php';
         include 'Build.crud.php';
 
         $nom = $_GET['id'];
 
+        $id=champ_id($conn, $nom);
 
 
 
 
 
-
+        include 'disconnect.php';
     ?>
 
 
