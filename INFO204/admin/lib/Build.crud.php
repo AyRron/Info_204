@@ -52,7 +52,6 @@ function select_bu($conn, $id){
 function select_all_bu($conn){
 	$sql="SELECT * FROM `build`" ;
 	if($ret=mysqli_query($conn, $sql)){
-		echo($sql);
 		$ret=mysqli_fetch_assoc($ret);
 	}
 	return $ret ;
