@@ -47,9 +47,34 @@ $result=mysqli_query($conn,"SELECT * FROM `build`");
 	
 	echo("</table>");
 
-	
+
 
 ?>
+
+<form method="post" action="Build_admin.php">
+	déplacer la pièce : 
+	<table>
+		<tr>
+			<td>Nom</td>
+			<td><input type="str" name="nom"></td>
+		</tr>
+		<tr>
+			<td>Prénom</td>
+			<td><input type="str" name="prenom"></td>
+		</tr>
+		<tr>
+			<td>Pays</td>
+			<td><input type="str" name="pays"></td>
+		</tr>
+		<tr>
+			<td>Rang</td>
+			<td><input type="int" name="rang"></td>
+		</tr>
+	</table>
+
+	<input type="submit" value="Créer">
+	</form>
+
 
 </body>
 
