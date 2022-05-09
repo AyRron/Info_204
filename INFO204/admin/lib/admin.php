@@ -2,14 +2,14 @@
 session_start() ;
 
 if(!$_SESSION["admin"]){
-	header("Location: admin_form_joueur.php") ; 
+	header("Location: admin_form.php") ; 
 } 
 ?>
 <!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Admin_joueur</title>
+  <title>Admin</title>
   <link rel="stylesheet" href="../CSS/style_index.css">
   <script src=""></script>
 </head>
@@ -40,9 +40,7 @@ if(!$_SESSION["admin"]){
 </body>
 
 <footer>
-	<a href="../index_admin.php?action=disconnect">
-	Deconnexion
-	</a>
+	<a href="../index_admin.php?action=disconnect">Deconnexion</a>
 </footer>
 	
 </html>
