@@ -1,6 +1,6 @@
 
 <?php
-include 'lib/connect_uwamp.php';
+include 'lib/connect.php';
 ?>
 
 
