@@ -12,7 +12,12 @@
 
     <?php
 
-    
+        include 'Build.crud.php';
+
+        $nom = $_GET['id'];
+
+
+
 
 
 
