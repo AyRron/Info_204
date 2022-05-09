@@ -52,14 +52,14 @@ $result=mysqli_query($conn,"SELECT * FROM `build`");
 ?>
 
 <form method="post" action="Build_admin.php">
-	déplacer la pièce : 
+	Ajouter un nouveau Build :  
 	<table>
 		<tr>
 			<td>Nom</td>
 			<td><input type="str" name="nom"></td>
 		</tr>
 		<tr>
-			<td>Prénom</td>
+			<td>Rune Fondamentale</td>
 			<td><input type="str" name="prenom"></td>
 		</tr>
 		<tr>

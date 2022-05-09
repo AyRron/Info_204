@@ -20,6 +20,7 @@ img {
 header {
   height: 10%;
   background-color: rgb(255, 149, 0);
+  display: flex;
   text-align: center;
 }
 
@@ -38,10 +39,7 @@ section {
 footer {
   height: 10%;
   background-color: rgb(255, 149, 0);
+  display: flex;
   text-align: center;
   justify-content: center;
-}
-
-header h2 {
-  color: white;
 }
