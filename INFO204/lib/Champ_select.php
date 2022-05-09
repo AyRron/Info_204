@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<h1>Nom du site</h1>
+
 <div class="top">
 <h2> Toplane <img src="../image/top_lane.png" /> </h2>
 <img src="../image/Aatrox.webp" />
