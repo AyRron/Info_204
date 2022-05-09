@@ -24,6 +24,17 @@ if(!$_SESSION["admin"]){
 
 
 <body>
+
+	<h2>Page des Runes </h2>
+
+	<a href="Rune_admin.php"> Modifier les Runes </a>
+
+
+	<h2>Page de Build </h2>
+
+	<a href="Build_admin.php"> Modifier le Build </a>
+
+
 	<h2>Page d'admin des Joueurs</h2>
 
 
@@ -53,6 +64,7 @@ if(!$_SESSION["admin"]){
 
 
 	<?php
+	
 		include 'utilisateur.crud.php';
 
 		if (isset($_POST["nom"])) {
@@ -66,9 +78,11 @@ if(!$_SESSION["admin"]){
 		}
 
 		/*2−Executiondelarequete*/
+		
 		$result=mysqli_query($conn,"SELECT * FROM `utilisateur`");
 		
 		/*3−Iterationsurlesresultats*/
+		
 		echo("<table>");
 		echo("<tr>");
 		echo("<td>Nom</td>");
@@ -90,7 +104,9 @@ if(!$_SESSION["admin"]){
 			}
 		
 		echo("</table>");
+		
 	?>	
+
 </body>
 
 <footer>

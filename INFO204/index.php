@@ -22,16 +22,16 @@ League of legends
 
 <body>
  
-<a href="lib/Build.php" >Build</a></br>
-<a href="lib/Item.php" >Item</a></br>
-<a href="lib/Rune.php" >Rune</a></br>
-<a href="lib/Champ_select.php" >Champ_select</a></br>
+<a href="lib/Build.php" >Build</a>
+<a href="lib/Item.php" >Item</a>
+<a href="lib/Rune.php" >Rune</a>
+<a href="lib/Champ_select.php" >Champ_select</a>
 
 
 </body>
 
 <footer>
-    <a href="admin/index_admin.php" >Page admin</a></br>
+    <a href="admin/index_admin.php" >Page admin</a>
 </footer>
 
 <script src=""></script>
