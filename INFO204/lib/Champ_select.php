@@ -39,7 +39,7 @@
 </div>
 
 <div class="sup">
-<h2> Support <img src="../image/support.png" /> </h2>
+<h2> Support <img src="../image/support-removebg-preview.png" /> </h2>
 <img id="Tresh" class="image" src="../image/champions/Tresh.webp" /></br>
 <img id="Morgana" class="image" src="../image/champions/Morgana.webp" />
 </div>
