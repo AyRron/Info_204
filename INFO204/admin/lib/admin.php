@@ -2,7 +2,7 @@
 session_start() ;
 
 if(!$_SESSION["admin"]){
-	header("Location: admin.php") ; 
+	header("Location: admin_form.php") ; 
 } 
 ?>
 <!doctype html>
