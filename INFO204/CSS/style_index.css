@@ -47,6 +47,16 @@ section div {
   border-radius: 5px;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.contenu {
+  display: flex;
+  justify-content: space-around;
+}
+
 footer {
   height: 10%;
   background-color: rgb(255, 149, 0);

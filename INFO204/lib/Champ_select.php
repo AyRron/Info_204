@@ -15,38 +15,48 @@
 <section>
 
 <div class="top">
-<h2>Toplane<img src="../image/top_lane-removebg-preview.png"/></h2>
+<span class="title"><h2>Toplane<img src="../image/top_lane-removebg-preview.png"/></h2></span>
+<span class="contenu">
 <img id="Aatrox" class="image" src="../image/champions/Aatrox.webp"/>
 <img id="Sett" class="image" src="../image/champions/Sett.webp"/>
 <img id="Garen" class="image" src="../image/champions/Garen.webp"/>
+</span>
 </div>
 
 <div class="jgl">
-<h2>Jungle<img src="../image/jungle-removebg-preview.png"/></h2>
+<span class="title"><h2>Jungle<img src="../image/jungle-removebg-preview.png"/></h2></span>
+<span class="contenu">
 <img id="Kayn" class="image" src="../image/champions/Kayn.webp"/>
 <img id="Lee_Sin" class="image" src="../image/champions/Lee_Sin.webp"/>
 <img id="Graves" class="image" src="../image/champions/Graves.webp"/>
+</span>
 </div>
 
 <div class="mid">
-<h2>Midlane<img src="../image/mid_lane-removebg-preview.png"/></h2>
+<span class="title"><h2>Midlane<img src="../image/mid_lane-removebg-preview.png"/></h2></span>
+<span class="contenu">
 <img id="Vladimir" class="image" src="../image/champions/Vladimir.webp" />
 <img id="Katarina" class="image" src="../image/champions/Katarina.webp" />
 <img id="Heimerdinger" class="image" src="../image/champions/Heimerdinger.webp"/>
+</span>
 </div>
 
 <div class="bot">
-<h2>Botlane<img src="../image/bot_lane.webp"/></h2>
+<span class="title"><h2>Botlane<img src="../image/bot_lane.webp"/></h2></span>
+<span class="contenu">
 <img id="Jinx" class="image" src="../image/champions/Jinx.webp"/>
 <img id="MissFortune" class="image" src="../image/champions/MissFortune.webp"/>
 <img id="Kalista" class="image" src="../image/champions/Kalista.webp"/>
+</span>
 </div>
 
 <div class="sup">
-<h2>Support<img src="../image/support-removebg-preview.png"/></h2>
+<span class="title"><h2>Support<img src="../image/support-removebg-preview.png"/></h2></span>
+<span class="contenu">
 <img id="Tresh" class="image" src="../image/champions/Tresh.webp"/>
 <img id="Morgana" class="image" src="../image/champions/Morgana.webp"/>
 <img id="Leona" class="image" src="../image/champions/Leona.webp"/>
+</span>
 </div>
 
 </section>
