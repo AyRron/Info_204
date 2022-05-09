@@ -43,7 +43,8 @@ section {
 }
 
 section div {
-  background-color: rgb(55, 55, 55);
+  background-color: rgb(33, 33, 33);
+  border-radius: 5px;
 }
 
 footer {
