@@ -26,7 +26,7 @@ if(isset($_GET["action"])){
 
 
 <body>
-  <a href="lib/admin_joueur.php">Connexion en tant qu'administrateur</a></br>
+  <a href="lib/admin.php">Connexion en tant qu'administrateur</a></br>
 </body>
 
 

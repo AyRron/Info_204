@@ -2,13 +2,13 @@
 session_start() ;
 if(isset($_POST["login"])){
 	if($_POST["login"]=="admin"
-		&& $_POST["password"]=="joueur"){
+		&& $_POST["password"]=="admin"){
 		
 		/* session admin */
 		$_SESSION["admin"]=time() ; 
 	
 		/* redirection */
-		header("Location: admin_joueur.php") ; 
+		header("Location: admin.php") ; 
 	}
 }	
 
@@ -19,7 +19,7 @@ if(isset($_POST["login"])){
 	</head>
 
 	<body>
-	<form method="POST" action="admin_form_joueur.php">
+	<form method="POST" action="admin_form.php">
 	Login:	<input type="text" name="login">
 	Password:	<input type="text" name="password">
 		<input type="submit" value="Envoyer" >
