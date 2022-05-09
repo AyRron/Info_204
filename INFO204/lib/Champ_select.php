@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
          
             const clickedImage = this;
             var nom = this.id;
-            alert(nom);
+            window.open("http://os-vps418.infomaniak.ch:1180/l1_info_3/www_test_A/INFO204/lib/Build.php?id=nom");
              
         })
     ))
@@ -70,13 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 </script>
-
-
- <?php
-$variable_php = '<script type="text/javascript">document.write(nom);</script>';
-echo($variable_php);
-?>
-
 
 </body>
 
