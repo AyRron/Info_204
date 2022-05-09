@@ -9,7 +9,7 @@
 <body>
 
 <header>
-<h1>Nom du site</h1>
+<span class="logo"><h1>Build</h1><h1>hub</h1></span>
 </header>
 
 <section>
