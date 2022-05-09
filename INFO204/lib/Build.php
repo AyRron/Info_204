@@ -16,7 +16,7 @@
 
         $nom = $_GET['id'];
 
-        $id=champ_id($conn, $nom);
+        $id=champ_id($conn, $nom)['id'];
 
 
 

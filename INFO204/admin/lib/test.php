@@ -9,6 +9,12 @@ var_dump(champ_id($conn, 'Vladimir'));
 <br>
 <br>
 
+<?php
+$id=champ_id($conn, $nom)['id']
+?>
+<br>
+<br>
+
 
 <?php
 var_dump(select_all_build($conn))
