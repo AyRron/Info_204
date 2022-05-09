@@ -13,26 +13,25 @@ include 'lib/connect.php';
     <link rel="stylesheet" href="CSS/style_index.css">
 </head>
 
+<body>
+
 <header>
 <h1> Nom du site </h1>
-<br>
-League of legends
-
+<h2>League of legends</h2>
 </header>
 
-<body>
- 
+<section>
 <a href="lib/Build.php" >Build</a>
 <a href="lib/Item.php" >Item</a>
 <a href="lib/Rune.php" >Rune</a>
 <a href="lib/Champ_select.php" >Champ_select</a>
-
-
-</body>
+</section>
 
 <footer>
     <a href="admin/index_admin.php" >Page admin</a>
 </footer>
+
+</body>
 
 <script src=""></script>
 
