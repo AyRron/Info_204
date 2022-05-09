@@ -50,19 +50,6 @@
 <a href="../index.php" >Retourner a l'acceuil</a>
 </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script>
 document.addEventListener('DOMContentLoaded', () => {
      
