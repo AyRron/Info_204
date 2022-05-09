@@ -1,5 +1,5 @@
 <?php
-include 'lib/db_connect.php';
+include 'lib/connect_uwamp.php';
 
 session_start() ; 
 if(isset($_GET["action"])){
