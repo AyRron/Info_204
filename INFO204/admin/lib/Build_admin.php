@@ -27,8 +27,6 @@
 include 'Build.crud.php';
 
 $result=mysqli_query($conn,"SELECT * FROM `build`");
-		
-	/*3−Iterationsurlesresultats*/
 	
 	echo("<table>");
 	echo("<tr>");
@@ -37,7 +35,6 @@ $result=mysqli_query($conn,"SELECT * FROM `build`");
 	echo("<td>Runes Secondaires : </td>");
 	echo("<td>Ajustements : </td>");
 	echo("</tr>");
-	echo("\n");
 	
 	while($row = mysqli_fetch_assoc($result)){
 		echo("<tr>");
@@ -46,10 +43,10 @@ $result=mysqli_query($conn,"SELECT * FROM `build`");
 		echo("<td>$row[S1] $row[S2]</td>");
 		echo("<td>$row[sup1] $row[sup2] $row[sup3]</td>");
 		echo("</tr>");
-		echo("\n");
 		}
 	
 	echo("</table>");
+
 	
 
 ?>
