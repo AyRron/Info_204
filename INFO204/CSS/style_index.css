@@ -47,6 +47,13 @@ nav {
   font-weight: bold;
 }
 
+nav > ul {
+  margin: 0; /* voir fusion des marges */
+  padding: 0px;
+  justify-content: space-around;
+  display: flex;
+}
+
 section {
   height: 70%;
   margin-left: 10px;
