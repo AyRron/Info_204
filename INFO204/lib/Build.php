@@ -20,14 +20,9 @@
                 print_r($nom);
             }
         }
-/*
-        echo($nom);
-*/
+
+        var_dump(champ_info_nom($conn, $nom));
         
-
-        
-
-
 
 
         include 'disconnect.php';
