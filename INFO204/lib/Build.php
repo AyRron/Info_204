@@ -20,8 +20,8 @@
                 print_r($nom);
             }
         }
-
-        var_dump(champ_info_nom($conn, $nom));
+        
+        champ_info_nom($conn, $nom);
         
 
 
