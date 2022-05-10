@@ -48,8 +48,6 @@ nav {
 }
 
 nav > ul {
-  margin: 0; /* voir fusion des marges */
-  padding: 0px;
   justify-content: space-around;
   display: flex;
 }
