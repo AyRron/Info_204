@@ -39,7 +39,7 @@ header span {
 
 nav {
   background-color: rgb(33, 33, 33);
-  height: 10%;
+  height: 5%;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -64,7 +64,7 @@ nav a {
 }
 
 section {
-  height: 70%;
+  height: 75%;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 5px;
@@ -128,5 +128,11 @@ footer > a {
     grid-gap: 10px;
     color: white;
     text-decoration: none;
+  }
+
+  .map {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }

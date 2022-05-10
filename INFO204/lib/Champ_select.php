@@ -23,7 +23,7 @@
 
 <section class="select">
 
-<div class="top">
+<div class="map">
 <span class="title"><h2>Toplane<img src="../image/top_lane-removebg-preview.png"/></h2></span>
 <span class="contenu">
 <img id="Aatrox" class="image" src="../image/champions/Aatrox.webp"/>
@@ -33,7 +33,7 @@
 </span>
 </div>
 
-<div class="jgl">
+<div class="map">
 <span class="title"><h2>Jungle<img src="../image/jungle-removebg-preview.png"/></h2></span>
 <span class="contenu">
 <img id="Kayn" class="image" src="../image/champions/Kayn.webp"/>
@@ -43,7 +43,7 @@
 </span>
 </div>
 
-<div class="mid">
+<div class="map">
 <span class="title"><h2>Midlane<img src="../image/mid_lane-removebg-preview.png"/></h2></span>
 <span class="contenu">
 <img id="Vladimir" class="image" src="../image/champions/Vladimir.webp" />
@@ -53,7 +53,7 @@
 </span>
 </div>
 
-<div class="bot">
+<div class="map">
 <span class="title"><h2>Botlane<img src="../image/bot_lane.webp"/></h2></span>
 <span class="contenu">
 <img id="Jinx" class="image" src="../image/champions/Jinx.webp"/>
@@ -63,7 +63,7 @@
 </span>
 </div>
 
-<div class="sup">
+<div class="map">
 <span class="title"><h2>Support<img src="../image/support-removebg-preview.png"/></h2></span>
 <span class="contenu">
 <img id="Tresh" class="image" src="../image/champions/Tresh.webp"/>
