@@ -9,15 +9,23 @@
 </head>
 <body>
     
-
+<div>
     <?php
         include 'connect.php';
         include 'Build.crud.php';
 
-        $nom = $_GET['id'];
+        if(isset($_GET)){
+            if(isset($_GET["id"])){
+                $nom = $_GET['id'];
+                print_r($nom);
+            }
+        }
+/*
+        echo($nom);
+*/
+        
 
-        $id=champ_id($conn, $nom)['id'];
-
+        
 
 
 
@@ -27,7 +35,7 @@
 
 
 
-
+</div>
 
 
 </body>
