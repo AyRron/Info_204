@@ -32,6 +32,11 @@
 
 </div>
 
+<footer>
+<p><a href="../index.php" >Retourner a l'acceuil</a></p>
+<p><a href="./Champ_select.php" >Retourner a l'écran de sélection du champion</a></p>
+</footer>
 
 </body>
+
 </html>
