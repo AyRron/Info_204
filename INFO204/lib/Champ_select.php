@@ -29,6 +29,7 @@
 <img id="Aatrox" class="image" src="../image/champions/Aatrox.webp"/>
 <img id="Sett" class="image" src="../image/champions/Sett.webp"/>
 <img id="Garen" class="image" src="../image/champions/Garen.webp"/>
+<img id="Cho_Gath" class="image" src="../image/champions/Cho_Gath.webp"/>
 </span>
 </div>
 
@@ -38,6 +39,7 @@
 <img id="Kayn" class="image" src="../image/champions/Kayn.webp"/>
 <img id="Lee_Sin" class="image" src="../image/champions/Lee_Sin.webp"/>
 <img id="Graves" class="image" src="../image/champions/Graves.webp"/>
+<img id="Elise" class="image" src="../image/champions/Elise.webp"/>
 </span>
 </div>
 
@@ -47,6 +49,7 @@
 <img id="Vladimir" class="image" src="../image/champions/Vladimir.webp" />
 <img id="Katarina" class="image" src="../image/champions/Katarina.webp" />
 <img id="Heimerdinger" class="image" src="../image/champions/Heimerdinger.webp"/>
+<img id="Aurelion_Sol" class="image" src="../image/champions/Aurelion_sol.webp"/>
 </span>
 </div>
 
@@ -56,6 +59,7 @@
 <img id="Jinx" class="image" src="../image/champions/Jinx.webp"/>
 <img id="MissFortune" class="image" src="../image/champions/MissFortune.webp"/>
 <img id="Kalista" class="image" src="../image/champions/Kalista.webp"/>
+<img id="Ashe" class="image" src="../image/champions/Ashe.webp"/>
 </span>
 </div>
 
@@ -65,6 +69,7 @@
 <img id="Tresh" class="image" src="../image/champions/Tresh.webp"/>
 <img id="Morgana" class="image" src="../image/champions/Morgana.webp"/>
 <img id="Leona" class="image" src="../image/champions/Leona.webp"/>
+<img id="Brand" class="image" src="../image/champions/Brand.webp"/>
 </span>
 </div>
 
