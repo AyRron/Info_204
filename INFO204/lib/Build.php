@@ -9,55 +9,74 @@
 </head>
 <body>
     
-<div>
-    <?php
-        include 'connect.php';
-        include 'Build.crud.php';
 
-        if(isset($_GET)){
-            if(isset($_GET["id"])){
-                $nom = $_GET['id'];
-                print_r($nom);
-            }
+<?php
+    include 'connect.php';
+    include 'Build.crud.php';
+
+    if(isset($_GET)){
+        if(isset($_GET["id"])){
+            $nom = $_GET['id'];
         }
-        echo("\n");
-        var_dump($champ=champ_info_nom($conn, $nom));
+    }
+    
+    $champ=champ_info_nom($conn, $nom);
+    
+    
+    echo("<table>\n");
+    echo("\t<tr>$nom</tr>\n");
+    echo("</table>\n");
 
-        echo($champ['Nom_Champ']);
-        /*
-        echo("<table>\n");
-        
-        foreach($champ as $key => $value){
-            if($key == "Nom_Champ"){
-                echo("\t<tr>$value</tr>\n");
 
-            } elseif($key == "Rune_f" || $key == "S1"){
-                echo("\t<tr>");
-                if($key == "Rune_f"){
-                    echo("<td>$value</td>");
-                } else{
-                    echo("<td>$value</td></tr>\n");
-                }
+    echo("<table>\n");
+    foreach($champ as $key => $value){
+        if($key == "Rune_f" ){
+            echo("\t<tr>\n");
+            echo("\t<td>\n");
+            echo("$value\n");
+         
+        } elseif($key == "F3" ){
+            echo("$value");
+            echo("\t</tr>\n");
             
-            } elseif($key == "F1" || $key == "S2"){
-                echo("\t<tr>");
-                if($key == "F1"){
-                    echo("<td>$value</td>");
-                } else{
-                    echo("<td>$value</td></tr>\n");
-                }
+        } elseif($key == "S1" || $key == "S2" ){
+            if($key == "S1"){
+                echo("\t<td>\n");
+                echo("\t<tr>\n");
+                echo("$value\n");
+            }else{
+                echo("$value\n");
+                echo("\t</tr>\n");
+            }
 
-            }elseif($key == "F2" || $key == "sup1")
-            echo("<h2> clef : $key, valeur : $value</h2>\n");
+        } elseif($key == "S1" || $key == "S2" ){
+            if($key == "sup1"){
+                echo("\t<tr>\n");
+                echo("$value\n");
+            }elseif($key == "sup2"){
+                echo("$value\n");
+            }else{
+                echo("$value\n");
+                echo("\t</tr>\n");
+                echo("\t</td>\n");
+            }
+        
+
+        } elseif($key == "id" || $key == "Nom_Champ" ){
+            
+        } else{
+            echo("$value\n");
         }
-        */
-
-        include 'disconnect.php';
-    ?>
+        
+    } 
 
 
+    include 'disconnect.php';
+?>
 
-</div>
+
+
+
 
 <footer>
 <p><a href="../index.php" >Retourner a l'acceuil</a></p>
