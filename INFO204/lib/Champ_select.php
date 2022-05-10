@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
          
             const clickedImage = this;
             var nom = this.id;
-            window.location.replace("http://os-vps418.infomaniak.ch:1180/l1_info_3/www/lib/Build.php?id=" + nom);
+            window.location.replace("http://os-vps418.infomaniak.ch:1180/l1_info_3/www_test_C/lib/Build.php?id=" + nom);
              
         })
     ))
