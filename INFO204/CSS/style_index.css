@@ -54,6 +54,15 @@ nav > ul {
   display: flex;
 }
 
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+}
+
 section {
   height: 70%;
   margin-left: 10px;
