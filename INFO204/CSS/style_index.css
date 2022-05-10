@@ -54,6 +54,8 @@ nav > ul {
 
 nav li {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
 
 nav a {
