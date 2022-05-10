@@ -9,10 +9,17 @@
 <body>
 
 <header>
-<span class="logo"><h1>Build</h1><h1>hub</h1></span>
+<h1>Build<span>hub</span></h1>
 </header>
 
-<section>
+<nav>
+  <a href="lib/Build.php" >Build</a>
+  <a href="lib/Item.php" >Item</a>
+  <a href="lib/Rune.php" >Rune</a>
+  <a href="Champ_select.php" >Champ_select</a>
+</nav>
+
+<section class="select">
 
 <div class="top">
 <span class="title"><h2>Toplane<img src="../image/top_lane-removebg-preview.png"/></h2></span>
