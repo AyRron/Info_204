@@ -84,4 +84,18 @@ function champ_id($conn, $nom_champ){
 }
 
 
+/*
+	Envoie les informations d'un Champion à partir de son nom
+*/
+function champ_info_nom($conn, $nom_champ){
+	$sql="SELECT * FROM `build` WHERE `Nom_champ`='$nom_champ'" ;
+	if($ret=mysqli_query($conn, $sql)){
+		$ret=mysqli_fetch_assoc($ret);
+	} else{
+		echo("Ce personnage n'existe pas");
+	}
+	return $ret ;
+}
+
+
 ?>
