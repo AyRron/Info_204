@@ -49,7 +49,7 @@
 <img id="Vladimir" class="image" src="../image/champions/Vladimir.webp" />
 <img id="Katarina" class="image" src="../image/champions/Katarina.webp" />
 <img id="Heimerdinger" class="image" src="../image/champions/Heimerdinger.webp"/>
-<img id="Aurelion_Sol" class="image" src="../image/champions/Aurelion_sol.webp"/>
+<img id="Aurelion_Sol" class="image" src="../image/champions/Aurelion_Sol.webp"/>
 </span>
 </div>
 
