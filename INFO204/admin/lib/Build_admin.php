@@ -12,7 +12,7 @@
 <header>
     <?php
 
-    include '../../lib/connect.php'
+    include '../../lib/connect_uwamp.php'
 
     ?>
 

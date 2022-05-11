@@ -17,7 +17,7 @@ if(!$_SESSION["admin"]){
 
 <header>
 	<?php
-		include 'connexion.php';
+		include 'connexion_uwamp.php';
 	?>
 </header>
 

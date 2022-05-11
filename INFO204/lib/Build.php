@@ -11,7 +11,7 @@
     
 
 <?php
-    include 'connect.php';
+    include 'connect_uwamp.php';
     include 'Build.crud.php';
 
     if(isset($_GET)){
@@ -42,7 +42,7 @@
         } elseif($key == "S1" || $key == "S2" ){
             if($key == "S1"){
                 echo("\t<td>\n");
-                echo("\t<tr>\n");
+                echo("\t<td>\n");
                 echo("$value\n");
             }else{
                 echo("$value\n");
@@ -51,13 +51,13 @@
 
         } elseif($key == "S1" || $key == "S2" ){
             if($key == "sup1"){
-                echo("\t<tr>\n");
+                echo("\t<td>\n");
                 echo("$value\n");
             }elseif($key == "sup2"){
                 echo("$value\n");
             }else{
                 echo("$value\n");
-                echo("\t</tr>\n");
+                echo("\t</td>\n");
                 echo("\t</td>\n");
             }
         
