@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Champ_select</title>
   <link rel="stylesheet" href="../CSS/style_index.css">
+  <link rel="icon" href="../image/league.png">
 </head>
 
 <body>
@@ -65,7 +66,7 @@
 <div class="map">
 <span class="title"><h2>Support<img src="../image/support-removebg-preview.png"/></h2></span>
 <span class="contenu">
-<img id="Tresh" class="image" src="../image/champions/Tresh.webp"/>
+<img id="Thresh" class="image" src="../image/champions/Thresh.webp"/>
 <img id="Morgana" class="image" src="../image/champions/Morgana.webp"/>
 <img id="Leona" class="image" src="../image/champions/Leona.webp"/>
 <img id="Brand" class="image" src="../image/champions/Brand.webp"/>
