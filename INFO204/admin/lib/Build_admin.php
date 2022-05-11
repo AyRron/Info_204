@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Build_admin</title>
   <link rel="stylesheet" href="../CSS/style_index.css">
+  <link rel="icon" href="../image/league.png">
 </head>
 
 <body>

@@ -17,7 +17,7 @@ if(isset($_GET["action"])){
   <meta charset="utf-8">
   <title>index_admin</title>
   <link rel="stylesheet" href="CSS/style_index.css">
-  <script src=""></script>
+  <link rel="icon" href="image/league.png">
 </head>
 
 

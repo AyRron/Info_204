@@ -8,6 +8,7 @@ include 'lib/connect_uwamp.php';
   <meta charset="UTF-8">
   <title>Index</title>
   <link rel="stylesheet" href="CSS/style_index.css">
+  <link rel="icon" href="../image/league.png">
 </head>
 
 <body>

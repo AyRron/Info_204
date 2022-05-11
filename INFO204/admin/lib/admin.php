@@ -11,7 +11,7 @@ if(!$_SESSION["admin"]){
   <meta charset="utf-8">
   <title>Admin</title>
   <link rel="stylesheet" href="../CSS/style_index.css">
-  <script src=""></script>
+  <link rel="icon" href="../image/league.png">
 </head>
 
 
