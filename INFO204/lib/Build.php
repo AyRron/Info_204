@@ -24,51 +24,54 @@
     
     
     echo("<table>\n");
-    echo("\t<tr>$nom</tr>\n");
+    echo("<tr>\n");
+    echo("$nom\n");
+    echo("</tr>\n");
     echo("</table>\n");
 
 
     echo("<table>\n");
     foreach($champ as $key => $value){
         if($key == "Rune_f" ){
-            echo("\t<tr>\n");
-            echo("\t<td>\n");
+            echo("<tr>\n");
+            echo("<th rowspan='2'>\n");
             echo("$value\n");
          
         } elseif($key == "F3" ){
-            echo("$value");
-            echo("\t</tr>\n");
+            echo("$value\n");
+            echo("</th>\n");
+            
             
         } elseif($key == "S1" || $key == "S2" ){
             if($key == "S1"){
-                echo("\t<td>\n");
-                echo("\t<td>\n");
+                echo("<td>\n");
                 echo("$value\n");
             }else{
                 echo("$value\n");
-                echo("\t</tr>\n");
+                echo("</td>\n");
+                echo("</tr>\n");
             }
 
-        } elseif($key == "S1" || $key == "S2" ){
+        } elseif($key == "sup1" || $key == "sup3" ){
             if($key == "sup1"){
-                echo("\t<td>\n");
-                echo("$value\n");
-            }elseif($key == "sup2"){
+                echo("<tr>\n");
+                echo("<td>\n");
                 echo("$value\n");
             }else{
                 echo("$value\n");
-                echo("\t</td>\n");
-                echo("\t</td>\n");
+                echo("</td>\n");
+                echo("</tr>\n");
             }
         
 
         } elseif($key == "id" || $key == "Nom_Champ" ){
             
         } else{
-            echo("$value\n");
+            echo("t$value\n");
         }
         
     } 
+    echo("</table>");
 
 
     include 'disconnect.php';
