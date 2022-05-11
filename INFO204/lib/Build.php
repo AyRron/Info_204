@@ -65,7 +65,7 @@
         } elseif($key == "id" || $key == "Nom_Champ" ){
             
         } else{
-            echo("t$value\n");
+            echo("$value\n");
         }
         
     } 

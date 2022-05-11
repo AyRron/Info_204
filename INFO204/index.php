@@ -18,7 +18,6 @@ include 'lib/connect_uwamp.php';
 
 <nav>
   <ul>
-    <li><a href="lib/Build.php" >Build</a></li>
     <li><a href="lib/Item.php" >Item</a></li>
     <li><a href="lib/Rune.php" >Rune</a></li>
     <li><a href="lib/Champ_select.php" >Champ_select</a></li>
