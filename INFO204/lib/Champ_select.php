@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
          
             const clickedImage = this;
             var nom = this.id;
-            window.location.replace("http://localhost/INFO204/lib/Build.php?id=" + nom);
+            window.location.replace("http://localhost/www_test_A/INFO204/lib/Build.php?id=" + nom);
              
         })
     ))
