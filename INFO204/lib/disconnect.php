@@ -1,4 +1,3 @@
-
 <?php
 
 /* Déconnexion de la base de donnée*/
