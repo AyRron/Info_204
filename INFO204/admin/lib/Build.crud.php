@@ -18,7 +18,7 @@ function create_build($conn, $nom, $rune, $f1, $f2, $f3, $s1, $s2, $sup1, $sup2,
 	Met à jour les valeurs du Build
 */
 function update_build($conn, $id, $nom, $rune, $f1, $f2, $f3, $s1, $s2, $sup1, $sup2, $sup3){
-	$sql="UPDATE `build` set `Nom_champ`='$nom', `Rune_f`='$rune', `F1`='$f1', `F2`='$f2', `F3`='$f3', `S1`='$s1', `S2`='$s2', `sup1`='$sup1', `sup2`='$sup2', `sup3`='$sup3' WHERE `id`=$id" ;
+	$sql="UPDATE `build` set `Nom_champ`='$nom', `Rune_f`='$rune', `F1`='$f1', `F2`='$f2', `F3`='$f3', `S1`='$s1', `S2`='$s2', `sup1`='$sup1', `sup2`='$sup2', `sup3`='$sup3' WHERE `id`='$id'" ;
 	$ret=mysqli_query($conn, $sql) ;
     return $ret ; 
 }
@@ -48,7 +48,7 @@ function delete_build_id($conn, $id){
 	Selectionne un Champion
 */
 function select_build($conn, $id){
-	$sql="SELECT * FROM `build` WHERE `id`=$id" ;
+	$sql="SELECT * FROM `build` WHERE `id`='$id'" ;
 	if($ret=mysqli_query($conn, $sql)){
 		echo($sql);
 		$ret=mysqli_fetch_assoc($ret);
