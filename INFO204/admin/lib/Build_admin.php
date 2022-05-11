@@ -8,6 +8,8 @@
 
 <body>
 <header>
+	<a href="../index_admin.php?action=disconnect">Deconnexion</a>
+	<a href="admin.php">Retour à la page d'accueil</a>
     <?php
     include '../../lib/connect_uwamp.php';
 	include 'Build.crud.php';
@@ -162,5 +164,10 @@
 		echo("</table>");
 	?>
 </body>
+
+
+<footer>
+	
+</footer>
 
 </html>
