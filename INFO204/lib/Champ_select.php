@@ -10,17 +10,19 @@
 <body>
 
 <header>
-<h1>Build<span>hub</span></h1>
+<nav class="navigation">
+  <a href="#home" class="logo-lien">
+    <img src="../image/logo.png" alt="Logo" class="logo-image">
+  </a>
+  <div class="liens">
+    <a href="Item.php" class="nav-lien">Items</a>
+    <a href="Rune.php" class="nav-lien">Runes</a>
+    <a href="Champ_select.php" class="nav-lien">Champions</a>
+  </div>
+</nav>
 </header>
 
-<nav>
-  <ul>
-    <li><a href="Item.php">Item</a></li>
-    <li><a href="Rune.php">Rune</a></li>
-    <li><a href="Champ_select.php">Champions</a></li>
-  </ul>
-</nav>
-
+<main class="main">
 <section class="select">
 
 <div class="map">
@@ -78,7 +80,7 @@
 <footer>
 <a href="../index.php" >Retourner a l'acceuil</a>
 </footer>
-
+</main>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {

@@ -14,16 +14,17 @@ include 'lib/connect.php';
 <body onload="openPopup()">
 
 <header id="back1">
-<h1>Build<span>hub</span></h1>
-</header>
-
-<nav id="back2">
-  <ul>
-    <li><a href="lib/Item.php" >Item</a></li>
-    <li><a href="lib/Rune.php" >Rune</a></li>
-    <li><a href="lib/Champ_select.php" >Champions</a></li>
-  </ul>
+<nav class="navigation">
+  <a href="#home" class="logo-lien">
+    <img src="image/logo.png" alt="Logo" class="logo-image">
+  </a>
+  <div class="liens">
+    <a href="lib/Item.php" class="nav-lien">Items</a>
+    <a href="lib/Rune.php" class="nav-lien">Runes</a>
+    <a href="lib/Champ_select.php" class="nav-lien">Champions</a>
+  </div>
 </nav>
+</header>
 
 <section>
 	<div class="container">
@@ -48,7 +49,7 @@ let popup = document.getElementById("popup");
 function openPopup(){
 	popup.classList.add("open-popup");
 	back1.classList.add("back");
-	back2.classList.add("back");
+	/*back2.classList.add("back");*/
 	back3.classList.add("back");
 	
 }
@@ -56,7 +57,7 @@ function openPopup(){
 function closePopup(){
 	popup.classList.remove("open-popup");
 	back1.classList.remove("back");
-	back2.classList.remove("back");
+	/*back2.classList.remove("back");*/
 	back3.classList.remove("back");
 }
 </script>

@@ -1,18 +1,71 @@
-* {
+/* font-family: "Poppins", sans-serif; */
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 18px;
   font-family: "Poppins", sans-serif;
 }
 
 body {
-  position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: black;
-  display: flex;
+  color: white;
+  /*  display: flex;
   flex-direction: column;
   align-items: stretch;
+  color: white;*/
+}
+
+/* font-family: 'Poppins', sans-serif;*/
+/*
+or: #dfa419;
+gris: rgb(33, 33, 33);
+*/
+
+.navigation {
+  padding: 10px 100px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo-lien {
+  margin-right: auto;
+}
+
+.logo-image {
+  width: 200px;
+  height: auto;
+}
+
+.nav-lien:link,
+.nav-lien:visited {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 30px;
+  text-decoration: uppercase;
+  color: black;
+  font-weight: 600;
+  display: inline-block;
+  width: 180px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.nav-lien:not(:last-child) {
+  border-right: 3px solid black;
+}
+
+.nav-lien:hover {
+  background-color: black;
   color: white;
 }
 
@@ -22,52 +75,19 @@ img {
 }
 
 header {
-  height: 10%;
-  background-color: rgb(255, 149, 0);
+  background-color: #dfa419;
   margin: 10px;
   border-radius: 5px;
+}
+
+.main {
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header span {
-  background-color: black;
-  border-radius: 5px;
-  color: white;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-nav {
-  background-color: rgb(33, 33, 33);
-  height: 5%;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-nav > ul {
-  justify-content: space-around;
-  display: flex;
-}
-
-nav li {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-}
-
-nav a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-}
-
 section {
-  height: 75%;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 5px;
@@ -95,8 +115,7 @@ section a {
 }
 
 footer {
-  height: 10%;
-  background-color: rgb(255, 149, 0);
+  background-color: #dfa419;
   margin: 10px;
   border-radius: 5px;
   display: flex;
@@ -107,6 +126,31 @@ footer {
 footer > a {
   text-decoration: none;
   color: black;
+}
+
+@media only screen and (max-width: 1150px) {
+  .nav-lien:link,
+  .nav-lien:visited {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .navigation {
+    padding: 10px 50px;
+  }
+
+  .logo-image {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .navigation {
+    flex-direction: column;
+  }
+
+  .logo-lien {
+    margin-right: 0px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -177,7 +221,7 @@ footer > a {
   width: 100%;
   margin-top: 50px;
   padding: 10px 0;
-  background: rgb(255, 149, 0);
+  background: #dfa419;
   color: #fff;
   border: 0;
   outline: none;
