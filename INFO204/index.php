@@ -1,5 +1,5 @@
 <?php
-include 'lib/connect_uwamp.php';
+include 'lib/connect.php';
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ include 'lib/connect_uwamp.php';
   <ul>
     <li><a href="lib/Item.php" >Item</a></li>
     <li><a href="lib/Rune.php" >Rune</a></li>
-    <li><a href="lib/Champ_select.php" >Champ_select</a></li>
+    <li><a href="lib/Champ_select.php" >Champions</a></li>
   </ul>
 </nav>
 

@@ -17,7 +17,7 @@
   <ul>
     <li><a href="Item.php">Item</a></li>
     <li><a href="Rune.php">Rune</a></li>
-    <li><a href="Champ_select.php">Champ_select</a></li>
+    <li><a href="Champ_select.php">Champions</a></li>
   </ul>
 </nav>
 
