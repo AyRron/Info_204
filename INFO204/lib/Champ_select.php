@@ -22,7 +22,6 @@
 </nav>
 </header>
 
-<main class="main">
 <section class="select">
 
 <div class="map">
@@ -78,9 +77,8 @@
 </section>
 
 <footer>
-<a href="../index.php" >Retourner a l'accueil</a>
+<a href="../index.php" >Retourner à l'accueil</a>
 </footer>
-</main>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {

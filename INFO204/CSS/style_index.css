@@ -1,4 +1,15 @@
-/* font-family: "Poppins", sans-serif; */
+/* Color Theme Swatches in Hex /
+.Mecha-Studio-Website-1-hex { color: #AB04D9; }
+.Mecha-Studio-Website-2-hex { color: #8303A6; }
+.Mecha-Studio-Website-3-hex { color: #AB05F2; }
+.Mecha-Studio-Website-4-hex { color: #0CF2B1; }
+.Mecha-Studio-Website-5-hex { color: #0D0D0D; }*/
+
+:root {
+  --main: #0d0d0d;
+  --second: #ab05f2;
+  --accent: #0cf2b1;
+}
 
 *,
 *::before,
@@ -16,19 +27,9 @@ html {
 body {
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: var(--main);
   color: white;
-  /*  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  color: white;*/
 }
-
-/* font-family: 'Poppins', sans-serif;*/
-/*
-or: #dfa419;
-gris: rgb(33, 33, 33);
-*/
 
 .navigation {
   padding: 10px 100px;
@@ -61,11 +62,11 @@ gris: rgb(33, 33, 33);
 }
 
 .nav-lien:not(:last-child) {
-  border-right: 3px solid black;
+  border-right: 3px solid var(--main);
 }
 
 .nav-lien:hover {
-  background-color: black;
+  background-color: var(--main);
   color: white;
 }
 
@@ -75,26 +76,21 @@ img {
 }
 
 header {
-  background-color: #dfa419;
-  margin: 10px;
+  background-color: var(--second);
+  margin: 25px;
   border-radius: 5px;
 }
 
-.main {
-  height: 800px;
-  display: flex;
+section {
+  border-radius: 5px;
+  margin: 25px;
+  display: block;
   justify-content: center;
   align-items: center;
 }
 
-section {
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-}
-
 section div {
-  background-color: rgb(33, 33, 33);
+  /*background-color: rgb(33, 33, 33);*/
   border-radius: 5px;
 }
 
@@ -115,9 +111,9 @@ section a {
 }
 
 footer {
-  background-color: #dfa419;
-  margin: 10px;
+  background-color: var(--second);
   border-radius: 5px;
+  margin: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +157,7 @@ footer > a {
 
   .nav-lien:not(:last-child) {
     border-right: none;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--main);
   }
 }
 
@@ -174,7 +170,7 @@ footer > a {
   .select {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
+    grid-gap: 25px;
     color: white;
     text-decoration: none;
   }
@@ -183,8 +179,8 @@ footer > a {
 @media screen and (max-width: 1023px) {
   .select {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 25px;
     color: white;
     text-decoration: none;
   }
@@ -198,7 +194,7 @@ footer > a {
 
 .popup {
   width: 400px;
-  background: black;
+  background: var(--main);
   border-radius: 6px;
   position: absolute;
   top: 0%;
@@ -233,7 +229,7 @@ footer > a {
   width: 100%;
   margin-top: 50px;
   padding: 10px 0;
-  background: #dfa419;
+  background: var(--second);
   color: #fff;
   border: 0;
   outline: none;
