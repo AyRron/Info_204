@@ -72,10 +72,75 @@
     } 
     echo("</table>");
 
+if ($nom=="Aatrox"){
+	echo('<html><img class="sorts" src="../image/sorts/Aatrox.png"></html>');
+}
+elseif ($nom=="Cho_Gath"){
+	echo('<html><img class="sorts" src="../image/sorts/Cho_gath.png"></html>');
+}
+elseif ($nom=="Garen"){
+	echo('<html><img class="sorts" src="../image/sorts/Garen.png"></html>');
+}
+elseif ($nom=="Sett"){
+	echo('<html><img class="sorts" src="../image/sorts/Sett.png"></html>');
+}
 
-if ($nom=="Kayn"){
+
+elseif ($nom=="Kayn"){
 	echo('<html><img class="sorts" src="../image/sorts/Kayn.png"></html>');
 }
+elseif ($nom=="Lee_Sin"){
+	echo('<html><img class="sorts" src="../image/sorts/Lee_Sin.png"></html>');
+}
+elseif ($nom=="Graves"){
+	echo('<html><img class="sorts" src="../image/sorts/Graves.png"></html>');
+}
+elseif ($nom=="Elise"){
+	echo('<html><img class="sorts" src="../image/sorts/Elise.png"></html>');
+}
+
+
+elseif ($nom=="Aurelion_Sol"){
+	echo('<html><img class="sorts" src="../image/sorts/Aurelion_Sol.png"></html>');
+}
+elseif ($nom=="Heimerdinger"){
+	echo('<html><img class="sorts" src="../image/sorts/Heimerdinger.png"></html>');
+}
+elseif ($nom=="Katarina"){
+	echo('<html><img class="sorts" src="../image/sorts/Katarina.png"></html>');
+}
+elseif ($nom=="Vladimir"){
+	echo('<html><img class="sorts" src="../image/sorts/Vladimir.png"></html>');
+}
+
+
+elseif ($nom=="Ashe"){
+	echo('<html><img class="sorts" src="../image/sorts/Ashe.png"></html>');
+}
+elseif ($nom=="Jinx"){
+	echo('<html><img class="sorts" src="../image/sorts/Jinx.png"></html>');
+}
+elseif ($nom=="Kalista"){
+	echo('<html><img class="sorts" src="../image/sorts/Kalista.png"></html>');
+}
+elseif ($nom=="Miss_Fortune"){
+	echo('<html><img class="sorts" src="../image/sorts/Miss_Fortune.png"></html>');
+}
+
+
+elseif ($nom=="Brand"){
+	echo('<html><img class="sorts" src="../image/sorts/Brand.png"></html>');
+}
+elseif ($nom=="Leona"){
+	echo('<html><img class="sorts" src="../image/sorts/Leona.png"></html>');
+}
+elseif ($nom=="Morgana"){
+	echo('<html><img class="sorts" src="../image/sorts/Morgana.png"></html>');
+}
+elseif ($nom=="Thresh"){
+	echo('<html><img class="sorts" src="../image/sorts/Thresh.png"></html>');
+}
+
 
     include 'disconnect.php';
 ?>
@@ -83,8 +148,7 @@ if ($nom=="Kayn"){
 
 
 <footer>
-<p><a href="../index.php">Retourner à l'accueil</a></p>
-<p><a href="Champ_select.php">Retourner a l'écran de sélection du champion</a></p>
+<p><a href="../index.php">Retourner à l'accueil</a> - <a href="Champ_select.php">Retourner a l'écran de sélection du champion</a>
 </footer>
 
 </body>
