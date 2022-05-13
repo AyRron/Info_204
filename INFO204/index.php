@@ -6,7 +6,7 @@ if(isset($_GET["action"])){
 	$action=$_GET["action"] ;
 	if($action=="disconnect"){
 		unset($_SESSION["action"]);
-		unset($_SESSION["utilisateur"]);
+		unset($_SESSION["admin"]);
 	}
 }
 
