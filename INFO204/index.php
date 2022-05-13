@@ -1,5 +1,15 @@
 <?php
 include 'lib/connect.php';
+
+session_start() ; 
+if(isset($_GET["action"])){
+	$action=$_GET["action"] ;
+	if($action=="disconnect"){
+		unset($_SESSION["action"]);
+		unset($_SESSION["utilisateur"]);
+	}
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -51,6 +61,15 @@ function openPopup(){
 	/*back2.classList.add("back");*/
 	back3.classList.add("back");
 	
+}
+
+function connection(){
+	window.location.href="http://votre_url"
+}
+
+
+function creation(){
+
 }
 
 function closePopup(){
