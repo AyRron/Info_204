@@ -78,7 +78,7 @@
 </section>
 
 <footer>
-<a href="../index.php" >Retourner a l'acceuil</a>
+<a href="../index.php" >Retourner a l'accueil</a>
 </footer>
 </main>
 
