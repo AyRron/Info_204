@@ -2,3 +2,23 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: flex;
+  justify-content: space-between;
+}
+
+table {
+  border-collapse: collapse;
+  font-family: Blippo, fantasy;
+  font-size: 1em;
+}
+
+td {
+  padding: 0;
+  margin: 0;
+  width: 5em;
+  height: 5em;
+  text-align: center;
+  border: 2px solid black;
+}
