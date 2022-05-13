@@ -18,36 +18,33 @@
     <h1>Tous les Builds : </h1>
 </header>
 
+<section id="newbuild">
+	<div class="container">
+		<div class="title">
+			<h3>Créer un nouveau Build :</h3>
+		</div>
+		<form method="post" action="Build_admin.php">
+			<input type="text" name="nom_create" placeholder="Nom...">
 
-<form method="post" action="Build_admin.php">
-	Créer un nouveau Build :  
-	<table>
-		<tr>
-			<td>Nom : </td>
-			<td><input type="text" name="nom_create"></td>
-		</tr>
-		<tr>
-			<td>Runes Fondamentales : </td>
-			<td><input type="text" name="Rune_f_create"></td>
-			<td><input type="text" name="F1_create"></td>
-			<td><input type="text" name="F2_create"></td>
-			<td><input type="text" name="F3_create"></td>
-		</tr>
-		<tr>
-			<td>Runes Secondaires : </td>
-			<td><input type="text" name="S1_create"></td>
-			<td><input type="text" name="S2_create"></td>
-		</tr>
-		<tr>
-			<td>Ajustements : </td>
-			<td><input type="text" name="sup1_create"></td>
-			<td><input type="text" name="sup2_create"></td>
-			<td><input type="text" name="sup3_create"></td>
-		</tr>
-	</table>
+			<input type="text" name="Rune_f_create" placeholder="rune fondamentale 1:">
+			<input type="text" name="F1_create" placeholder="rune fondamentale 2:">
+			<input type="text" name="F2_create" placeholder="rune fondamentale 3:">
+			<input type="text" name="F3_create" placeholder="rune fondamentale 4:">
 
-	<input type="submit" value="Créer">
-	</form>
+			<input type="text" name="S1_create" placeholder="rune secondaire 1:">
+			<input type="text" name="S2_create" placeholder="rune secondaire 2:">
+
+			<input type="text" name="sup1_create" placeholder="ajustement 1:">
+			<input type="text" name="sup2_create" placeholder="ajustement 2:">
+			<input type="text" name="sup3_create" placeholder="ajustement 3:">
+
+
+			<input type="submit" value="Créer">
+		</form>
+	</div>
+
+</section>
+
 	<?php
 	if (isset($_POST["nom_create"])) {
 

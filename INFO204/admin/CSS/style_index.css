@@ -33,3 +33,26 @@ td {
 .basedebuild {
   width: 100%;
 }
+
+#newbuild {
+  background-color: rgb(33, 33, 33);
+  padding: 100px 0;
+}
+
+#newbuild .container {
+  max-width: 1100px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#newbuild .container .title {
+  font-size: 1.8em;
+  text-align: center;
+}
