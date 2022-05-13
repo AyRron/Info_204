@@ -2,6 +2,7 @@
 include 'lib/connect.php';
 
 session_start() ; 
+var_dump($_SESSION);
 if(isset($_GET["action"])){
 	$action=$_GET["action"] ;
 	if($action=="disconnect"){

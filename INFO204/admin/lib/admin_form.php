@@ -9,6 +9,8 @@ if(isset($_POST["login"])){
 	
 		/* redirection */
 		header("Location: admin.php") ; 
+	}else{
+		echo("Mauvais login ou mot de passe");
 	}
 }	
 
