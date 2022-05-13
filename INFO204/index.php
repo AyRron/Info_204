@@ -29,10 +29,9 @@ include 'lib/connect.php';
 <section>
 	<div class="container">
 		<div class="popup" id="popup">
-			<h2>Avez vous 18 ans?</h2>
-			<p>BuildHub est un site reservé aux personnes majeures.</p>
-			<p>Vous devez avoir 18 ans ou plus pour continuer.</p>
-			<button type="button" onclick="closePopup()">J'ai 18 ans ou plus - Entrer</button>
+			<h2>Connectez-vous</h2>
+			<button type="button" onclick="closePopup()">Se Connecter</button>
+			<button type="button" onclick="closePopup()">Vous n'avez pas de compte ?</button>
 		</div>
 	</div>
 </section>
