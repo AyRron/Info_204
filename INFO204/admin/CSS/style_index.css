@@ -5,13 +5,14 @@
 
 body {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 table {
   border-collapse: collapse;
-  font-family: Blippo, fantasy;
   font-size: 1em;
+  background-color: red;
 }
 
 td {
@@ -21,4 +22,5 @@ td {
   height: 5em;
   text-align: center;
   border: 2px solid black;
+  background-color: blue;
 }
