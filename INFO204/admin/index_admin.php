@@ -31,7 +31,7 @@ if(isset($_GET["action"])){
 
 
 <footer>
-<a href="../index.php" >Retourner à l'accueil</a>
+  <a href="../index.php" >Retourner à l'accueil</a>
 </footer>
 </html>
 

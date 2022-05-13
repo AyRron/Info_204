@@ -41,6 +41,7 @@ if(!$_SESSION["admin"]){
 
 <footer>
 	<a href="../index_admin.php?action=disconnect">Deconnexion</a>
+	<a href="../../index.php" >Retourner à l'accueil</a>
 </footer>
 	
 </html>

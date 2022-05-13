@@ -9,8 +9,6 @@
 
 <body>
 <header>
-	<a href="../index_admin.php?action=disconnect">Deconnexion</a>
-	<a href="admin.php">Retour à la page d'accueil</a>
     <?php
     include '../../lib/connect.php';
 	include 'Build.crud.php';
@@ -168,7 +166,8 @@
 
 
 <footer>
-	
+	<a href="../index_admin.php?action=disconnect">Deconnexion</a>
+	<a href="admin.php">Retour à la page admin</a>
 </footer>
 
 </html>
