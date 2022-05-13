@@ -3,7 +3,7 @@ include 'connect.php';
 ?>
 
 
-<form method="post" action="../index.php">
+<form method="post" action="Nouvel_utilisateur.php">
     Veuillez entrer un pseudo et un mot de passe 
 	<table>
 		<tr>
@@ -17,19 +17,21 @@ include 'connect.php';
 	</table>
 
 	<input type="submit" value="Création">
-	</form>
+</form>
     
-	<?php
-	if (isset($_POST["pseudo"])) {
+<?php
 
-		$pseudo = $_POST["pseudo"];
-		$mdp = $_POST["mdp"];
+if (isset($_POST["pseudo"])) {
 
-		$sql="INSERT INTO `utilisateur`(`Pseudo`, `Mdp`, `Droit`) VALUES ('$pseudo','$mdp','0')";
-	    $ret=mysqli_query($conn, $sql) ;
-	    return $ret ;
-		}
+	$pseudo = $_POST["pseudo"];
+	$mdp = $_POST["mdp"];
+
+	$sql="INSERT INTO `utilisateur`(`Pseudo`, `Mdp`, `Droit`) VALUES ('$pseudo','$mdp','0')";
+	mysqli_query($conn, $sql) ;
+	echo($sql);
+	header('Location:../index.php');
+	}
 
 
-    include 'disconnect.php';
-    ?>
+include 'disconnect.php';
+?>
