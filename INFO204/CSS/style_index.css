@@ -81,6 +81,13 @@ header {
   border-radius: 5px;
 }
 
+span {
+  border-radius: 5px;
+  margin: 25px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
 section {
   border-radius: 5px;
   margin: 25px;
