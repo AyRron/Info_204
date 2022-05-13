@@ -142,7 +142,7 @@
 
 	$result=mysqli_query($conn,"SELECT * FROM `build`");
 		
-		echo("<table>");
+		echo("<table class="basedebuild">");
 		echo("<tr>");
 		echo("<td>Id du Champion : </td>");
 		echo("<td>Nom Du Champion : </td>");
