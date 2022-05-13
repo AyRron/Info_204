@@ -73,16 +73,18 @@
     echo("</table>");
 
 
+if ($nom=="Kayn"){
+	echo('<html><img class="sorts" src="../image/sorts/Kayn.png"></html>');
+}
+
     include 'disconnect.php';
 ?>
 
 
 
-
-
 <footer>
-<p><a href="../index.php" >Retourner a l'acceuil</a></p>
-<p><a href="./Champ_select.php" >Retourner a l'écran de sélection du champion</a></p>
+<p><a href="../index.php">Retourner à l'accueil</a></p>
+<p><a href="Champ_select.php">Retourner a l'écran de sélection du champion</a></p>
 </footer>
 
 </body>
