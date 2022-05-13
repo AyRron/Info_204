@@ -1,4 +1,10 @@
 <?php
+session_start() ;
+var_dump($_SESSION);
+if(!$_SESSION["admin"]){
+	header("Location: admin_form.php") ; 
+} 
+
 /*---------------------------------------
 CRUD: Gestion des Builds
 ---------------------------------------*/
