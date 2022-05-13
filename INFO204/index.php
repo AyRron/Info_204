@@ -36,6 +36,11 @@ if(isset($_GET["action"])){
 </nav>
 </header>
 
+<span id="back2">
+<h2> Bienvenue sur BuildHub.</h2>
+<p> BuildHub est un outil de guides rapides pour les joueurs de league of legends. Sa fonction principale est de fournir à la communauté league of legends les meilleurs build du moment.</p>
+</span>
+	
 <section>
 	<div class="container">
 		<div class="popup" id="popup">
@@ -59,7 +64,7 @@ let popup = document.getElementById("popup");
 function openPopup(){
 	popup.classList.add("open-popup");
 	back1.classList.add("back");
-	/*back2.classList.add("back");*/
+	back2.classList.add("back");
 	back3.classList.add("back");
 	
 }
@@ -76,7 +81,7 @@ function creation(){
 function closePopup(){
 	popup.classList.remove("open-popup");
 	back1.classList.remove("back");
-	/*back2.classList.remove("back");*/
+	back2.classList.remove("back");
 	back3.classList.remove("back");
 }
 </script>
