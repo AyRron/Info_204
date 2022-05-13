@@ -1,5 +1,5 @@
 <?php
-include 'connect_uwamp.php';
+include 'connect.php';
 include 'Build.crud.php';
 ?>
 

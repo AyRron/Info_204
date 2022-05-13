@@ -1,33 +1,35 @@
 <?php
 include 'connect.php';
+
+
+session_start() ;
+var_dump($_SESSION);
+if(isset($_POST["login"])){
+	if($_POST["login"]=="admin"
+		&& $_POST["password"]=="admin"){
+		
+		/* session admin */
+		$_SESSION["admin"]=time() ; 
+	
+		/* redirection */
+		header("Location: admin.php") ; 
+	}else{
+		echo("Mauvais login ou mot de passe");
+	}
+}	
+
+include 'disconnect.php';
 ?>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	</head>
 
-
-<form method="post" action="Build_admin.php">
-	Créer un nouveau Build :  
-	<table>
-		<tr>
-			<td>Pseudo : </td>
-			<td><input type="text" name="pseudo"></td>
-		</tr>
-		<tr>
-			<td>Mot de passe : </td>
-			<td><input type="text" name="mdp"></td>
-		</tr>
-	</table>
-
-	<input type="submit" value="Connexion">
+	<body>
+	<form method="POST" action="admin_form.php">
+	Login:	<input type="text" name="login">
+	Password:	<input type="text" name="password">
+		<input type="submit" value="Envoyer" >
 	</form>
-    
-	<?php
-	if (isset($_POST["pseudo"])) {
-
-		$pseudo = $_POST["pseudo"];
-		$mdp = $_POST["mdp"];
-
-		create_build($conn, $nom, $rune, $f1, $f2, $f3, $s1, $s2, $sup1, $sup2, $sup3);
-		}
-
-
-    include 'disconnect.php';
-    ?>
+	</body>
+</html>
