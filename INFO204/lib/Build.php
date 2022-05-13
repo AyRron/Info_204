@@ -63,7 +63,7 @@
             }
         
 
-        } elseif($key == "id" || $key == "Nom_Champ" ){
+        } elseif($key == "id" || $key == "Nom_champ" ){
             
         } else{
             echo("$value\n");
