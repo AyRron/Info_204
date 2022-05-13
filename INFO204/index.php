@@ -40,8 +40,9 @@ if(isset($_GET["action"])){
 	<div class="container">
 		<div class="popup" id="popup">
 			<h2>Connectez-vous</h2>
-			<button type="button" onclick="closePopup()">Se Connecter</button>
-			<button type="button" onclick="closePopup()">Vous n'avez pas de compte ?</button>
+			<button type="button" onclick="connexion()" onclick="closePopup()">Se Connecter</button>
+			<button type="button" onclick="creation()" onclick="closePopup()">Vous n'avez pas de compte ?</button>
+			<button type="button" onclick="closePopup()">Fermer la Popup</button>
 		</div>
 	</div>
 </section>
@@ -63,13 +64,13 @@ function openPopup(){
 	
 }
 
-function connection(){
-	window.location.href="http://votre_url"
+function connexion(){
+	window.location.href="http://os-vps418.infomaniak.ch:1180/l1_info_3/www/lib/Connexion.php"
 }
 
 
 function creation(){
-
+	window.location.href="http://os-vps418.infomaniak.ch:1180/l1_info_3/www/lib/Nouvel_utilisateur.php"
 }
 
 function closePopup(){

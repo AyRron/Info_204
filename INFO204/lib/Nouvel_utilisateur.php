@@ -3,8 +3,8 @@ include 'connect.php';
 ?>
 
 
-<form method="post" action="Build_admin.php">
-	Créer un nouveau Build :  
+<form method="post" action="../index.php">
+    Veuillez entrer un pseudo et un mot de passe 
 	<table>
 		<tr>
 			<td>Pseudo : </td>
@@ -16,7 +16,7 @@ include 'connect.php';
 		</tr>
 	</table>
 
-	<input type="submit" value="Connexion">
+	<input type="submit" value="Création">
 	</form>
     
 	<?php
@@ -25,7 +25,7 @@ include 'connect.php';
 		$pseudo = $_POST["pseudo"];
 		$mdp = $_POST["mdp"];
 
-		$sql="INSERT INTO `utilisateur`(`Pseudo`, `Mdp`, `Droit`) VALUES ('$pseudo','$mdp','utilisateur')";
+		$sql="INSERT INTO `utilisateur`(`Pseudo`, `Mdp`, `Droit`) VALUES ('$pseudo','$mdp','0')";
 	    $ret=mysqli_query($conn, $sql) ;
 	    return $ret ;
 		}
