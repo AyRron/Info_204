@@ -1,22 +1,50 @@
 <?php
 include 'connect.php';
 
-
 session_start() ;
 var_dump($_SESSION);
+
 if(isset($_POST["login"])){
-	if($_POST["login"]=="admin"
-		&& $_POST["password"]=="admin"){
+
+
+	$pseudo=$_POST["login"];
+	$sql="SELECT * FROM `utilisateur` WHERE `pseudo`='$pseudo'" ;
+
+	if($ret=mysqli_query($conn, $sql)){
+		$ret=mysqli_fetch_assoc($ret);
+	
 		
+		if($_POST["password"] == $ret['Mdp'] && $ret['Droit'] == 1 ){
+			$_SESSION["admin"]=time() ; 
+			header("Location: ../index.php") ; 
+
+		} elseif ($_POST["password"] == $ret['Mdp'] && $ret['Droit'] == 0 ){
+			$_SESSION["user"]=time() ; 
+			header("Location: ../index.php") ; 
+		}
+	} else{
+		echo("Mauvais login ou mot de passe");
+	}
+	
+}
+
+	
+	
+
+
+/*
+	if($_POST["login"]=="" && $_POST["password"]=="admin"){
+
 		/* session admin */
-		$_SESSION["admin"]=time() ; 
+		/*$_SESSION["admin"]=time() ; */
 	
 		/* redirection */
-		header("Location: admin.php") ; 
+		/*header("Location: ../index.php") ; 
 	}else{
 		echo("Mauvais login ou mot de passe");
 	}
 }	
+*/
 
 include 'disconnect.php';
 ?>
@@ -26,7 +54,7 @@ include 'disconnect.php';
 	</head>
 
 	<body>
-	<form method="POST" action="admin_form.php">
+	<form method="POST" action="Connexion.php">
 	Login:	<input type="text" name="login">
 	Password:	<input type="text" name="password">
 		<input type="submit" value="Envoyer" >
