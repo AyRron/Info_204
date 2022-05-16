@@ -4,8 +4,8 @@
 	Créé un nouveau Champion avec ses items 
 	suppose un id auto-incrementé
 */
-function create_items($conn, $nom, $mythique, $bottes, $core1, $core2, $option1, $option2){
-	$sql="INSERT INTO `item`( `nom`, `mythique`, `bottes`, `core1`, `core2`, `option1`, `option2`) values( '$nom', '$mythique', '$bottes', '$core1', '$core2', '$option1', '$option2')";
+function create_items($conn, $starting_item, $nom, $mythique, $bottes, $core1, $core2, $option1, $option2, $option3){
+	$sql="INSERT INTO `item`( `nom`,`starting_item`, `mythique`, `bottes`, `core1`, `core2`, `option1`, `option2`, `option3`) values( '$nom', '$starting_item', '$mythique', '$bottes', '$core1', '$core2', '$option1', '$option2', '$option3')";
 	$ret=mysqli_query($conn, $sql) ;
 	return $ret ; 	
 }
@@ -13,8 +13,8 @@ function create_items($conn, $nom, $mythique, $bottes, $core1, $core2, $option1,
 /*
 	Met à jour les valeurs du Build
 */
-function update_items($conn,$id, $nom, $mythique, $bottes, $core1, $core2, $option1, $option2){
-	$sql="UPDATE `item` set `nom`='$nom', `mythique`='$mythique', `bottes`='$bottes', `core1`='$core1', `core2`='$core2', `option1`='$option1', `option2`='$option2' WHERE `id`='$id'" ;
+function update_items($conn,$id, $nom, $starting_item, $mythique, $bottes, $core1, $core2, $option1, $option2, $option3){
+	$sql="UPDATE `item` set `nom`='$nom', `starting_item`='$starting_item', `mythique`='$mythique', `bottes`='$bottes', `core1`='$core1', `core2`='$core2', `option1`='$option1', `option2`='$option2', `option3`='$option3' WHERE `id`='$id'" ;
 	$ret=mysqli_query($conn, $sql) ;
     return $ret ; 
 }
