@@ -73,37 +73,42 @@
 	?>
 
 
+<section class="updatebuild">
+	<div class="container">
+		<div class="title">
+			<h3>Modifier un Build :</h3>
+		</div>
+		<form method="post" action="Build_admin.php">
+		<table>
+			<tr>
+				<td>Id et Nom : </td>
+				<td><input type="number" name="id_mod"></td>
+				<td><input type="text" name="nom_mod"></td>
+			</tr>
+			<tr>
+				<td>Runes Fondamentales : </td>
+				<td><input type="text" name="Rune_f_mod"></td>
+				<td><input type="text" name="F1_mod"></td>
+				<td><input type="text" name="F2_mod"></td>
+				<td><input type="text" name="F3_mod"></td>
+			</tr>
+			<tr>
+				<td>Runes Secondaires : </td>
+				<td><input type="text" name="S1_mod"></td>
+				<td><input type="text" name="S2_mod"></td>
+			</tr>
+			<tr>
+				<td>Ajustements : </td>
+				<td><input type="text" name="sup1_mod"></td>
+				<td><input type="text" name="sup2_mod"></td>
+				<td><input type="text" name="sup3_mod"></td>
+			</tr>
+		</table>
+		<input type="submit" value="Modifier">
+		</form>
+	</div>
+</section>
 
-	<form method="post" action="Build_admin.php">
-	Modifier un Build :
-	<table>
-		<tr>
-			<td>Id et Nom : </td>
-			<td><input type="number" name="id_mod"></td>
-			<td><input type="text" name="nom_mod"></td>
-		</tr>
-		<tr>
-			<td>Runes Fondamentales : </td>
-			<td><input type="text" name="Rune_f_mod"></td>
-			<td><input type="text" name="F1_mod"></td>
-			<td><input type="text" name="F2_mod"></td>
-			<td><input type="text" name="F3_mod"></td>
-		</tr>
-		<tr>
-			<td>Runes Secondaires : </td>
-			<td><input type="text" name="S1_mod"></td>
-			<td><input type="text" name="S2_mod"></td>
-		</tr>
-		<tr>
-			<td>Ajustements : </td>
-			<td><input type="text" name="sup1_mod"></td>
-			<td><input type="text" name="sup2_mod"></td>
-			<td><input type="text" name="sup3_mod"></td>
-		</tr>
-	</table>
-
-	<input type="submit" value="Modifier">
-	</form>
 	<?php
 	if (isset($_POST["id_mod"])) {
 		$id =$_POST["id_mod"];
@@ -195,6 +200,7 @@
 	$result=mysqli_query($conn,"SELECT * FROM `build`");
 		
 		echo("<table>");
+		echo("<thead>");
 		echo("<tr>");
 		echo("<td>Id du Champion : </td>");
 		echo("<td>Nom Du Champion : </td>");
@@ -202,6 +208,8 @@
 		echo("<td>Runes Secondaires : </td>");
 		echo("<td>Ajustements : </td>");
 		echo("</tr>");
+		echo("</thead>");
+		echo("<tbody>");
 		
 		while($row = mysqli_fetch_assoc($result)){
 			echo("<tr>");
@@ -212,6 +220,7 @@
 			echo("<td>$row[sup1] $row[sup2] $row[sup3]</td>");
 			echo("</tr>");
 		}
+		echo("</tbody>");
 		echo("</table>");
 	?>
 </body>
