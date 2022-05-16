@@ -102,8 +102,12 @@
 		$core2 = $_POST["F3_mod"];
 		$option1 = $_POST["S1_mod"];
 		$option2 = $_POST["S2_mod"];
+<<<<<<< HEAD
+		update_items($conn, $id, $nom, $starting_item, $mythique, $bottes, $core1, $core2, $option1, $option2, $option3);
+=======
 		$option2 = $_POST["S2_mod"];
 		update_items($conn, $nom, $starting_item, $mythique, $bottes, $core1, $core2, $option1, $option2, $option3);
+>>>>>>> 63d7cdf989bdea877410a0805073a72179758603
 		}
 	?>
 
