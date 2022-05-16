@@ -12,7 +12,7 @@
 <?php
     include 'connect.php';
     include 'Build.crud.php';
-    include '../admin/'
+    include '../admin/';
 
     if(isset($_GET)){
         if(isset($_GET["id"])){
@@ -205,13 +205,13 @@ elseif ($nom=="Thresh"){
 
     include 'disconnect.php';
 ?>
-
+</body>
 
 
 <footer>
 <p><a href="../index.php">Retourner à l'accueil</a> - <a href="Champ_select.php">Retourner a l'écran de sélection du champion</a>
 </footer>
 
-</body>
+
 
 </html>
