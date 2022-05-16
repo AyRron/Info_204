@@ -55,3 +55,34 @@
 		create_items($conn, $nom, $mythique, $bottes, $core1, $core2, $option1, $option2);
 		}
 	?>
+
+	<?php
+
+	$result=mysqli_query($conn,"SELECT * FROM `item`");
+		
+		echo("<table>");
+		echo("<tr>");
+		echo("<td>Id du Champion : </td>");
+		echo("<td>Nom Du Champion : </td>");
+		echo("<td>Item mythique : </td>");
+		echo("<td>Bottes : </td>");
+		echo("</tr>");
+		
+		while($row = mysqli_fetch_assoc($result)){
+			echo("<tr>");
+			echo("<td>$row[id]</td>");
+			echo("<td>$row[nom] </td>");
+			echo("<td>$row[mythique] $row[bottes] $row[core1] $row[core2]</td>");
+			echo("<td>$row[option1] $row[option2]</td>");
+			echo("</tr>");
+		}
+		echo("</table>");
+	?>
+</body>
+
+
+<footer>
+	
+</footer>
+
+</html>
