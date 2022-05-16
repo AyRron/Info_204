@@ -60,34 +60,39 @@ if(isset($_GET["action"])){
 
 </body>
 
-<script>
-let popup = document.getElementById("popup");
 
-function openPopup(){
-	popup.classList.add("open-popup");
-	back1.classList.add("back");
-	back2.classList.add("back");
-	back3.classList.add("back");
+<?php
+if(isset($_GET["action"])){
+} else{
+echo('<script>');
+echo('let popup = document.getElementById("popup");');
+
+echo('function openPopup(){');
+echo('	popup.classList.add("open-popup");');
+echo('	back1.classList.add("back");');
+echo('	back2.classList.add("back");');
+echo('	back3.classList.add("back");');
 	
+echo('}');
+
+echo('function connexion(){');
+echo('	window.location.href="http://os-vps418.infomaniak.ch:1180/l1_info_3/www/lib/Connexion.php"');
+echo('}');
+
+
+echo('function creation(){');
+echo('	window.location.href="http://os-vps418.infomaniak.ch:1180/l1_info_3/www/lib/Nouvel_utilisateur.php"');
+echo('}');
+
+echo('function closePopup(){');
+echo('	popup.classList.remove("open-popup");');
+echo('	back1.classList.remove("back");');
+echo('	back2.classList.remove("back");');
+echo('	back3.classList.remove("back");');
+echo('}');
+echo('</script>');
 }
-
-function connexion(){
-	window.location.href="http://os-vps418.infomaniak.ch:1180/l1_info_3/www/lib/Connexion.php"
-}
-
-
-function creation(){
-	window.location.href="http://os-vps418.infomaniak.ch:1180/l1_info_3/www/lib/Nouvel_utilisateur.php"
-}
-
-function closePopup(){
-	popup.classList.remove("open-popup");
-	back1.classList.remove("back");
-	back2.classList.remove("back");
-	back3.classList.remove("back");
-}
-</script>
-
+?>
 
 
 
