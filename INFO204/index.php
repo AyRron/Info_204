@@ -62,7 +62,7 @@ if(isset($_GET["action"])){
 
 
 <?php
-if(isset($_GET["action"])){
+if(isset($_SESSION["admin"]) || isset($_SESSION["user"])){
 } else{
 echo('<script>');
 echo('let popup = document.getElementById("popup");');
