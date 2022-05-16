@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../CSS/style_index.css">
     <link rel="icon" href="../image/league.png">
 </head>
+
 <body>
     
 
@@ -209,7 +210,7 @@ elseif ($nom=="Thresh"){
 
 
 <footer>
-<p><a href="../index.php">Retourner à l'accueil</a> - <a href="Champ_select.php">Retourner a l'écran de sélection du champion</a>
+<p><a href="../index.php">Retourner à l'accueil</a> - <a href="Champ_select.php">Retourner a l'écran de sélection du champion</a></p>
 </footer>
 
 
