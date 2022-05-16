@@ -18,7 +18,7 @@
 	<h1>Tous les items :</h1>
 </header>
 
-<section id="newitem">
+<section id="newbuild">
 	<div class="container">
 		<div class="title">
 			<h3>Créer un nouveau build d'items :</h3>
@@ -55,7 +55,65 @@
 		create_items($conn, $nom, $mythique, $bottes, $core1, $core2, $option1, $option2);
 		}
 	?>
+	
+	<form method="post" action="Items_admin.php">
+	Modifier un Build :
+	<table>
+		<tr>
+			<td>Id et Nom : </td>
+			<td><input type="number" name="id_mod"></td>
+			<td><input type="text" name="nom_mod"></td>
+		</tr>
+		<tr>
+			<td>RCores items: </td>
+			<td><input type="text" name="Mythique_mod"></td>
+			<td><input type="text" name="Bottes_mod"></td>
+			<td><input type="text" name="core1_mod"></td>
+			<td><input type="text" name="core2_mod"></td>
+		</tr>
+		<tr>
+			<td>Items secondaires : </td>
+			<td><input type="text" name="option1_mod"></td>
+			<td><input type="text" name="option2_mod"></td>
+		</tr>
+	</table>
 
+	<input type="submit" value="Modifier">
+	</form>
+	<?php
+	if (isset($_POST["id_mod"])) {
+		$id =$_POST["id_mod"];
+		$nom = $_POST["nom_mod"];
+		$mythique = $_POST["Rune_f_mod"];
+		$bottes = $_POST["F1_mod"];
+		$core1 = $_POST["F2_mod"];
+		$core2 = $_POST["F3_mod"];
+		$option1 = $_POST["S1_mod"];
+		$option2 = $_POST["S2_mod"];
+		update_items($conn, $nom, $mythique, $bottes, $core1, $core2, $option1, $option2);
+		}
+	?>
+
+
+
+<form method="post" action="Items_admin.php">
+	Supprimer un Build :
+	<table>
+		<tr>
+			<td>Nom : </td>
+			<td><input type="text" name="nom_sup"></td>
+		</tr>
+	</table>
+
+	<input type="submit" value="Supprimer">
+	</form>
+	<?php
+	if (isset($_POST["nom_sup"])) {
+		$nom = $_POST["nom_sup"];
+		delete_item_nom($conn, $nom);
+		}
+	?>
+	
 	<?php
 
 	$result=mysqli_query($conn,"SELECT * FROM `item`");
@@ -77,7 +135,7 @@
 			echo("</tr>");
 		}
 		echo("</table>");
-	?>
+	?>	
 </body>
 
 
