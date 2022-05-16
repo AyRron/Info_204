@@ -25,7 +25,7 @@
 		</div>
 		<form method="post" action="Items_admin.php">
 			<input type="text" name="nom_create" placeholder="Nom...">
-			<input type="text" name="starting__item_create" placeholder="Item de départ:">
+			<input type="text" name="starting_item_create" placeholder="Item de départ:">
 			
 			<input type="text" name="Mythique_create" placeholder="Item mythique:">
 			<input type="text" name="Bottes_create" placeholder="Bottes:">
@@ -48,6 +48,7 @@
 	if (isset($_POST["nom_create"])) {
 
 		$nom = $_POST["nom_create"];
+		$starting_item = $_POST["starting_item_create"];
 		$mythique = $_POST["Mythique_create"];
 		$bottes = $_POST["Bottes_create"];
 		$core1 = $_POST["Core1_create"];
@@ -55,7 +56,7 @@
 		$option1 = $_POST["Option1_create"];
 		$option2 = $_POST["Option2_create"];
 		$option3 = $_POST["Option3_create"];
-		$starting_item = $_POST["starting_item_create"];		
+				
 
 		create_items($conn, $nom, $starting_item, $mythique, $bottes, $core1, $core2, $option1, $option2, $option3);
 		}
@@ -101,7 +102,12 @@
 		$core2 = $_POST["F3_mod"];
 		$option1 = $_POST["S1_mod"];
 		$option2 = $_POST["S2_mod"];
+<<<<<<< HEAD
 		update_items($conn, $id, $nom, $starting_item, $mythique, $bottes, $core1, $core2, $option1, $option2, $option3);
+=======
+		$option2 = $_POST["S2_mod"];
+		update_items($conn, $nom, $starting_item, $mythique, $bottes, $core1, $core2, $option1, $option2, $option3);
+>>>>>>> 63d7cdf989bdea877410a0805073a72179758603
 		}
 	?>
 
@@ -135,7 +141,9 @@
 		echo("<td>Nom Du Champion : </td>");
 		echo("<td>Item de départ : </td>");
 		echo("<td>Item mythique : </td>");
+		echo("<td>Core items : </td>");
 		echo("<td>Bottes : </td>");
+		echo("<td>Items secondaires : </td>");
 		echo("</tr>");
 		
 		while($row = mysqli_fetch_assoc($result)){
@@ -143,8 +151,10 @@
 			echo("<td>$row[id]</td>");
 			echo("<td>$row[nom] </td>");
 			echo("<td>$row[starting_item] </td>");
-			echo("<td>$row[mythique] $row[bottes] $row[core1] $row[core2]</td>");
-			echo("<td>$row[option1] $row[option2]</td>");
+			echo("<td>$row[mythique] </td>");
+			echo("<td>$row[core1] / $row[core2]</td>");
+			echo("<td>$row[bottes]</td>"); 
+			echo("<td>$row[option1] / $row[option2] / $row[option3]</td>");
 			echo("</tr>");
 		}
 		echo("</table>");
