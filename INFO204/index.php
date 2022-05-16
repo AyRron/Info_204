@@ -54,7 +54,11 @@ if(isset($_GET["action"])){
 </section>
 
 <footer id="back3">
-  <a href="admin/index_admin.php" >Page admin</a>
+	<?php
+	if (isset($_SESSION["admin"])){
+  		echo('<a href="admin/index_admin.php" >Page admin</a>');
+	}
+	?>
   <a href="index.php?action=disconnect">Deconnexion</a>
 </footer>
 
