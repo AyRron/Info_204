@@ -73,38 +73,38 @@
 	?>
 
 
-<section class="updatebuild">
+<section id="updatebuild">
 	<div class="container">
 		<div class="title">
 			<h3>Modifier un Build :</h3>
 		</div>
 		<form method="post" action="Build_admin.php">
-		<table>
-			<tr>
-				<td>Id et Nom : </td>
-				<td><input type="number" name="id_mod"></td>
-				<td><input type="text" name="nom_mod"></td>
-			</tr>
-			<tr>
-				<td>Runes Fondamentales : </td>
-				<td><input type="text" name="Rune_f_mod"></td>
-				<td><input type="text" name="F1_mod"></td>
-				<td><input type="text" name="F2_mod"></td>
-				<td><input type="text" name="F3_mod"></td>
-			</tr>
-			<tr>
-				<td>Runes Secondaires : </td>
-				<td><input type="text" name="S1_mod"></td>
-				<td><input type="text" name="S2_mod"></td>
-			</tr>
-			<tr>
-				<td>Ajustements : </td>
-				<td><input type="text" name="sup1_mod"></td>
-				<td><input type="text" name="sup2_mod"></td>
-				<td><input type="text" name="sup3_mod"></td>
-			</tr>
-		</table>
-		<input type="submit" value="Modifier">
+			<div class="idnom">
+				<input type="number" name="id_mod" placeholder="identifiant:">
+				<input type="text" name="nom_mod" placeholder="Nom...">
+			</div>
+
+			<div class="fondament">
+				<input type="text" name="Rune_f_mod" placeholder="rune fondamentale 1:">
+				<input type="text" name="F1_mod" placeholder="rune fondamentale 2:">
+				<input type="text" name="F2_mod" placeholder="rune fondamentale 3:">
+				<input type="text" name="F3_mod" placeholder="rune fondamentale 4:">
+			</div>
+
+			<div class="second">
+				<input type="text" name="S1_mod" placeholder="rune secondaire 1:">
+				<input type="text" name="S2_mod" placeholder="rune secondaire 2:">
+			</div>
+
+			<div class="ajust">
+				<input type="text" name="sup1_mod" placeholder="ajustement 1:">
+				<input type="text" name="sup2_mod" placeholder="ajustement 2:">
+				<input type="text" name="sup3_mod" placeholder="ajustement 3:">
+			</div>
+
+			<div class="creat">
+				<input type="submit" value="Modifier">
+			</div>
 		</form>
 	</div>
 </section>
