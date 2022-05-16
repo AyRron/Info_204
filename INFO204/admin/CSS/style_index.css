@@ -22,13 +22,17 @@ body {
 }
 
 #newbuild,
-#updatebuild {
+#updatebuild,
+#deletebuild,
+#searchbuild {
   background-color: rgb(33, 33, 33);
-  padding: 100px 0;
+  padding: 25px 0;
 }
 
 #newbuild .container,
-#updatebuild .container {
+#updatebuild .container,
+#deletebuild .container,
+#searchbuild .container {
   max-width: 1100px;
   margin: 0px auto;
   display: flex;
@@ -43,62 +47,72 @@ body {
 }
 
 #newbuild .container .title,
-#updatebuild .container .title {
+#updatebuild .container .title,
+#deletebuild .container .title,
+#searchbuild .container .title {
   font-size: 1.8em;
   text-align: center;
   margin-bottom: 50px;
 }
 
 #newbuild .container form,
-#updatebuild .container form {
+#updatebuild .container form,
+#deletebuild .container form,
+#searchbuild .container form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 600px;
 }
 
-#newbuild .container form .nom input {
+#newbuild .container form .nom input,
+#deletebuild .container form .nom input,
+#searchbuild .container form .nom input {
   width: 100%;
-  margin: 5px 10px;
+  margin: 5px;
   padding: 5px;
 }
 
 #updatebuild .container form .idnom input {
   width: 50%;
-  margin: 5px 10px;
+  margin: 5px;
   padding: 5px;
 }
 
 #newbuild .container form .fondament input,
 #updatebuild .container form .fondament input {
   width: 25%;
-  margin: 5px 10px;
+  margin: 5px;
   padding: 5px;
 }
 
 #newbuild .container form .second input,
 #updatebuild .container form .second input {
   width: 50%;
-  margin: 5px 10px;
+  margin: 5px;
   padding: 5px;
 }
 
 #newbuild .container form .ajust input,
 #updatebuild .container form .ajust input {
   width: 33%;
-  margin: 5px 10px;
+  margin: 5px;
   padding: 5px;
 }
 
 #newbuild .container form .creat input,
-#updatebuild .container form .creat input {
+#updatebuild .container form .creat input,
+#deletebuild .container form .delete input,
+#searchbuild .container form .search input {
   width: 100%;
-  margin: 5px 10px;
+  margin: 5px;
   padding: 5px;
 }
 
 #newbuild .container form div,
-#updatebuild .container form div {
+#updatebuild .container form div,
+#deletebuild .container form div,
+#searchbuild .container form div {
   margin: 10px 0;
   padding: 10px;
   border: none;
@@ -109,6 +123,8 @@ body {
 
 #newbuild .container form .nom,
 #updatebuild .container form .idnom,
+#deletebuild .container form .nom,
+#searchbuild .container form .nom,
 #newbuild .container form .fondament,
 #updatebuild .container form .fondament,
 #newbuild .container form .second,
@@ -116,7 +132,9 @@ body {
 #newbuild .container form .ajust,
 #updatebuild .container form .ajust,
 #newbuild .container form .creat,
-#updatebuild .container form .creat {
+#updatebuild .container form .creat,
+#deletebuild .container form .delete,
+#searchbuild .container form .search {
   width: 100%;
   display: flex;
   flex-direction: row;
