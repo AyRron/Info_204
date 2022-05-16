@@ -71,6 +71,49 @@
         
     } 
     echo("</table>");
+	
+ echo("<table>\n");
+    foreach($champ as $key => $value){
+        if($key == "mythique" ){
+            echo("<tr>\n");
+            echo("<th rowspan='2'>\n");
+            echo("$value\n");
+         
+        } elseif($key == "bottes" ){
+            echo("$value\n");
+            echo("</th>\n");
+            
+            
+        } elseif($key == "core1" || $key == "core2" ){
+            if($key == "core1"){
+                echo("<td>\n");
+                echo("$value\n");
+            }else{
+                echo("$value\n");
+                echo("</td>\n");
+                echo("</tr>\n");
+            }
+
+        } elseif($key == "option1" || $key == "option2" ){
+            if($key == "option1	"){
+                echo("<tr>\n");
+                echo("<td>\n");
+                echo("$value\n");
+            }else{
+                echo("$value\n");
+                echo("</td>\n");
+                echo("</tr>\n");
+            }
+    
+	    } 
+    echo("</table>");
+	
+
+        } elseif($key == "id" || $key == "nom" ){
+            
+        } else{
+            echo("$value\n");
+        }
 
 if ($nom=="Aatrox"){
 	echo('<html><img class="sorts" src="../image/sorts/Aatrox.png"></html>');
