@@ -7,6 +7,7 @@ if(isset($_GET["action"])){
 	if($action=="disconnect"){
 		unset($_SESSION["action"]);
 		unset($_SESSION["admin"]);
+		unset($_SESSION["user"]);
 	}
 }
 
@@ -54,6 +55,7 @@ if(isset($_GET["action"])){
 
 <footer id="back3">
   <a href="admin/index_admin.php" >Page admin</a>
+  <a href="index.php?action=disconnect">Deconnexion</a>
 </footer>
 
 </body>
