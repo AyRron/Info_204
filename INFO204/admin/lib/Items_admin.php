@@ -55,8 +55,6 @@
 		$core2 = $_POST["Core2_create"];
 		$option1 = $_POST["Option1_create"];
 		$option2 = $_POST["Option2_create"];
-		$option3 = $_POST["Option3_create"];
-				
 		$option3 = $_POST["Option3_create"];		
 
 		create_items($conn, $nom, $starting_item, $mythique, $bottes, $core1, $core2, $option1, $option2, $option3);
@@ -101,13 +99,13 @@
 		$id =$_POST["id_mod"];
 		$nom = $_POST["nom_mod"];
 		$starting_item = $_POST["starting_item_mod"];
-		$mythique = $_POST["Rune_f_mod"];
-		$bottes = $_POST["F1_mod"];
-		$core1 = $_POST["F2_mod"];
-		$core2 = $_POST["F3_mod"];
-		$option1 = $_POST["S1_mod"];
-		$option2 = $_POST["S2_mod"];
-		$option3 = $_POST["S2_mod"];
+		$mythique = $_POST["mythique_mod"];
+		$bottes = $_POST["bottes_mod"];
+		$core1 = $_POST["core1_mod"];
+		$core2 = $_POST["core2_mod"];
+		$option1 = $_POST["option1_mod"];
+		$option2 = $_POST["option2_mod"];
+		$option3 = $_POST["option3_mod"];
 		update_items($conn, $nom, $starting_item, $mythique, $bottes, $core1, $core2, $option1, $option2, $option3);
 
 		}
@@ -157,8 +155,6 @@
 			echo("<td>$row[core1] / $row[core2]</td>");
 			echo("<td>$row[bottes]</td>"); 
 			echo("<td>$row[option1] / $row[option2] / $row[option3]</td>");
-			echo("<td>$row[mythique] $row[bottes] $row[core1] $row[core2]</td>");
-			echo("<td>$row[option1] $row[option2]</td>");
 			echo("</tr>");
 		}
 		echo("</table>");
