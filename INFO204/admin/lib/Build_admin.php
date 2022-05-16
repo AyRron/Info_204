@@ -127,18 +127,23 @@
 	?>
 
 
+<section id="deletebuild">
+	<div class="container">
+		<div class="title">
+			<h3>Supprimer un Build :</h3>
+		</div>
+		<form method="post" action="Build_admin.php">
+			<div class="nom">
+				<input type="text" name="nom_sup" placeholder="Nom...">
+			</div>
 
-<form method="post" action="Build_admin.php">
-	Supprimer un Build :
-	<table>
-		<tr>
-			<td>Nom : </td>
-			<td><input type="text" name="nom_sup"></td>
-		</tr>
-	</table>
+			<div class="delete">
+				<input type="submit" value="Supprimer">
+			</div>
+		</form>
+	</div>
+</section>
 
-	<input type="submit" value="Supprimer">
-	</form>
 	<?php
 	if (isset($_POST["nom_sup"])) {
 		$nom = $_POST["nom_sup"];
@@ -146,18 +151,22 @@
 		}
 	?>
 
+<section id="searchbuild">
+	<div class="container">
+		<div class="title">
+			<h3>Chercher un Build :</h3>
+		</div>
+		<form method="post" action="Build_admin.php">
+			<div class="nom">
+				<input type="text" name="nom_search" placeholder="Nom...">
+			</div>
 
-<form method="post" action="Build_admin.php">
-	Chercher un Build :
-	<table>
-		<tr>
-			<td>Nom : </td>
-			<td><input type="text" name="nom_search"></td>
-		</tr>
-	</table>
-
-	<input type="submit" value="Chercher">
-	</form>
+			<div class="search">
+			<input type="submit" value="Chercher">
+			</div>
+		</form>
+	</div>
+</section>
 
 
 	<?php
