@@ -142,6 +142,50 @@
 	?>
 
 
+<form method="post" action="Build_admin.php">
+	Chercher un Build :
+	<table>
+		<tr>
+			<td>Nom : </td>
+			<td><input type="text" name="nom_search"></td>
+		</tr>
+	</table>
+
+	<input type="submit" value="Chercher">
+	</form>
+
+
+	<?php
+	if (isset($_POST["nom_search"])) {
+		$nom = $_POST["nom_search"];
+		$info=mysqli_query($conn,"SELECT * FROM `build` WHERE `Nom_champ`='$nom'");
+
+		if(mysqli_num_rows($info)>0){ 
+			echo("<table>");
+			echo("<tr>");
+			echo("<td>Id du Champion : </td>");
+			echo("<td>Nom Du Champion : </td>");
+			echo("<td>Runes Fondamentales : </td>");
+			echo("<td>Runes Secondaires : </td>");
+			echo("<td>Ajustements : </td>");
+			echo("</tr>");
+
+			while($row = mysqli_fetch_assoc($info)){
+				echo("<tr>");
+				echo("<td>$row[id]</td>");
+				echo("<td>$row[Nom_champ] </td>");
+				echo("<td>$row[Rune_f] $row[F1] $row[F2] $row[F3]</td>");
+				echo("<td>$row[S1] $row[S2]</td>");
+				echo("<td>$row[sup1] $row[sup2] $row[sup3]</td>");
+				echo("</tr>");
+			}
+			echo("</table>");
+		} else{
+			echo("Champion non trouvé");
+		}
+		
+		}
+	?>
 
 
 

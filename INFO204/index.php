@@ -7,6 +7,7 @@ if(isset($_GET["action"])){
 	if($action=="disconnect"){
 		unset($_SESSION["action"]);
 		unset($_SESSION["admin"]);
+		unset($_SESSION["user"]);
 	}
 }
 
@@ -25,7 +26,7 @@ if(isset($_GET["action"])){
 
 <header id="back1">
 <nav class="navigation">
-  <a href="#home" class="logo-lien">
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="logo-lien">
     <img src="image/logo.png" alt="Logo" class="logo-image">
   </a>
   <div class="liens">
@@ -37,7 +38,7 @@ if(isset($_GET["action"])){
 </header>
 
 <span id="back2">
-<h2> Bienvenue sur BuildHub.</h2>
+<h2>Bienvenue sur BuildHub.</h2>
 <p> BuildHub est un outil de guides rapides pour les joueurs de league of legends. Sa fonction principale est de fournir à la communauté league of legends les meilleurs build du moment.</p>
 </span>
 	
@@ -54,38 +55,44 @@ if(isset($_GET["action"])){
 
 <footer id="back3">
   <a href="admin/index_admin.php" >Page admin</a>
+  <a href="index.php?action=disconnect">Deconnexion</a>
 </footer>
 
 </body>
 
-<script>
-let popup = document.getElementById("popup");
 
-function openPopup(){
-	popup.classList.add("open-popup");
-	back1.classList.add("back");
-	back2.classList.add("back");
-	back3.classList.add("back");
+<?php
+if(isset($_SESSION["admin"]) || isset($_SESSION["user"])){
+} else{
+echo('<script>');
+echo('let popup = document.getElementById("popup");');
+
+echo('function openPopup(){');
+echo('	popup.classList.add("open-popup");');
+echo('	back1.classList.add("back");');
+echo('	back2.classList.add("back");');
+echo('	back3.classList.add("back");');
 	
+echo('}');
+
+echo('function connexion(){');
+echo('	window.location.href="http://os-vps418.infomaniak.ch:1180/l1_info_3/www/lib/Connexion.php"');
+echo('}');
+
+
+echo('function creation(){');
+echo('	window.location.href="http://os-vps418.infomaniak.ch:1180/l1_info_3/www/lib/Nouvel_utilisateur.php"');
+echo('}');
+
+echo('function closePopup(){');
+echo('	popup.classList.remove("open-popup");');
+echo('	back1.classList.remove("back");');
+echo('	back2.classList.remove("back");');
+echo('	back3.classList.remove("back");');
+echo('}');
+echo('</script>');
 }
-
-function connexion(){
-	window.location.href="http://os-vps418.infomaniak.ch:1180/l1_info_3/www/lib/Connexion.php"
-}
-
-
-function creation(){
-	window.location.href="http://os-vps418.infomaniak.ch:1180/l1_info_3/www/lib/Nouvel_utilisateur.php"
-}
-
-function closePopup(){
-	popup.classList.remove("open-popup");
-	back1.classList.remove("back");
-	back2.classList.remove("back");
-	back3.classList.remove("back");
-}
-</script>
-
+?>
 
 
 

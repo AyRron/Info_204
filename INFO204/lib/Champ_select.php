@@ -58,7 +58,7 @@
 <span class="title"><h2>Botlane<img src="../image/bot_lane.webp"/></h2></span>
 <span class="contenu">
 <img id="Jinx" class="image" src="../image/champions/Jinx.webp"/>
-<img id="MissFortune" class="image" src="../image/champions/MissFortune.webp"/>
+<img id="Miss_Fortune" class="image" src="../image/champions/Miss_Fortune.webp"/>
 <img id="Kalista" class="image" src="../image/champions/Kalista.webp"/>
 <img id="Ashe" class="image" src="../image/champions/Ashe.webp"/>
 </span>

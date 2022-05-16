@@ -1,6 +1,5 @@
 <?php
 session_start() ;
-var_dump($_SESSION);
 if(!$_SESSION["admin"]){
 	header("Location: admin_form.php") ; 
 } 
@@ -33,6 +32,7 @@ if(!$_SESSION["admin"]){
 	<h2>Page de Build </h2>
 
 	<a href="Build_admin.php"> Modifier le Build </a>
+	<a href="Items_admin.php"> Modifier les items </a>
 
 
 

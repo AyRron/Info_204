@@ -99,4 +99,14 @@ function champ_info_nom($conn, $nom_champ){
 }
 
 
+/*
+	Créé un nouveau Champion avec ses items 
+	suppose un id auto-incrementé
+*/
+function create_items($conn, $nom, $mythique, $bottes, $core1, $core2, $option1, $option2){
+	$sql="INSERT INTO `item`( `nom`, `mythique`, `bottes`, `core1`, `core2`, `option1`, `option2`) values( '$nom', '$mythique', '$bottes', '$core1', '$core2', '$option1', '$option2')";
+	$ret=mysqli_query($conn, $sql) ;
+	return $ret ; 	
+}
 ?>
+
