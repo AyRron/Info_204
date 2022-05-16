@@ -26,7 +26,7 @@ if(isset($_GET["action"])){
 
 <header>
 	<?php
-		include 'connexion.php';
+		include 'lib/connexion.php';
 	?>
 </header>
 
@@ -50,7 +50,7 @@ if(isset($_GET["action"])){
 </body>
 
 <footer>
-  <a href="Admin.php?action=disconnect">Deconnexion</a>
+  <a href="index_admin.php?action=disconnect">Deconnexion</a>
   <a href="../index.php" >Retourner à l'accueil</a>
 </footer>
 </html>
