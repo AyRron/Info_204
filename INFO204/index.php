@@ -26,7 +26,7 @@ if(isset($_GET["action"])){
 
 <header id="back1">
 <nav class="navigation">
-  <a href="#home" class="logo-lien">
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="logo-lien">
     <img src="image/logo.png" alt="Logo" class="logo-image">
   </a>
   <div class="liens">
@@ -38,7 +38,7 @@ if(isset($_GET["action"])){
 </header>
 
 <span id="back2">
-<h2> Bienvenue sur BuildHub.</h2>
+<h2>Bienvenue sur BuildHub.</h2>
 <p> BuildHub est un outil de guides rapides pour les joueurs de league of legends. Sa fonction principale est de fournir à la communauté league of legends les meilleurs build du moment.</p>
 </span>
 	
