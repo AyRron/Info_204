@@ -1,7 +1,7 @@
 <?php
 session_start() ;
 if(!$_SESSION["admin"]){
-	header("Location: admin_form.php") ; 
+	header("Location: admin_form.php?action=disconnect") ; 
 } 
 ?>
 <!doctype html>

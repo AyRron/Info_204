@@ -12,6 +12,7 @@
 <?php
     include 'connect.php';
     include 'Build.crud.php';
+    include '../admin/'
 
     if(isset($_GET)){
         if(isset($_GET["id"])){
@@ -19,7 +20,7 @@
         }
     }
     
-    $champ=champ_info_nom($conn, $nom);
+    $champ_build=champ_info_nom($conn, $nom);
     
     
     echo("<table>\n");
@@ -30,7 +31,7 @@
 
 
     echo("<table>\n");
-    foreach($champ as $key => $value){
+    foreach($champ_build as $key => $value){
         if($key == "Rune_f" ){
             echo("<tr>\n");
             echo("<th rowspan='2'>\n");
@@ -72,6 +73,24 @@
     } 
     echo("</table>");
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  echo("<table>\n");
     foreach($champ as $key => $value){
         if($key == "mythique" ){
@@ -105,9 +124,8 @@
                 echo("</tr>\n");
             }
     
-	    } 
-    echo("</table>");
-	
+    
+            echo("</table>");
 
         } elseif($key == "id" || $key == "nom" ){
             

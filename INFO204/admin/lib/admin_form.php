@@ -1,8 +1,7 @@
 <?php
 session_start() ;
 if(isset($_POST["login"])){
-	if($_POST["login"]=="admin"
-		&& $_POST["password"]=="admin"){
+	if($_POST["login"]=="admin"	&& $_POST["password"]=="admin"){
 		
 		/* session admin */
 		$_SESSION["admin"]=time() ; 
