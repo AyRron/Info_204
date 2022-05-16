@@ -24,22 +24,31 @@
 			<h3>Créer un nouveau Build :</h3>
 		</div>
 		<form method="post" action="Build_admin.php">
-			<input type="text" name="nom_create" placeholder="Nom...">
+			<div class="nom">
+				<input class="nom" type="text" name="nom_create" placeholder="Nom...">
+			</div>
 
-			<input type="text" name="Rune_f_create" placeholder="rune fondamentale 1:">
-			<input type="text" name="F1_create" placeholder="rune fondamentale 2:">
-			<input type="text" name="F2_create" placeholder="rune fondamentale 3:">
-			<input type="text" name="F3_create" placeholder="rune fondamentale 4:">
+			<div class="fondament">
+				<input type="text" name="Rune_f_create" placeholder="rune fondamentale 1:">
+				<input type="text" name="F1_create" placeholder="rune fondamentale 2:">
+				<input type="text" name="F2_create" placeholder="rune fondamentale 3:">
+				<input type="text" name="F3_create" placeholder="rune fondamentale 4:">
+			</div>
 
-			<input type="text" name="S1_create" placeholder="rune secondaire 1:">
-			<input type="text" name="S2_create" placeholder="rune secondaire 2:">
+			<div class="second">
+				<input type="text" name="S1_create" placeholder="rune secondaire 1:">
+				<input type="text" name="S2_create" placeholder="rune secondaire 2:">
+			</div>
 
-			<input type="text" name="sup1_create" placeholder="ajustement 1:">
-			<input type="text" name="sup2_create" placeholder="ajustement 2:">
-			<input type="text" name="sup3_create" placeholder="ajustement 3:">
-
-
-			<input type="submit" value="Créer">
+			<div class="ajust">
+				<input type="text" name="sup1_create" placeholder="ajustement 1:">
+				<input type="text" name="sup2_create" placeholder="ajustement 2:">
+				<input type="text" name="sup3_create" placeholder="ajustement 3:">
+			</div>
+			
+			<div class="creat">
+				<input type="submit" value="Créer">
+			</div>
 		</form>
 	</div>
 
