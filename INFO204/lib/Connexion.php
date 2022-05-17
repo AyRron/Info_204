@@ -26,23 +26,6 @@ if(isset($_POST["login"])){
 	
 }
 
-	
-	
-
-
-/*
-	if($_POST["login"]=="" && $_POST["password"]=="admin"){
-
-		/* session admin */
-		/*$_SESSION["admin"]=time() ; */
-	
-		/* redirection */
-		/*header("Location: ../index.php") ; 
-	}else{
-		echo("Mauvais login ou mot de passe");
-	}
-}	
-*/
 
 include 'disconnect.php';
 ?>
@@ -54,7 +37,7 @@ include 'disconnect.php';
 	<body>
 	<form method="POST" action="Connexion.php">
 	Login:	<input type="text" name="login">
-	Password:	<input type="text" name="password">
+	Password:	<input type="password" name="password">
 		<input type="submit" value="Envoyer" >
 	</form>
 	</body>
