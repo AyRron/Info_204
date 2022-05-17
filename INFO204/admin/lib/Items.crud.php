@@ -33,7 +33,11 @@ function delete_item_id($conn, $id){
 */
 function affiche_item_nom($conn, $nom){
 	$sql="SELECT * FROM `item` WHERE `nom`='$nom'" ;
-	$ret=mysqli_query($conn, $sql) ;
+	if($ret=mysqli_query($conn, $sql)){
+		$ret=mysqli_fetch_assoc($ret);
+	} else{
+		echo("Les items de ce personages n'existent pas");
+	}
 	return $ret ; 
 }
 

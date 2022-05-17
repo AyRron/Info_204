@@ -12,8 +12,8 @@
 
 <?php
     include 'connect.php';
-    include 'Build.crud.php';
-    include '../admin/';
+    include '../admin/lib/Build.crud.php';
+    include '../admin/lib/Items.crud.php';
 
     if(isset($_GET)){
         if(isset($_GET["id"])){
@@ -72,7 +72,7 @@
         }
         
     } 
-    echo("</table>");
+echo("</table>\n");
 	
 
 
@@ -88,51 +88,59 @@
 
 
 
-
-
-
+$champ_item=affiche_item_nom($conn, $nom);
 
  echo("<table>\n");
-    foreach($champ as $key => $value){
-        if($key == "mythique" ){
+    foreach($champ_item as $key => $value){
+
+        if($key == "starting_item"){
             echo("<tr>\n");
-            echo("<th rowspan='2'>\n");
+            echo("<td>\n");
             echo("$value\n");
+            echo("</td>\n");
          
         } elseif($key == "bottes" ){
+            echo("<td>\n");
             echo("$value\n");
-            echo("</th>\n");
+            echo("</td>\n");
+            echo("</tr>\n");
             
-            
-        } elseif($key == "core1" || $key == "core2" ){
+        } elseif($key == "mythique" || $key == "core1" || $key == "core2" ){
             if($key == "core1"){
+                echo("<tr>\n");
                 echo("<td>\n");
                 echo("$value\n");
-            }else{
+                echo("</td>\n");
+            } elseif($key == "core2"){
+                echo("<td>\n");
                 echo("$value\n");
                 echo("</td>\n");
                 echo("</tr>\n");
+            } else{
+                echo("<td>\n");
+                echo("$value\n");
+                echo("</td>\n"); 
             }
 
-        } elseif($key == "option1" || $key == "option2" ){
+        } elseif($key == "option1" || $key == "option2" || $key == "option3" ){
             if($key == "option1	"){
                 echo("<tr>\n");
                 echo("<td>\n");
                 echo("$value\n");
-            }else{
+                echo("</td>\n");
+            } elseif($key == "option3"){
+                echo("<td>\n");
                 echo("$value\n");
                 echo("</td>\n");
                 echo("</tr>\n");
+            } else{
+                echo("<td>\n");
+                echo("$value\n");
+                echo("</td>\n");
             }
-    
-    
-            echo("</table>");
-
-        } elseif($key == "id" || $key == "nom" ){
-            
-        } else{
-            echo("$value\n");
         }
+    }
+echo("</table>");   
 
 if ($nom=="Aatrox"){
 	echo('<html><img class="sorts" src="../image/sorts/Aatrox.png"></html>');
@@ -205,6 +213,7 @@ elseif ($nom=="Thresh"){
 
 
     include 'disconnect.php';
+
 ?>
 </body>
 
