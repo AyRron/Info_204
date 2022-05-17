@@ -28,14 +28,14 @@
 <img class="combattant" src="../image/items/combattant/Gueule_de_Malmortius.webp" />
 <img class="combattant" src="../image/items/combattant/Plaque_du_mort.webp" />
 <img class="combattant" src="../image/items/combattant/Aube_de_Haut-Lac-d_Argent.webp" />
-<img class="combattant" src="../image/items/combattant/.webp" />
-<img class="combattant" src="../image/items/combattant/.webp" />
-<img class="combattant" src="../image/items/combattant/.webp" />
-<img class="combattant" src="../image/items/combattant/.webp" />
-<img class="combattant" src="../image/items/combattant/.webp" />
-<img class="combattant" src="../image/items/combattant/.webp" />
-<img class="combattant" src="../image/items/combattant/.webp" />
-<img class="combattant" src="../image/items/combattant/.webp" />
+<img class="combattant" src="../image/items/combattant/Au_bout_du_rouleau.webp" />
+<img class="combattant" src="../image/items/combattant/Couperet_noir.webp" />
+<img class="combattant" src="../image/items/combattant/Gage_de_Sterak.webp" />
+<img class="combattant" src="../image/items/combattant/Rancune_de_Serylda.webp" />
+<img class="combattant" src="../image/items/combattant/Lame_du_roi_dechu.webp" />
+<img class="combattant" src="../image/items/combattant/Hydre_vorace.webp" />
+<img class="combattant" src="../image/items/combattant/Danse_de_la_mort.webp" />
+<img class="combattant" src="../image/items/combattant/Hydre_titanesque.webp" />
 
 
 
@@ -43,30 +43,30 @@
 <br>
 <h3> Items mythiques </h3>
 
-<img class="tireur" src="../image/items/tireur/Galeforce_item.webp" />
-<img class="tireur" src="../image/items/tireur/Immortal_Shieldbow_item.webp" />
-<img class="tireur" src="../image/items/tireur/Kraken_Slayer_item.webp" />
+<img class="tireur" src="../image/items/tireur/Tueur_de_krakens.webp" />
+<img class="tireur" src="../image/items/tireur/Force_du_vent.webp" />
+<img class="tireur" src="../image/items/tireur/Arc-bouclier_immortel.webp" />
 
 <h3> Items légendaires </h3>
 
-<img class="tireur" src="../image/items/tireur/Blade_of_the_Ruined_King_item.webp" />
-<img class="tireur" src="../image/items/tireur/Bloodthirster_item.webp" />
-<img class="tireur" src="../image/items/tireur/Essence_Reaver_item.webp" />
-<img class="tireur" src="../image/items/tireur/Guardian_Angel_item.webp" />
-<img class="tireur" src="../image/items/tireur/Guinsoo_Rageblade_item.webp" />
-<img class="tireur" src="../image/items/tireur/Infinity_Edge_item.webp" />
-<img class="tireur" src="../image/items/tireur/Lord_Dominik's_Regards_item.webp" />
-<img class="tireur" src="../image/items/tireur/Manamune_item.webp" />
-<img class="tireur" src="../image/items/tireur/Maw_of_Malmortius_item.webp" />
-<img class="tireur" src="../image/items/tireur/Mercurial_Scimitar_item.webp" />
-<img class="tireur" src="../image/items/tireur/Mortal_Reminder_item.webp" />
-<img class="tireur" src="../image/items/tireur/Navori_Quickblades_item.webp" />
-<img class="tireur" src="../image/items/tireur/Phantom_Dancer_item.webp" />
-<img class="tireur" src="../image/items/tireur/Rapid_Firecannon_item.webp" />
-<img class="tireur" src="../image/items/tireur/Runaan's_Hurricane_item.webp" />
-<img class="tireur" src="../image/items/tireur/Serylda's_Grudge_item.webp" />
-<img class="tireur" src="../image/items/tireur/Stormrazor_item.webp" />
-<img class="tireur" src="../image/items/tireur/The_Collector_item.webp" />
+<img class="tireur" src="../image/items/tireur/Canon_ultrarapide.webp" />
+<img class="tireur" src="../image/items/tireur/Rappel_mortel.webp" />
+<img class="tireur" src="../image/items/tireur/Lame_enragee_de_Guinsoo.webp" />
+<img class="tireur" src="../image/items/tireur/Ouragan_de_Runaan.webp" />
+<img class="tireur" src="../image/items/tireur/Danseur_fantome.webp" />
+<img class="tireur" src="../image/items/tireur/Lame_tempete.webp" />
+<img class="tireur" src="../image/items/tireur/Faux_spectrale.webp" />
+<img class="tireur" src="../image/items/tireur/Ange_gardien.webp" />
+<img class="tireur" src="../image/items/tireur/Manamune.webp" />
+<img class="tireur" src="../image/items/tireur/Gueule_de_Malmortius.webp" />
+<img class="tireur" src="../image/items/tireur/Percepteur.webp" />
+<img class="tireur" src="../image/items/tireur/Cimeterre_mercuriel.webp" />
+<img class="tireur" src="../image/items/tireur/Salutations_de_Dominik.webp" />
+<img class="tireur" src="../image/items/tireur/Rancune_de_Serylda.webp" />
+<img class="tireur" src="../image/items/tireur/Lame_du_roi_dechu.webp" />
+<img class="tireur" src="../image/items/tireur/Lame_d_infini.webp" />
+<img class="tireur" src="../image/items/tireur/Prestelames_navori.webp" />
+<img class="tireur" src="../image/items/tireur/Soif-de-sang.webp" />
 
 
 
@@ -74,26 +74,26 @@
 <br>
 <h3> Items mythiques </h3>
 
-<img class="assassin" src="../image/items/assassin/Duskblade_of_Draktharr_item.webp" />
-<img class="assassin" src="../image/items/assassin/Eclipse_item.webp" />
-<img class="assassin" src="../image/items/assassin/Prowler's_Claw_item.webp" />
+<img class="assassin" src="../image/items/assassin/Epee_vesperale_de_Draktharr.webp" />
+<img class="assassin" src="../image/items/assassin/Griffes_du_rodeur.webp" />
+<img class="assassin" src="../image/items/assassin/Eclipse.webp" />
 
 <h3> Items légendaires </h3>
 
-<img class="assassin" src="../image/items/assassin/Axiom_Arc_item.webp" />
-<img class="assassin" src="../image/items/assassin/Black_Cleaver_item.webp" />
-<img class="assassin" src="../image/items/assassin/Chempunk_Chainsword_item.webp" />
-<img class="assassin" src="../image/items/assassin/Edge_of_Night_item.webp" />
-<img class="assassin" src="../image/items/assassin/Guardian_Angel_item.webp" />
-<img class="assassin" src="../image/items/assassin/Manamune_item.webp" />
-<img class="assassin" src="../image/items/assassin/Maw_of_Malmortius_item.webp" />
-<img class="assassin" src="../image/items/assassin/Ravenous_Hydra_item.webp" />
-<img class="assassin" src="../image/items/assassin/Serpent's_Fang_item.webp" />
-<img class="assassin" src="../image/items/assassin/Serylda's_Grudge_item.webp" />
-<img class="assassin" src="../image/items/assassin/Silvermere_Dawn_item.webp" />
-<img class="assassin" src="../image/items/assassin/The_Collector_item.webp" />
-<img class="assassin" src="../image/items/assassin/Umbral_Glaive_item.webp" />
-<img class="assassin" src="../image/items/assassin/Youmuu's_Ghostblade_item.webp" />
+<img class="assassin" src="../image/items/assassin/Glaive_d_ombre.webp" />
+<img class="assassin" src="../image/items/assassin/Crochet_de_serpent.webp" />
+<img class="assassin" src="../image/items/assassin/Epee_dentelee_chimico-punk.webp" />
+<img class="assassin" src="../image/items/assassin/Ange_gardien.webp" />
+<img class="assassin" src="../image/items/assassin/Manamune.webp" />
+<img class="assassin" src="../image/items/assassin/Manteau_de_la_nuit.webp" />
+<img class="assassin" src="../image/items/assassin/Gueule_de_Malmortius.webp" />
+<img class="assassin" src="../image/items/assassin/Lame_spectre_de_Youmuu.webp" />
+<img class="assassin" src="../image/items/assassin/Percepteur.webp" />
+<img class="assassin" src="../image/items/assassin/Arc_axiomatique.webp" />
+<img class="assassin" src="../image/items/assassin/Aube_de_Haut-Lac-d_Argent.webp" />
+<img class="assassin" src="../image/items/assassin/Couperet_noir.webp" />
+<img class="assassin" src="../image/items/assassin/Rancune_de_Serylda.webp" />
+<img class="assassin" src="../image/items/assassin/Hydre_vorace.webp" />
 
 
 
@@ -101,30 +101,30 @@
 <br>
 <h3> Items mythiques </h3>
 
-<img class="mage" src="../image/items/mage/Crown_of_the_Shattered_Queen_item.webp" />
-<img class="mage" src="../image/items/mage/Everfrost_item.webp" />
-<img class="mage" src="../image/items/mage/Hextech_Rocketbelt_item.webp" />
-<img class="mage" src="../image/items/mage/Liandry's_Anguish_item.webp" />
-<img class="mage" src="../image/items/mage/Luden's_Tempest_item.webp" />
-<img class="mage" src="../image/items/mage/Night_Harvester_item.webp" />
-<img class="mage" src="../image/items/mage/Riftmaker_item.webp" />
+<img class="mage" src="../image/items/mage/Gel_eternel.webp" />
+<img class="mage" src="../image/items/mage/Couronne_de_la_Reine_brisee.webp" />
+<img class="mage" src="../image/items/mage/Affliction_de_Liandry.webp" />
+<img class="mage" src="../image/items/mage/Tempete_de_Luden.webp" />
+<img class="mage" src="../image/items/mage/Moissonneur_nocturne.webp" />
+<img class="mage" src="../image/items/mage/Ceinture-roquette_Hextech.webp" />
+<img class="mage" src="../image/items/mage/Createur_de_failles.webp" />
 
 <h3> Items légendaires </h3>
 
-<img class="mage" src="../image/items/mage/Archangel's_Staff_item.webp" />
-<img class="mage" src="../image/items/mage/Banshee's_Veil_item.webp" />
-<img class="mage" src="../image/items/mage/Cosmic_Drive_item.webp" />
-<img class="mage" src="../image/items/mage/Demonic_Embrace_item.webp" />
-<img class="mage" src="../image/items/mage/Horizon_Focus_item.webp" />
-<img class="mage" src="../image/items/mage/Lich_Bane_item.webp" />
-<img class="mage" src="../image/items/mage/Mejai's_Soulstealer_item.webp" />
-<img class="mage" src="../image/items/mage/Morellonomicon_item.webp" />
-<img class="mage" src="../image/items/mage/Nashor's_Tooth_item.webp" />
-<img class="mage" src="../image/items/mage/Rabadon's_Deathcap_item.webp" />
-<img class="mage" src="../image/items/mage/Rylai's_Crystal_Scepter_item.webp" />
-<img class="mage" src="../image/items/mage/Shadowflame_item.webp" />
-<img class="mage" src="../image/items/mage/Void_Staff_item.webp" />
-<img class="mage" src="../image/items/mage/Zhonya's_Hourglass_item.webp" />
+<img class="mage" src="../image/items/mage/Voleur_d_ames_de_Mejai.webp" />
+<img class="mage" src="../image/items/mage/Morellonomicon.webp" />
+<img class="mage" src="../image/items/mage/Baton_de_l_archange.webp" />
+<img class="mage" src="../image/items/mage/Voile_de_la_banshee.webp" />
+<img class="mage" src="../image/items/mage/Sceptre_de_Rylai.webp" />
+<img class="mage" src="../image/items/mage/Sablier_de_Zhonya.webp" />
+<img class="mage" src="../image/items/mage/Baton_du_vide.webp" />
+<img class="mage" src="../image/items/mage/Dent_de_Nashor.webp" />
+<img class="mage" src="../image/items/mage/Flamme_ombre.webp" />
+<img class="mage" src="../image/items/mage/Concentration_lointaine.webp" />
+<img class="mage" src="../image/items/mage/Fleau_de_liche.webp" />
+<img class="mage" src="../image/items/mage/Volonte_cosmique.webp" />
+<img class="mage" src="../image/items/mage/Etreinte_demoniaque.webp" />
+<img class="mage" src="../image/items/mage/Coiffe_de_Rabadon.webp" />
 
 
 
@@ -132,30 +132,30 @@
 <br>
 <h3> Items mythiques </h3>
 
-<img class="tank" src="../image/items/tank/Evenshroud_item.webp" />
-<img class="tank" src="../image/items/tank/Frostfire_Gauntlet_item.webp" />
-<img class="tank" src="../image/items/tank/Locket_of_the_Iron_Solari_item.webp" />
-<img class="tank" src="../image/items/tank/Sunfire_Aegis_item.webp" />
-<img class="tank" src="../image/items/tank/Turbo_Chemtank_item.webp" />
+<img class="tank" src="../image/items/tank/Linceul_de_la_congruence.webp" />
+<img class="tank" src="../image/items/tank/Medaillon_de_l_Iron_Solari.webp" />
+<img class="tank" src="../image/items/tank/Gantelet_cryopyrique.webp" />
+<img class="tank" src="../image/items/tank/Chimico-scaphandre_turbo.webp" />
+<img class="tank" src="../image/items/tank/Egide_solaire.webp" />
 
 <h3> Items légendaires </h3>
 
-<img class="tank" src="../image/items/tank/Abyssal_Mask_item.webp" />
-<img class="tank" src="../image/items/tank/Anathema's_Chains_item.webp" />
-<img class="tank" src="../image/items/tank/Dead_Man_Plate_item.webp" />
-<img class="tank" src="../image/items/tank/Demonic_Embrace_item.webp" />
-<img class="tank" src="../image/items/tank/Force_of_Nature_item.webp" />
-<img class="tank" src="../image/items/tank/Frozen_Heart_item.webp" />
-<img class="tank" src="../image/items/tank/Gargoyle_Stoneplate_item.webp" />
-<img class="tank" src="../image/items/tank/Knight's_Vow_item.webp" />
-<img class="tank" src="../image/items/tank/Randuin's_Omen_item.webp" />
-<img class="tank" src="../image/items/tank/Spirit_Visage_item.webp" />
-<img class="tank" src="../image/items/tank/Sterak's_Gage_item.webp" />
-<img class="tank" src="../image/items/tank/Thornmail_item.webp" />
-<img class="tank" src="../image/items/tank/Titanic_Hydra_item.webp" />
-<img class="tank" src="../image/items/tank/Warmog's_Armor_item.webp" />
-<img class="tank" src="../image/items/tank/Winter's_Approach_item.webp" />
-<img class="tank" src="../image/items/tank/Zeke's_Convergence_item.webp" />
+<img class="tank" src="../image/items/tank/Voeu_du_chevalier.webp" />
+<img class="tank" src="../image/items/tank/Convergence_de_Zeke.webp" />
+<img class="tank" src="../image/items/tank/Coeur_gele.webp" />
+<img class="tank" src="../image/items/tank/Chaines_de_l_anatheme.webp" />
+<img class="tank" src="../image/items/tank/Approche_de_l_hiver.webp" />
+<img class="tank" src="../image/items/tank/Masque_abyssal.webp" />
+<img class="tank" src="../image/items/tank/Presage_de_Randuin.webp" />
+<img class="tank" src="../image/items/tank/Cotte_epineuse.webp" />
+<img class="tank" src="../image/items/tank/Visage_spirituel.webp" />
+<img class="tank" src="../image/items/tank/Force_de_la_nature.webp" />
+<img class="tank" src="../image/items/tank/Plaque_du_mort.webp" />
+<img class="tank" src="../image/items/tank/Etreinte_demoniaque.webp" />
+<img class="tank" src="../image/items/tank/Armure_de_Warmog.webp" />
+<img class="tank" src="../image/items/tank/Gage_de_Sterak.webp" />
+<img class="tank" src="../image/items/tank/Lithoplastron_de_gargouille.webp" />
+<img class="tank" src="../image/items/tank/Hydre_titanesque.webp" />
 
 
 
@@ -163,24 +163,24 @@
 <br>
 <h3> Items mythiques </h3>
 
-<img class="support" src="../image/items/support/Evenshroud_item.webp" />
-<img class="support" src="../image/items/support/Imperial_Mandate_item.webp" />
-<img class="support" src="../image/items/support/Locket_of_the_Iron_Solari_item.webp" />
-<img class="support" src="../image/items/support/Moonstone_Renewer_item.webp" />
-<img class="support" src="../image/items/support/Shurelya's_Battlesong_item.webp" />
-<img class="support" src="../image/items/support/Turbo_Chemtank_item.webp" />
+<img class="support" src="../image/items/support/Chant_de_guerre_de_Shurelya.webp" />
+<img class="support" src="../image/items/support/Mandat_imperial.webp" />
+<img class="support" src="../image/items/support/Regenerateur_de_pierre_de_lune.webp" />
+<img class="support" src="../image/items/support/Linceul_de_la_congruence.webp" />
+<img class="support" src="../image/items/support/Medaillon_de_l_Iron_Solari.webp" />
+<img class="support" src="../image/items/support/Chimico-scaphandre_turbo.webp" />
 
 <h3> Items légendaires </h3>
 
-<img class="support" src="../image/items/support/Abyssal_Mask_item.webp" />
-<img class="support" src="../image/items/support/Ardent_Censer_item.webp" />
-<img class="support" src="../image/items/support/Chemtech_Putrifier_item.webp" />
-<img class="support" src="../image/items/support/Knight's_Vow_item.webp" />
-<img class="support" src="../image/items/support/Mikael's_Blessing_item.webp" />
-<img class="support" src="../image/items/support/Redemption_item.webp" />
-<img class="support" src="../image/items/support/Staff_of_Flowing_Water_item.webp" />
-<img class="support" src="../image/items/support/Winter's_Approach_item.webp" />
-<img class="support" src="../image/items/support/Zeke's_Convergence_item.webp" />
+<img class="support" src="../image/items/support/Encensoir_ardent.webp" />
+<img class="support" src="../image/items/support/Putrificateur_techno-chimique.webp" />
+<img class="support" src="../image/items/support/Baton_des_flots.webp" />
+<img class="support" src="../image/items/support/Benediction_de_Mikael.webp" />
+<img class="support" src="../image/items/support/Redemption.webp" />
+<img class="support" src="../image/items/support/Voeu_du_chevalier.webp" />
+<img class="support" src="../image/items/support/Convergence_de_Zeke.webp" />
+<img class="support" src="../image/items/support/Approche_de_l_hiver.webp" />
+<img class="support" src="../image/items/support/Masque_abyssal.webp" />
 
 
 </body>
