@@ -12,30 +12,30 @@
 <br>
 <h3> Items mythiques </h3>
 
-<img class="combattant" src="../image/items/combattant/Divine_Sunderer_item.webp" />
-<img class="combattant" src="../image/items/combattant/Eclipse_item.webp" />
-<img class="combattant" src="../image/items/combattant/Goredrinker_item.webp" />
-<img class="combattant" src="../image/items/combattant/Infinity_Force_item.webp" />
-<img class="combattant" src="../image/items/combattant/Stridebreaker_item.webp" />
+<img class="combattant" src="../image/items/combattant/Eclipse.webp" />
+<img class="combattant" src="../image/items/combattant/Estropieur.webp" />
+<img class="combattant" src="../image/items/combattant/Eviscerateur.webp" />
+<img class="combattant" src="../image/items/combattant/Pourfendeur_divin.webp" />
+<img class="combattant" src="../image/items/combattant/Force_de_la_trinite.webp" />
 
 <h3> Items légendaires </h3>
 
-<img class="combattant" src="../image/items/combattant/Black_Cleaver_item.webp" />
-<img class="combattant" src="../image/items/combattant/Blade_of_the_Ruined_King_item.webp" />
-<img class="combattant" src="../image/items/combattant/Chempunk_Chainsword_item.webp" />
-<img class="combattant" src="../image/items/combattant/Dead_Man_Plate_item.webp" />
-<img class="combattant" src="../image/items/combattant/Death's_Dance_item.webp" />
-<img class="combattant" src="../image/items/combattant/Guardian_Angel_item.webp" />
-<img class="combattant" src="../image/items/combattant/Guinsoo_Rageblade_item.webp" />
-<img class="combattant" src="../image/items/combattant/Hullbreaker_item.webp" />
-<img class="combattant" src="../image/items/combattant/Manamune_item.webp" />
-<img class="combattant" src="../image/items/combattant/Maw_of_Malmortius_item.webp" />
-<img class="combattant" src="../image/items/combattant/Ravenous_Hydra_item.webp" />
-<img class="combattant" src="../image/items/combattant/Serylda's_Grudge_item.webp" />
-<img class="combattant" src="../image/items/combattant/Silvermere_Dawn_item.webp" />
-<img class="combattant" src="../image/items/combattant/Sterak's_Gage_item.webp" />
-<img class="combattant" src="../image/items/combattant/Titanic_Hydra_item.webp" />
-<img class="combattant" src="../image/items/combattant/Wit's_End_item.webp" />
+<img class="combattant" src="../image/items/combattant/Lame_enragee_de_Guinsoo.webp" />
+<img class="combattant" src="../image/items/combattant/Epee_dentelee_chimico-punk.webp" />
+<img class="combattant" src="../image/items/combattant/Brise_coques.webp" />
+<img class="combattant" src="../image/items/combattant/Ange_gardien.webp" />
+<img class="combattant" src="../image/items/combattant/Manamune.webp" />
+<img class="combattant" src="../image/items/combattant/Gueule_de_Malmortius.webp" />
+<img class="combattant" src="../image/items/combattant/Plaque_du_mort.webp" />
+<img class="combattant" src="../image/items/combattant/Aube_de_Haut-Lac-d_Argent.webp" />
+<img class="combattant" src="../image/items/combattant/.webp" />
+<img class="combattant" src="../image/items/combattant/.webp" />
+<img class="combattant" src="../image/items/combattant/.webp" />
+<img class="combattant" src="../image/items/combattant/.webp" />
+<img class="combattant" src="../image/items/combattant/.webp" />
+<img class="combattant" src="../image/items/combattant/.webp" />
+<img class="combattant" src="../image/items/combattant/.webp" />
+<img class="combattant" src="../image/items/combattant/.webp" />
 
 
 
