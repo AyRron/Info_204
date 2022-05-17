@@ -36,19 +36,19 @@
         if($key == "Rune_f" ){
             echo("<tr>\n");
             echo("<th rowspan='2'>\n");
-            echo("$value\n");
+            echo("<img src='../image/runes/$value.webp'>\n");
          
         } elseif($key == "F3" ){
-            echo("$value\n");
+            echo("<img src='../image/runes/$value.webp'>\n");
             echo("</th>\n");
             
             
         } elseif($key == "S1" || $key == "S2" ){
             if($key == "S1"){
                 echo("<td>\n");
-                echo("$value\n");
+                echo("<img src='../image/runes/$value.webp'>\n");
             }else{
-                echo("$value\n");
+                echo("<img src='../image/runes/$value.webp'>\n");
                 echo("</td>\n");
                 echo("</tr>\n");
             }
@@ -57,9 +57,9 @@
             if($key == "sup1"){
                 echo("<tr>\n");
                 echo("<td>\n");
-                echo("$value\n");
+                echo("<img src='../image/runes/$value.webp'>\n");
             }else{
-                echo("$value\n");
+                echo("<img src='../image/runes/$value.webp'>\n");
                 echo("</td>\n");
                 echo("</tr>\n");
             }
@@ -68,7 +68,7 @@
         } elseif($key == "id" || $key == "Nom_champ" ){
             
         } else{
-            echo("$value\n");
+            echo("<img src='../image/runes/$value.webp'>\n");
         }
         
     } 
@@ -96,46 +96,46 @@ $champ_item=affiche_item_nom($conn, $nom);
         if($key == "starting_item"){
             echo("<tr>\n");
             echo("<td>\n");
-            echo("$value\n");
+            echo("<img src='../image/items/starter_item/$value.webp'>\n");
             echo("</td>\n");
          
         } elseif($key == "bottes" ){
             echo("<td>\n");
-            echo("$value\n");
+            echo("<img src='../image/items/bottes/$value.webp'>\n");
             echo("</td>\n");
             echo("</tr>\n");
             
         } elseif($key == "mythique" || $key == "core1" || $key == "core2" ){
-            if($key == "core1"){
+            if($key == "mythique"){
                 echo("<tr>\n");
                 echo("<td>\n");
-                echo("$value\n");
+                echo("<img src='../image/items/TOUT/$value.webp'>\n");
                 echo("</td>\n");
-            } elseif($key == "core2"){
+            } elseif($key == "core1"){
                 echo("<td>\n");
-                echo("$value\n");
-                echo("</td>\n");
-                echo("</tr>\n");
+                echo("<img src='../image/items/TOUT/$value.webp'>\n");
+                echo("</td>\n");               
             } else{
                 echo("<td>\n");
-                echo("$value\n");
+                echo("<img src='../image/items/TOUT/$value.webp'>\n");
                 echo("</td>\n"); 
+				echo("</tr>\n");
             }
 
         } elseif($key == "option1" || $key == "option2" || $key == "option3" ){
             if($key == "option1	"){
                 echo("<tr>\n");
                 echo("<td>\n");
-                echo("$value\n");
+                echo("<img src='../image/items/TOUT/$value.webp'>\n");
                 echo("</td>\n");
             } elseif($key == "option3"){
                 echo("<td>\n");
-                echo("$value\n");
+                echo("<img src='../image/items/TOUT/$value.webp'>\n");
                 echo("</td>\n");
                 echo("</tr>\n");
             } else{
                 echo("<td>\n");
-                echo("$value\n");
+                echo("<img src='../image/items/TOUT/$value.webp'>\n");
                 echo("</td>\n");
             }
         }
@@ -146,7 +146,7 @@ if ($nom=="Aatrox"){
 	echo('<html><img class="sorts" src="../image/sorts/Aatrox.png"></html>');
 }
 elseif ($nom=="Cho_Gath"){
-	echo('<html><img class="sorts" src="../image/sorts/Cho_gath.png"></html>');
+	echo('<html><img class="sorts" src="../image/sorts/Cho_Gath.png"></html>');
 }
 elseif ($nom=="Garen"){
 	echo('<html><img class="sorts" src="../image/sorts/Garen.png"></html>');
