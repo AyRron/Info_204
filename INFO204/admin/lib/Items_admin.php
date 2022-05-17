@@ -99,14 +99,14 @@
 		$id =$_POST["id_mod"];
 		$nom = $_POST["nom_mod"];
 		$starting_item = $_POST["starting_item_mod"];
-		$mythique = $_POST["mythique_mod"];
-		$bottes = $_POST["bottes_mod"];
+		$mythique = $_POST["Mythique_mod"];
+		$bottes = $_POST["Bottes_mod"];
 		$core1 = $_POST["core1_mod"];
 		$core2 = $_POST["core2_mod"];
 		$option1 = $_POST["option1_mod"];
 		$option2 = $_POST["option2_mod"];
 		$option3 = $_POST["option3_mod"];
-		update_items($conn, $nom, $starting_item, $mythique, $bottes, $core1, $core2, $option1, $option2, $option3);
+		update_items($conn, $id, $nom, $starting_item, $mythique, $bottes, $core1, $core2, $option1, $option2, $option3);
 
 		}
 	?>
@@ -117,7 +117,7 @@
 	Supprimer un Build :
 	<table>
 		<tr>
-			<td>Nom : </td>
+			<td>ID du build : </td>
 			<td><input type="text" name="nom_sup"></td>
 		</tr>
 	</table>
@@ -127,7 +127,7 @@
 	<?php
 	if (isset($_POST["nom_sup"])) {
 		$nom = $_POST["nom_sup"];
-		delete_item_nom($conn, $nom);
+		delete_item_id($conn, $nom);
 		}
 	?>
 	
@@ -142,7 +142,7 @@
 		echo("<td>Item de départ : </td>");
 		echo("<td>Item mythique : </td>");
 		echo("<td>Core items : </td>");
-		echo("<td>Bottes : </td>");
+		echo("<td>Bottes: </td>");
 		echo("<td>Items secondaires : </td>");
 		echo("</tr>");
 		

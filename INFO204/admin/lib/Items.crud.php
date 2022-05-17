@@ -4,7 +4,7 @@
 	Créé un nouveau Champion avec ses items 
 	suppose un id auto-incrementé
 */
-function create_items($conn, $starting_item, $nom, $mythique, $bottes, $core1, $core2, $option1, $option2, $option3){
+function create_items($conn, $nom, $starting_item, $mythique, $bottes, $core1, $core2, $option1, $option2, $option3){
 	$sql="INSERT INTO `item`( `nom`,`starting_item`, `mythique`, `bottes`, `core1`, `core2`, `option1`, `option2`, `option3`) values( '$nom', '$starting_item', '$mythique', '$bottes', '$core1', '$core2', '$option1', '$option2', '$option3')";
 	$ret=mysqli_query($conn, $sql) ;
 	return $ret ; 	
