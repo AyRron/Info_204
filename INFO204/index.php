@@ -41,7 +41,7 @@ if(isset($_GET["action"])){
 <h2>Bienvenue sur BuildHub.</h2>
 <p> BuildHub est un outil de guides rapides pour les joueurs de league of legends. Sa fonction principale est de fournir à la communauté league of legends les meilleurs build du moment.</p>
 </span>
-	
+<video id="fond" src="image/Video_lol.mp4" autoplay muted loop />
 <section>
 	<div class="container">
 		<div class="popup" id="popup">
