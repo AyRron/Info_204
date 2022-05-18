@@ -329,7 +329,7 @@ h2 {
   stroke-width: 10px;
 }
 
-@media screen and (max-width: 1200px) {
+/*@media screen and (max-width: 1200px) {
   h2 {
     display: none;
   }
@@ -337,7 +337,7 @@ h2 {
     width: 15vw;
     bottom: 3vw;
   }
-}
+}*/
 
 .mythique {
   margin-bottom: 1em;
