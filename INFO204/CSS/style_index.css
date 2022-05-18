@@ -293,3 +293,16 @@ footer > a {
 	width: 50em;
 	height: 15em;
 }
+
+#tab_rune tr{
+	space-between: 3em;
+}
+	
+	
+.mythique {
+	margin-bottom: 2em;
+}
+
+.legendaire{
+	margin-bottom: 4em;
+}
