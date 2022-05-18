@@ -144,10 +144,11 @@ body {
 table {
   background-color: #ab05f2;
   border-collapse: collapse;
-  margin: 25px 0;
+  margin: 50px;
   font-size: 1em;
   min-width: 40%;
   border-radius: 5px 5px 0 0;
+  box-sizing: border-box;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
