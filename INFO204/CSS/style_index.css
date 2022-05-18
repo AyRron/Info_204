@@ -175,9 +175,6 @@ footer > a {
   }
 
   .select {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 25px;
     color: white;
     text-decoration: none;
   }
@@ -185,9 +182,6 @@ footer > a {
 
 @media screen and (max-width: 1023px) {
   .select {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 25px;
     color: white;
     text-decoration: none;
   }
@@ -290,6 +284,74 @@ footer > a {
 }*/
 
 .sorts {
-	width: 50em;
-	height: 15em;
+  width: 50em;
+  height: 15em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main: #0d0d0d;
+  --second: #ab05f2;
+  --accent: #0cf2b1;
+}
+
+body {
+  background: var(--main);
+
+  font-size: 100px;
+  color: var(--second);
+}
+
+.icon {
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+}
+
+.head-group {
+  max-width: 1200px;
+  margin: 50px auto;
+  height: 228px;
+  position: relative;
+}
+
+h2 {
+  background-color: var(--main);
+  width: fit-content;
+  position: relative;
+  font-family: "BEYNO";
+  z-index: 1;
+  font-size: 1em;
+}
+
+.line {
+  max-width: 1200px;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  bottom: 0;
+  position: absolute;
+}
+
+.cls-1 {
+  fill: none;
+  stroke: var(--second);
+  stroke-linejoin: bevel;
+  stroke-width: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  h2 {
+    display: none;
+  }
+  .icon {
+    width: 15vw;
+    bottom: 3vw;
+  }
 }
