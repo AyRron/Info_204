@@ -22,7 +22,7 @@
 #fond {
   object-fit: cover;
   height: 100vh;
-  width: 95.5vw;
+  width: calc(100% - 50px);
   margin: 25px;
   border-radius: 5px;
 }
