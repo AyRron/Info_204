@@ -24,7 +24,6 @@
 
 <section class="select">
 
-<div class="map">
 <section class="head-group">
   <img src="../image/top_lane-removebg-preview.png" class="icon" alt="logo" />
     <h2>Toplane</h2>
@@ -45,7 +44,6 @@
 <img id="Garen" class="image" src="../image/champions/Garen.webp"/>
 <img id="Cho_Gath" class="image" src="../image/champions/Cho_Gath.webp"/>
 </span>
-</div>
 
 <section class="head-group">
       <img src="../image/jungle-removebg-preview.png" class="icon" alt="logo" />
@@ -67,36 +65,74 @@
 <img id="Elise" class="image" src="../image/champions/Elise.webp"/>
 </span>
 
-
-<div class="map">
-<span class="title"><h2>Midlane<img src="../image/mid_lane-removebg-preview.png"/></h2></span>
+<section class="head-group">
+      <img src="../image/mid_lane-removebg-preview.png" class="icon" alt="logo" />
+      <h2>Midlane</h2>
+      <svg
+        id="Calque_1"
+        class="line"
+        data-name="Calque 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 155.32"
+      >
+        <polyline class="cls-1" points="0 5 460 5 600 151.87 740 5 1200 5" />
+      </svg>
+    </section>
 <span class="contenu">
 <img id="Vladimir" class="image" src="../image/champions/Vladimir.webp" />
 <img id="Katarina" class="image" src="../image/champions/Katarina.webp" />
 <img id="Heimerdinger" class="image" src="../image/champions/Heimerdinger.webp"/>
 <img id="Aurelion_Sol" class="image" src="../image/champions/Aurelion_Sol.webp"/>
 </span>
-</div>
 
-<div class="map">
-<span class="title"><h2>Botlane<img src="../image/bot_lane.webp"/></h2></span>
+
+
+
+<section class="head-group">
+      <img src="../image/bot_lane.webp" class="icon" alt="logo" />
+      <h2>Botlane</h2>
+      <svg
+        id="Calque_1"
+        class="line"
+        data-name="Calque 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 155.32"
+      >
+        <polyline class="cls-1" points="0 5 460 5 600 151.87 740 5 1200 5" />
+      </svg>
+    </section>
 <span class="contenu">
 <img id="Jinx" class="image" src="../image/champions/Jinx.webp"/>
 <img id="Miss_Fortune" class="image" src="../image/champions/Miss_Fortune.webp"/>
 <img id="Kalista" class="image" src="../image/champions/Kalista.webp"/>
 <img id="Ashe" class="image" src="../image/champions/Ashe.webp"/>
 </span>
-</div>
 
-<div class="map">
-<span class="title"><h2>Support<img src="../image/support-removebg-preview.png"/></h2></span>
+
+
+
+
+
+<section class="head-group">
+      <img src="../image/support-removebg-preview.png" class="icon" alt="logo" />
+      <h2>support</h2>
+      <svg
+        id="Calque_1"
+        class="line"
+        data-name="Calque 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 155.32"
+      >
+        <polyline class="cls-1" points="0 5 460 5 600 151.87 740 5 1200 5" />
+      </svg>
+    </section>
 <span class="contenu">
 <img id="Thresh" class="image" src="../image/champions/Thresh.webp"/>
 <img id="Morgana" class="image" src="../image/champions/Morgana.webp"/>
 <img id="Leona" class="image" src="../image/champions/Leona.webp"/>
 <img id="Brand" class="image" src="../image/champions/Brand.webp"/>
 </span>
-</div>
+
 
 </section>
 
