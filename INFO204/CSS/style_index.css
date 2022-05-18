@@ -28,7 +28,8 @@ body {
   width: 100%;
   height: 100vh;
   background-color: var(--main);
-  color: white;
+  font-size: 100px;
+  color: var(--second);
 }
 
 .navigation {
@@ -286,24 +287,6 @@ footer > a {
 .sorts {
   width: 50em;
   height: 15em;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --main: #0d0d0d;
-  --second: #ab05f2;
-  --accent: #0cf2b1;
-}
-
-body {
-  background: var(--main);
-
-  font-size: 100px;
-  color: var(--second);
 }
 
 .icon {
