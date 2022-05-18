@@ -1,4 +1,3 @@
-
 <?php
 
 /* Connexion a la base de donnée*/
