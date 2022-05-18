@@ -355,3 +355,15 @@ h2 {
     bottom: 3vw;
   }
 }
+
+.mythique {
+  margin-bottom: 1em;
+}
+
+.mythique p {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.legendaire {
+  margin-bottom: 4em;
+}
