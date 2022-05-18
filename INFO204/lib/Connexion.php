@@ -13,11 +13,11 @@ if(isset($_POST["login"])){
 	
 		
 		if($_POST["password"] == $ret['Mdp'] && $ret['Droit'] == 1 ){
-			$_SESSION["admin"]=time() ; 
+			$_SESSION["admin"] = $pseudo; 
 			header("Location: ../index.php") ; 
 
 		} elseif ($_POST["password"] == $ret['Mdp'] && $ret['Droit'] == 0 ){
-			$_SESSION["user"]=time() ; 
+			$_SESSION["user"] = $pseudo; 
 			header("Location: ../index.php") ; 
 		}
 	} else{

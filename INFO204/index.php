@@ -48,7 +48,6 @@ if(isset($_GET["action"])){
 			<h2>Connectez-vous</h2>
 			<button type="button" onclick="connexion()" onclick="closePopup()">Se Connecter</button>
 			<button type="button" onclick="creation()" onclick="closePopup()">Vous n'avez pas de compte ?</button>
-			<button type="button" onclick="closePopup()">Fermer la Popup</button>
 		</div>
 	</div>
 </section>

@@ -10,7 +10,7 @@
 <body>
 <header>
 	<a href="../index_admin.php?action=disconnect">Deconnexion</a>
-	<a href="admin.php">Retour à la page d'accueil</a>
+	<a href="../index_admin.php">Retour à la page d'accueil</a>
     <?php
     include '../../lib/connect.php';
 	include 'Items.crud.php';

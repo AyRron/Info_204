@@ -58,5 +58,5 @@ if(isset($_GET["action"])){
 
 
 <?php
-include 'lib/db_disconnect.php';
+include 'lib/disconnect.php';
 ?>

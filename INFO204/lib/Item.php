@@ -12,63 +12,126 @@
 <br>
 <h3> Items mythiques </h3>
 
-<img class="combattant" src="../image/items/combattant/Eclipse.webp" />
-<img class="combattant" src="../image/items/combattant/Estropieur.webp" />
-<img class="combattant" src="../image/items/combattant/Eviscerateur.webp" />
-<img class="combattant" src="../image/items/combattant/Pourfendeur_divin.webp" />
-<img class="combattant" src="../image/items/combattant/Force_de_la_trinite.webp" />
+<table>
+    <tr>
+        <th><img class="combattant" src="../image/items/combattant/Eclipse.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Estropieur.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Eviscerateur.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Pourfendeur_divin.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Force_de_la_trinite.webp" /></th>
+    </tr>
+    <tr>
+        <td><p>Eclipse</p></td>
+        <td><p>Estropieur</p></td>
+        <td><p>Eviscerateur</p></td>
+        <td><p>Pourfendeur divin</p></td>
+        <td><p>Force de la trinité</p></td>
+    </tr>
+</table>
 
 <h3> Items légendaires </h3>
-
-<img class="combattant" src="../image/items/combattant/Lame_enragee_de_Guinsoo.webp" />
-<img class="combattant" src="../image/items/combattant/Epee_dentelee_chimico-punk.webp" />
-<img class="combattant" src="../image/items/combattant/Brise_coques.webp" />
-<img class="combattant" src="../image/items/combattant/Ange_gardien.webp" />
-<img class="combattant" src="../image/items/combattant/Manamune.webp" />
-<img class="combattant" src="../image/items/combattant/Gueule_de_Malmortius.webp" />
-<img class="combattant" src="../image/items/combattant/Plaque_du_mort.webp" />
-<img class="combattant" src="../image/items/combattant/Aube_de_Haut-Lac-d_Argent.webp" />
-<img class="combattant" src="../image/items/combattant/Au_bout_du_rouleau.webp" />
-<img class="combattant" src="../image/items/combattant/Couperet_noir.webp" />
-<img class="combattant" src="../image/items/combattant/Gage_de_Sterak.webp" />
-<img class="combattant" src="../image/items/combattant/Rancune_de_Serylda.webp" />
-<img class="combattant" src="../image/items/combattant/Lame_du_roi_dechu.webp" />
-<img class="combattant" src="../image/items/combattant/Hydre_vorace.webp" />
-<img class="combattant" src="../image/items/combattant/Danse_de_la_mort.webp" />
-<img class="combattant" src="../image/items/combattant/Hydre_titanesque.webp" />
-
+<table>
+    <tr>
+        <th><img class="combattant" src="../image/items/combattant/Lame_enragee_de_Guinsoo.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Epee_dentelee_chimico-punk.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Brise_coques.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Ange_gardien.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Manamune.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Gueule_de_Malmortius.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Plaque_du_mort.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Aube_de_Haut-Lac-d_Argent.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Au_bout_du_rouleau.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Couperet_noir.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Gage_de_Sterak.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Rancune_de_Serylda.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Lame_du_roi_dechu.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Hydre_vorace.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Danse_de_la_mort.webp" /></th>
+        <th><img class="combattant" src="../image/items/combattant/Hydre_titanesque.webp" /></th>
+    </tr>
+    <tr>
+        <td><p>Lame enragée de Guinsoo</p></td>
+        <td><p>Epée dentelée chimico-punk</p></td>
+        <td><p>Brise coques</p></td>
+        <td><p>Ange gardien</p></td>
+        <td><p>Manamune</p></td>
+        <td><p>Gueule de Malmortius</p></td>
+        <td><p>Plaque du mort</p></td>
+        <td><p>Aube de Haut-Lac-d'Argent</p></td>
+        <td><p>Au bout du rouleau</p></td>
+        <td><p>Couperet noir</p></td>
+        <td><p>Gage de Sterak</p></td>
+        <td><p>Rancune de Serylda</p></td>
+        <td><p>Lame du roi déchu</p></td>
+        <td><p>Hydre vorace</p></td>
+        <td><p>Danse de la mort</p></td>
+        <td><p>Hydre titanesque</p></td>
+    </tr>
+</table>
 
 
 <h2 class="tireur"> Items tireurs:</h2>
 <br>
 <h3> Items mythiques </h3>
 
-<img class="tireur" src="../image/items/tireur/Tueur_de_krakens.webp" />
-<img class="tireur" src="../image/items/tireur/Force_du_vent.webp" />
-<img class="tireur" src="../image/items/tireur/Arc-bouclier_immortel.webp" />
+<table>
+    <tr>
+        <th><img class="tireur" src="../image/items/tireur/Tueur_de_krakens.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Force_du_vent.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Arc-bouclier_immortel.webp" /></th>
+    </tr>
+    <tr>
+        <td><p>Tueur de krakens</p></td>
+        <td><p>Force du vent</p></td>
+        <td><p>Arc-bouclier immortel</p></td>
+    </tr>
+</table>
+
 
 <h3> Items légendaires </h3>
 
-<img class="tireur" src="../image/items/tireur/Canon_ultrarapide.webp" />
-<img class="tireur" src="../image/items/tireur/Rappel_mortel.webp" />
-<img class="tireur" src="../image/items/tireur/Lame_enragee_de_Guinsoo.webp" />
-<img class="tireur" src="../image/items/tireur/Ouragan_de_Runaan.webp" />
-<img class="tireur" src="../image/items/tireur/Danseur_fantome.webp" />
-<img class="tireur" src="../image/items/tireur/Lame_tempete.webp" />
-<img class="tireur" src="../image/items/tireur/Faux_spectrale.webp" />
-<img class="tireur" src="../image/items/tireur/Ange_gardien.webp" />
-<img class="tireur" src="../image/items/tireur/Manamune.webp" />
-<img class="tireur" src="../image/items/tireur/Gueule_de_Malmortius.webp" />
-<img class="tireur" src="../image/items/tireur/Percepteur.webp" />
-<img class="tireur" src="../image/items/tireur/Cimeterre_mercuriel.webp" />
-<img class="tireur" src="../image/items/tireur/Salutations_de_Dominik.webp" />
-<img class="tireur" src="../image/items/tireur/Rancune_de_Serylda.webp" />
-<img class="tireur" src="../image/items/tireur/Lame_du_roi_dechu.webp" />
-<img class="tireur" src="../image/items/tireur/Lame_d_infini.webp" />
-<img class="tireur" src="../image/items/tireur/Prestelames_navori.webp" />
-<img class="tireur" src="../image/items/tireur/Soif-de-sang.webp" />
-
-
+<table>
+    <tr>
+        <th><img class="tireur" src="../image/items/tireur/Canon_ultrarapide.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Rappel_mortel.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Lame_enragee_de_Guinsoo.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Ouragan_de_Runaan.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Danseur_fantome.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Lame_tempete.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Faux_spectrale.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Ange_gardien.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Manamune.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Gueule_de_Malmortius.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Percepteur.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Cimeterre_mercuriel.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Salutations_de_Dominik.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Rancune_de_Serylda.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Lame_du_roi_dechu.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Lame_d_infini.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Prestelames_navori.webp" /></th>
+        <th><img class="tireur" src="../image/items/tireur/Soif-de-sang.webp" /></th>
+    </tr>
+    <tr>    
+        <td><p>Canon ultrarapide</p></td>
+        <td><p>Rappel mortel</p></td>
+        <td><p>Lame enragée de Guinsoo</p></td>
+        <td><p>Ouragan de Runaan</p></td>
+        <td><p>Danseur fantôme</p></td>
+        <td><p>Lame tempête</p></td>
+        <td><p>Faux spectrale</p></td>
+        <td><p>Ange gardien</p></td>
+        <td><p>Manamune</p></td>
+        <td><p>Gueule de Malmortius</p></td>
+        <td><p>Percepteur</p></td>
+        <td><p>Cimeterre mercuriel</p></td>
+        <td><p>Salutations de Dominik</p></td>
+        <td><p>Rancune de Serylda</p></td>
+        <td><p>Lame du roi déchu</p></td>
+        <td><p>Lame d'infini</p></td>
+        <td><p>Prestelames navori</p></td>
+        <td><p>Soif-de-sang</p></td>
+    </tr>
+</table>
 
 <h2 class="assassin"> Items assassins:</h2>
 <br>
