@@ -81,9 +81,9 @@
         <th><img class="tireur" src="../image/items/tireur/Arc-bouclier_immortel.webp" /></th>
     </tr>
     <tr>
-        <td><p>Tueur de krakens</p></td>
-        <td><p>Force du vent</p></td>
-        <td><p>Arc-bouclier immortel</p></td>
+        <th><p>Tueur de krakens</p></th>
+        <th><p>Force du vent</p></th>
+        <th><p>Arc-bouclier immortel</p></th>
     </tr>
 </table>
 
@@ -112,24 +112,24 @@
         <th><img class="tireur" src="../image/items/tireur/Soif-de-sang.webp" /></th>
     </tr>
     <tr>    
-        <td><p>Canon ultrarapide</p></td>
-        <td><p>Rappel mortel</p></td>
-        <td><p>Lame enragée de Guinsoo</p></td>
-        <td><p>Ouragan de Runaan</p></td>
-        <td><p>Danseur fantôme</p></td>
-        <td><p>Lame tempête</p></td>
-        <td><p>Faux spectrale</p></td>
-        <td><p>Ange gardien</p></td>
-        <td><p>Manamune</p></td>
-        <td><p>Gueule de Malmortius</p></td>
-        <td><p>Percepteur</p></td>
-        <td><p>Cimeterre mercuriel</p></td>
-        <td><p>Salutations de Dominik</p></td>
-        <td><p>Rancune de Serylda</p></td>
-        <td><p>Lame du roi déchu</p></td>
-        <td><p>Lame d'infini</p></td>
-        <td><p>Prestelames navori</p></td>
-        <td><p>Soif-de-sang</p></td>
+        <th><p>Canon ultrarapide</p></th>
+        <th><p>Rappel mortel</p></th>
+        <th><p>Lame enragée de Guinsoo</p></th>
+        <th><p>Ouragan de Runaan</p></th>
+        <th><p>Danseur fantôme</p></th>
+        <th><p>Lame tempête</p></th>
+        <th><p>Faux spectrale</p></th>
+        <th><p>Ange gardien</p></th>
+        <th><p>Manamune</p></th>
+        <th><p>Gueule de Malmortius</p></th>
+        <th><p>Percepteur</p></th>
+        <th><p>Cimeterre mercuriel</p></th>
+        <th><p>Salutations de Dominik</p></th>
+        <th><p>Rancune de Serylda</p></th>
+        <th><p>Lame du roi déchu</p></th>
+        <th><p>Lame d'infini</p></th>
+        <th><p>Prestelames navori</p></th>
+        <th><p>Soif-de-sang</p></th>
     </tr>
 </table>
 
