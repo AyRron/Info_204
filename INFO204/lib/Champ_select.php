@@ -47,7 +47,7 @@
 
 <section class="head-group">
       <img src="../image/jungle-removebg-preview.png" class="icon" alt="logo" />
-      <h2>JUNGLE</h2>
+      <h2>Jungle</h2>
       <svg
         id="Calque_1"
         class="line"
@@ -115,7 +115,7 @@
 
 <section class="head-group">
       <img src="../image/support-removebg-preview.png" class="icon" alt="logo" />
-      <h2>support</h2>
+      <h2>Support</h2>
       <svg
         id="Calque_1"
         class="line"
