@@ -25,13 +25,17 @@
 
 	
     <tr>
-        <th><img src="../image/items/tireur/Canon_ultrarapide.webp" /></th>
-        <th><img src="../image/items/tireur/Canon_ultrarapide.webp" /></th>
-        <th><img src="../image/items/tireur/Canon_ultrarapide.webp" /></th>
-		<th><img src="../image/items/tireur/Canon_ultrarapide.webp" /></th>
-        <th><img src="../image/items/tireur/Canon_ultrarapide.webp" /></th>
+        <th><img src="../image/runes/Attaque_soutenue.webp" /> <img src="../image/runes/Jeu_de_jambes.webp" /> <img src="../image/runes/Tempo_mortel.webp" /> <img src="../image/runes/Conquerant.webp" /></th>
+        <th><img src="../image/runes/Electrocution.webp" /> <img src="../image/runes/Moisson_noire.webp" /> <img src="../image/runes/Predateur.webp" /> <img src="../image/runes/Deluge_de_lames.webp" /></th>
+        <th><img src="../image/runes/Invocation_d_aery.webp" /> <img src="../image/runes/Rush_phasique.webp" /> <img src="../image/runes/Comete_arcanique.webp" /></th>
+		<th><img src="../image/runes/Poigne_de_l_immortel.webp" /> <img src="../image/runes/Gardien.webp" /> <img src="../image/runes/Apres_coup.webp" /></th>
+        <th><img src="../image/runes/Optimisation_glaciale.webp" /> <img src="../image/runes/Premier_coup.webp" /> <img src="../image/runes/Grimoire_dechaine.webp" /></th>
     </tr>    
 	
 </table>
+
+<footer>
+<a href="../index.php" >Retourner a l'acceuil</a>
+</footer>
 </body>
 </html>
