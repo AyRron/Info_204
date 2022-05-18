@@ -7,9 +7,21 @@
     <link rel="icon" href="../image/league.png">
 </head>
 
-<body>
-    
 
+<header>
+<nav class="navigation">
+  <a href="../index.php" class="logo-lien">
+    <img src="../image/logo.png" alt="Logo" class="logo-image">
+  </a>
+  <div class="liens">
+    <a href="Item.php" class="nav-lien">Items</a>
+    <a href="Rune.php" class="nav-lien">Runes</a>
+    <a href="Champ_select.php" class="nav-lien">Champions</a>
+  </div>
+</nav>
+</header>
+
+<body>
 <?php
     include 'connect.php';
     include '../admin/lib/Build.crud.php';

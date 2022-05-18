@@ -6,6 +6,22 @@
     <link rel="stylesheet" href="../CSS/style_index.css">
     <link rel="icon" href="../image/league.png">
 </head>
+
+
+<header>
+<nav class="navigation">
+  <a href="../index.php" class="logo-lien">
+    <img src="../image/logo.png" alt="Logo" class="logo-image">
+  </a>
+  <div class="liens">
+    <a href="Item.php" class="nav-lien">Items</a>
+    <a href="Rune.php" class="nav-lien">Runes</a>
+    <a href="Champ_select.php" class="nav-lien">Champions</a>
+  </div>
+</nav>
+</header>
+
+
 <body>
 <table id="tab_rune">
     <tr>

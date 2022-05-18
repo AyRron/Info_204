@@ -11,7 +11,7 @@
 
 <header>
 <nav class="navigation">
-  <a href="#home" class="logo-lien">
+  <a href="../index.php" class="logo-lien">
     <img src="../image/logo.png" alt="Logo" class="logo-image">
   </a>
   <div class="liens">
