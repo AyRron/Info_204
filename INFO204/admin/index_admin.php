@@ -44,8 +44,9 @@ if(isset($_GET["action"])){
 	<a href="lib/Build_admin.php"> Modifier le Build </a>
 	<a href="lib/Items_admin.php"> Modifier les items </a>
 
+	<h2>Page des Utilisateurs </h2>
 
-
+	<a href="lib/User_admin.php"> Modifier les Utilisateurs </a>
 
 </body>
 
