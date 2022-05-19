@@ -26,6 +26,7 @@
     include 'connect.php';
     include '../admin/lib/Build.crud.php';
     include '../admin/lib/Items.crud.php';
+    include '../admin/lib/Sort.crud.php';
 
     if(isset($_GET)){
         if(isset($_GET["id"])){
@@ -187,11 +188,61 @@ echo("</table>");
 ?>
 </div>
 
-
-<div class="bld" id="sorts">
+<div class="bld" id="sorts" >
 <?php
+
+$champ_sort=affiche_sort($conn,$nom);
+
+echo("<table>");
+echo("<tr>");
+echo("<th>nv°1</th>");
+echo("<th>nv°2</th>");
+echo("<th>nv°3</th>");
+echo("<th>nv°4</th>");
+echo("<th>nv°5</th>");
+echo("<th>nv°6</th>");
+echo("<th>nv°7</th>");
+echo("<th>nv°8</th>");
+echo("<th>nv°9</th>");
+echo("<th>nv°10</th>");
+echo("<th>nv°11</th>");
+echo("<th>nv°12</th>");
+echo("<th>nv°13</th>");
+echo("<th>nv°14</th>");
+echo("<th>nv°15</th>");
+echo("<th>nv°16</th>");
+echo("<th>nv°17</th>");
+echo("<th>nv°18</th>");
+echo("</tr>\n");
+
+foreach($champ_sort as $key => $value){
+
+    if($key == "Nom" ||$key == "id"){
+
+    } elseif($key == "1" ){
+        echo("<tr>");
+        echo("<td>");
+        echo("$value");
+        echo("</td>");
+        
+    } elseif($key == "18" ){
+        echo("<td>");
+        echo("$value");
+        echo("</td>");
+        echo("</tr>");
+
+    } else{
+        echo("<td>");
+        echo("$value");
+        echo("<td>");
+    }
+}
+echo("</table>");  
+
+/*
 echo("<p><strong>Ordre des sorts à ameliorer : </strong></p>\n");
 echo("<img class='sorts' src='../image/sorts/$nom.png'>\n");
+*/
 ?>
 </div>
 

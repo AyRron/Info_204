@@ -34,6 +34,7 @@ function delete_sort($conn, $id){
 function affiche_sort($conn, $nom){
 	$sql="SELECT * FROM `sort` WHERE `nom`='$nom'" ;
 	if($ret=mysqli_query($conn, $sql)){
+		var_dump($ret);
 		$ret=mysqli_fetch_assoc($ret);
 	} else{
 		echo("Les sort de ce personages n'existent pas");
