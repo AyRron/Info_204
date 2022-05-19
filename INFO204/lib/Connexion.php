@@ -29,16 +29,32 @@ if(isset($_POST["login"])){
 
 include 'disconnect.php';
 ?>
-<html>
-	<head>
-	<meta charset="UTF-8">
-	</head>
 
-	<body>
-	<form method="POST" action="Connexion.php">
-	Login:	<input type="text" name="login">
-	Password:	<input type="password" name="password">
-		<input type="submit" value="Envoyer" >
-	</form>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="../CSS/style_connexion.css">
+    <title>Connexion</title>
+</head>
+
+<body>
+
+<div class="container">
+<form >
+	<p>Connexion</p>
+	<input type="text" name="login" placeholder="Identifiant"><br>
+	<input type="password" name="password" placeholder="Mot de passe"><br>
+	<input type="submit" value="Envoyer"><br>
+</form>
+
+<div class="drop drop-1"></div>
+<div class="drop drop-2"></div>
+<div class="drop drop-3"></div>
+<div class="drop drop-4"></div>
+<div class="drop drop-5"></div>
+</div>
+
+
+</body>
 </html>
