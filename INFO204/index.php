@@ -81,12 +81,12 @@ echo('	back3.classList.add("back");');
 echo('}');
 
 echo('function connexion(){');
-echo('	window.location.href="http://os-vps418.infomaniak.ch:1180/l1_info_3/www/lib/Connexion.php"');
+echo('	window.location.href="http://localhost/INFO204/lib/Connexion.php"');
 echo('}');
 
 
 echo('function creation(){');
-echo('	window.location.href="http://os-vps418.infomaniak.ch:1180/l1_info_3/www/lib/Nouvel_utilisateur.php"');
+echo('	window.location.href="http://localhost/INFO204/lib/Connexion.php"');
 echo('}');
 
 echo('function closePopup(){');
