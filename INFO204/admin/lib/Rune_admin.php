@@ -104,7 +104,7 @@
 		
 		echo("<table>");
 		echo("<tr>");
-    echo("<td>Id de la Rune : </td>");
+    	echo("<td>Id de la Rune : </td>");
 		echo("<td>Nom de la Rune : </td>");
 		echo("<td>Description de la Rune : </td>");
 		echo("</tr>");

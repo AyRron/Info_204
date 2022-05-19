@@ -61,7 +61,7 @@
             
         } elseif($key == "S1" || $key == "S2" ){
             if($key == "S1"){
-                echo("<td>\n");
+                echo("<th>\n");
                 echo("<img src='../image/runes/$value.webp'>\n");
                 $nom_item=str_replace("_", " ", $value);
                 echo("<p>$nom_item</p>\n");
@@ -69,14 +69,14 @@
                 echo("<img src='../image/runes/$value.webp'>\n");
                 $nom_item=str_replace("_", " ", $value);
                 echo("<p>$nom_item</p>\n");
-                echo("</td>\n");
+                echo("</th>\n");
                 echo("</tr>\n");
             }
 
         } elseif($key == "sup1" || $key == "sup3" ){
             if($key == "sup1"){
                 echo("<tr>\n");
-                echo("<td>\n");
+                echo("<th>\n");
                 echo("<img src='../image/runes/$value.webp'>\n");
                 $nom_item=str_replace("_", " ", $value);
                 echo("<p>$nom_item</p>\n");
@@ -84,7 +84,7 @@
                 echo("<img src='../image/runes/$value.webp'>\n");
                 $nom_item=str_replace("_", " ", $value);
                 echo("<p>$nom_item</p>\n");
-                echo("</td>\n");
+                echo("</th>\n");
                 echo("</tr>\n");
             }
         
@@ -121,70 +121,70 @@ $champ_item=affiche_item_nom($conn, $nom);
 
         if($key == "starting_item"){
             echo("<tr>\n");
-            echo("<td>\n");
+            echo("<th>\n");
             echo("<img src='../image/items/starter_item/$value.webp'>\n");
             $nom_item=str_replace("_", " ", $value);
             echo("<p>$nom_item</p>\n");
-            echo("</td>\n");
+            echo("</th>\n");
          
         } elseif($key == "bottes" ){
-            echo("<td>\n");
+            echo("<th>\n");
             echo("<img src='../image/items/bottes/$value.webp'>\n");
             $nom_item=str_replace("_", " ", $value);
             echo("<p>$nom_item</p>\n");
-            echo("</td>\n");
+            echo("</th>\n");
             echo("</tr>\n");
             
         } elseif($key == "mythique" || $key == "core1" || $key == "core2" ){
             if($key == "mythique"){
                 echo("<tr>\n");
-                echo("<td>\n");
+                echo("<th>\n");
                 echo("<img src='../image/items/TOUT/$value.webp'>\n");
                 $nom_item=str_replace("_", " ", $value);
                 echo("<p>$nom_item</p>\n");
-                echo("</td>\n");
+                echo("</th>");
             } elseif($key == "core1"){
-                echo("<td>\n");
+                echo("<th>\n");
                 echo("<img src='../image/items/TOUT/$value.webp'>\n");
                 $nom_item=str_replace("_", " ", $value);
                 echo("<p>$nom_item</p>\n");
-                echo("</td>\n");               
+                echo("</th>\n");               
             } else{
-                echo("<td>\n");
+                echo("<th>\n");
                 echo("<img src='../image/items/TOUT/$value.webp'>\n");
                 $nom_item=str_replace("_", " ", $value);
                 echo("<p>$nom_item</p>\n");
-                echo("</td>\n"); 
+                echo("</th>\n"); 
 				echo("</tr>\n");
             }
 
         } elseif($key == "option1" || $key == "option2" || $key == "option3" ){
             if($key == "option1	"){
                 echo("<tr>\n");
-                echo("<td>\n");
+                echo("<th>\n");
                 echo("<img src='../image/items/TOUT/$value.webp'>\n");
                 $nom_item=str_replace("_", " ", $value);
                 echo("<p>$nom_item</p>\n");
-                echo("</td>\n");
+                echo("</th>\n");
             } elseif($key == "option3"){
-                echo("<td>\n");
+                echo("<th>\n");
                 echo("<img src='../image/items/TOUT/$value.webp'>\n");
                 $nom_item=str_replace("_", " ", $value);
                 echo("<p>$nom_item</p>\n");
-                echo("</td>\n");
+                echo("</th>\n");
                 echo("</tr>\n");
             } else{
-                echo("<td>\n");
+                echo("<th>\n");
                 echo("<img src='../image/items/TOUT/$value.webp'>\n");
                 $nom_item=str_replace("_", " ", $value);
                 echo("<p>$nom_item</p>\n");
-                echo("</td>\n");
+                echo("</th>\n");
             }
         }
     }
 echo("</table>\n");   
 
-echo("<p>Ordre des sorts à ameliorer : </p>\n");
+echo("<p><strong>Ordre des sorts à ameliorer : </strong></p>\n");
 echo("<img class='sorts' src='../image/sorts/$nom.png'>\n");
 
 include 'disconnect.php';

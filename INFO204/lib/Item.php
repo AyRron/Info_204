@@ -337,12 +337,12 @@
 
 <table class="mythique">
     <tr>
-        </th><img class="support" src="../image/items/support/Chant_de_guerre_de_Shurelya.webp" /></th>
-        </th><img class="support" src="../image/items/support/Mandat_imperial.webp" /></th>
-        </th><img class="support" src="../image/items/support/Regenerateur_de_pierre_de_lune.webp" /></th>
-        </th><img class="support" src="../image/items/support/Linceul_de_la_congruence.webp" /></th>
-        </th><img class="support" src="../image/items/support/Medaillon_de_l_Iron_Solari.webp" /></th>
-        </th><img class="support" src="../image/items/support/Chimico-scaphandre_turbo.webp" /></th>
+        <th><img class="support" src="../image/items/support/Chant_de_guerre_de_Shurelya.webp" /></th>
+        <th><img class="support" src="../image/items/support/Mandat_imperial.webp" /></th>
+        <th><img class="support" src="../image/items/support/Regenerateur_de_pierre_de_lune.webp" /></th>
+        <th><img class="support" src="../image/items/support/Linceul_de_la_congruence.webp" /></th>
+        <th><img class="support" src="../image/items/support/Medaillon_de_l_Iron_Solari.webp" /></th>
+        <th><img class="support" src="../image/items/support/Chimico-scaphandre_turbo.webp" /></th>
     </tr>
     <tr>
         <th><p>Chant de guerre de Shurelya</p></th>
