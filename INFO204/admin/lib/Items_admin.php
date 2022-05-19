@@ -225,28 +225,32 @@
 
 	$result=mysqli_query($conn,"SELECT * FROM `item`");
 		
-		echo("<table>");
+		echo("<table id='tabitem'>");
+		echo("<thead>");
 		echo("<tr>");
-		echo("<td>Id du Champion : </td>");
-		echo("<td>Nom Du Champion : </td>");
-		echo("<td>Item de départ : </td>");
-		echo("<td>Item mythique : </td>");
-		echo("<td>Core items : </td>");
-		echo("<td>Bottes: </td>");
-		echo("<td>Items secondaires : </td>");
+		echo("<th>Id du Champion : </th>");
+		echo("<th>Nom Du Champion : </th>");
+		echo("<th>Item de départ : </th>");
+		echo("<th>Item mythique : </th>");
+		echo("<th>Core items : </th>");
+		echo("<th>Bottes : </th>");
+		echo("<th>Items secondaires : </th>");
 		echo("</tr>");
+		echo("</thead>");
+		echo("<tbody>");
 		
 		while($row = mysqli_fetch_assoc($result)){
 			echo("<tr>");
-			echo("<td>$row[id]</td>");
-			echo("<td>$row[nom] </td>");
-			echo("<td>$row[starting_item] </td>");
-			echo("<td>$row[mythique] </td>");
-			echo("<td>$row[core1] / $row[core2]</td>");
-			echo("<td>$row[bottes]</td>"); 
-			echo("<td>$row[option1] / $row[option2] / $row[option3]</td>");
+			echo("<td data-label='Id du Champion :'>$row[id]</td>");
+			echo("<td data-label='Nom Du Champion :'>$row[nom] </td>");
+			echo("<td data-label='Item de départ :'>$row[starting_item] </td>");
+			echo("<td data-label='Item mythique :'>$row[mythique] </td>");
+			echo("<td data-label='Core items :'>$row[core1] / $row[core2]</td>");
+			echo("<td data-label='Bottes :'>$row[bottes]</td>"); 
+			echo("<td data-label='Items secondaires :'>$row[option1] / $row[option2] / $row[option3]</td>");
 			echo("</tr>");
 		}
+		echo("</tbody>");
 		echo("</table>");
 	?>	
 </body>

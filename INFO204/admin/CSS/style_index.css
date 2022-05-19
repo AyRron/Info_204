@@ -234,3 +234,52 @@ tr:nth-child(odd) {
     margin-bottom: 1rem;
   }
 }
+
+#tabitem table,
+#tabitem thead,
+#tabitem tbody,
+#tabitem tr,
+#tabitem th,
+#tabitem td {
+  display: block;
+}
+
+#tabitem table {
+  background-color: var(--main);
+}
+
+#tabitem thead {
+  display: none;
+}
+
+#tabitem td {
+  padding-left: 220px;
+  position: relative;
+  background-color: #505050;
+}
+
+#tabitem td:nth-child(odd) {
+  background-color: #909090;
+}
+
+#tabitem td:nth-child(event) {
+  background-color: #505050;
+}
+
+#tabitem td::before {
+  padding: 10px;
+  content: attr(data-label);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  bottom: 0;
+  background-color: var(--main);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#tabitem tr {
+  margin-bottom: 1rem;
+}
