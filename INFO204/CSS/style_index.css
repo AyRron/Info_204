@@ -334,9 +334,13 @@ footer > a {
 }
 
 #items {
-  border: 1px solid var(--second);
+  width: 50%;
+  height: 50%;
+  position: absolute;
   padding: 1em;
   margin: 1em;
+  right: 15%;
+  top: 11.2%;
 }
 
 #sorts {
@@ -346,9 +350,11 @@ footer > a {
 }
 
 #matchups {
-  border: 1px solid var(--second);
+  position: absolute;
   padding: 1em;
   margin: 1em;
+  right: 15%;
+  top: 61%;
 }
 
 #tms table {
