@@ -210,23 +210,27 @@
 	<?php
 	if (isset($_POST["nom_search"])) {
 		$nom = $_POST["nom_search"];
-        $result=mysqli_query($conn,"SELECT * FROM `sort` WHERE `nom`='$nom'");
+    $result=mysqli_query($conn,"SELECT * FROM `sort` WHERE `nom`='$nom'");
 
-        echo("<table>");
-		echo("<tr>");
-    	echo("<td>Id de l'Ordre des Sorts : </td>");
-		echo("<td>Nom du Champion : </td>");
-		echo("<td>Ordre des Sorts : </td>");
-		echo("</tr>");
+      echo("<table>");
+      echo("<thead>");
+      echo("<tr>");
+      echo("<th>Id de l'Ordre des Sorts : </th>");
+      echo("<th>Nom du Champion : </th>");
+      echo("<th>Ordre des Sorts : </th>");
+      echo("</tr>");
+      echo("</thead>");
+      echo("<tbody>");
 		
-		while($row = mysqli_fetch_assoc($result)){
-			echo("<tr>");
-			echo("<td>$row[id]</td>");
-			echo("<td>$row[Nom]</td>");
-			echo("<td>$row[1]$row[2]$row[3]$row[4]$row[5]$row[6]$row[7]$row[8]$row[9]$row[10]$row[11]$row[12]$row[13]$row[14]$row[15]$row[16]$row[17]$row[18]</td>");
-			echo("</tr>");
-		}
-		echo("</table>");
+      while($row = mysqli_fetch_assoc($result)){
+        echo("<tr>");
+        echo("<td data-label='Id de l'Ordre des Sorts :'>$row[id]</td>");
+        echo("<td data-label='Nom du Champion :'>$row[Nom]</td>");
+        echo("<td data-label='Ordre des Sorts :'>$row[1]$row[2]$row[3]$row[4]$row[5]$row[6]$row[7]$row[8]$row[9]$row[10]$row[11]$row[12]$row[13]$row[14]$row[15]$row[16]$row[17]$row[18]</td>");
+        echo("</tr>");
+	  	}
+      echo("</tbody>");
+      echo("</table>");
 
 
 		}
@@ -239,22 +243,23 @@
 	$result=mysqli_query($conn,"SELECT * FROM `sort`");
 		
 		echo("<table>");
+    echo("<thead>");
 		echo("<tr>");
-    	echo("<td>Id de l'Ordre des Sorts : </td>");
-		echo("<td>Nom du Champion : </td>");
-		echo("<td>Ordre des Sorts : </td>");
+    echo("<th>Id de l'Ordre des Sorts : </th>");
+		echo("<th>Nom du Champion : </th>");
+		echo("<th>Ordre des Sorts : </th>");
 		echo("</tr>");
+    echo("</thead>");
+    echo("<tbody>");
 		
 		while($row = mysqli_fetch_assoc($result)){
-			echo("<tr>");
-			echo("<td>$row[id]</td>");
-			echo("<td>$row[Nom]</td>");
-			echo("<td>$row[1] $row[2]$row[3]$row[4]$row[5]
-                $row[6]$row[7]$row[8]$row[9]$row[10]
-                $row[11]$row[12]$row[13]$row[14]$row[15]
-                $row[16]$row[17]$row[18]</td>");
-			echo("</tr>");
+      echo("<tr>");
+      echo("<td data-label='Id de l'Ordre des Sorts :'>$row[id]</td>");
+      echo("<td data-label='Nom du Champion :'>$row[Nom]</td>");
+      echo("<td data-label='Ordre des Sorts :'>$row[1]$row[2]$row[3]$row[4]$row[5]$row[6]$row[7]$row[8]$row[9]$row[10]$row[11]$row[12]$row[13]$row[14]$row[15]$row[16]$row[17]$row[18]</td>");
+      echo("</tr>");
 		}
+    echo("</tbody>");
 		echo("</table>");
 	?>
 </body>

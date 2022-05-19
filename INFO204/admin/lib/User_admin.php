@@ -138,10 +138,10 @@
 
 			while($row = mysqli_fetch_assoc($info)){
 				echo("<tr>");
-				echo("<td>$row[id]</td>");
-				echo("<td>$row[Pseudo]</td>");
-				echo("<td>$row[Mdp]</td>");
-				echo("<td>$row[Droit]</td>");
+				echo("<td data-label='Id :'>$row[id]</td>");
+				echo("<td data-label='Pseudo :'>$row[Pseudo]</td>");
+				echo("<td data-label='Mot de passe :'>$row[Mdp]</td>");
+				echo("<td data-label='Droit :'>$row[Droit]</td>");
 				echo("</tr>");
 			}
 			echo("</tbody>");
@@ -173,10 +173,9 @@
 		
 		while($row = mysqli_fetch_assoc($result)){
 			echo("<tr>");
-            echo("<td>$row[id]</td>");
-            echo("<td>$row[Pseudo]</td>");
-            echo("<td>$row[Mdp]</td>");
-            echo("<td>$row[Droit]</td>");
+			echo("<td data-label='Id de l'Ordre des Sorts :'>$row[id]</td>");
+			echo("<td data-label='Nom du Champion :'>$row[Nom]</td>");
+			echo("<td data-label='Ordre des Sorts :'>$row[1]$row[2]$row[3]$row[4]$row[5]$row[6]$row[7]$row[8]$row[9]$row[10]$row[11]$row[12]$row[13]$row[14]$row[15]$row[16]$row[17]$row[18]</td>");
 			echo("</tr>");
 		}
 		echo("</tbody>");

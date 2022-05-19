@@ -179,26 +179,26 @@
 			echo("<table>");
 			echo("<thead>");
 			echo("<tr>");
-			echo("<td>Id des Items : </td>");
-			echo("<td>Nom Du Champion : </td>");
-			echo("<td>Objet de départ : </td>");
-			echo("<td>Bottes : </td>");
-			echo("<td>Objet Mythique : </td>");
-			echo("<td>Items principales : </td>");
-			echo("<td>Items Situationnelles : </td>");
+			echo("<th>Id des Items : </th>");
+			echo("<th>Nom Du Champion : </th>");
+			echo("<th>Objet de départ : </th>");
+			echo("<th>Bottes : </th>");
+			echo("<th>Objet Mythique : </th>");
+			echo("<th>Items principales : </th>");
+			echo("<th>Items Situationnelles : </th>");
 			echo("</tr>");
 			echo("</thead>");
 			echo("<tbody>");
 
 			while($row = mysqli_fetch_assoc($info)){
 				echo("<tr>");
-				echo("<td>$row[id]</td>");
-				echo("<td>$row[nom] </td>");
-				echo("<td>$row[starting_item]</td>");
-				echo("<td>$row[bottes]</td>");
-				echo("<td>$row[mythique]</td>");
-				echo("<td>$row[core1] $row[core2]</td>");
-				echo("<td>$row[option1] $row[option2] $row[option3]</td>");
+				echo("<td data-label='Id du Champion :'>$row[id]</td>");
+				echo("<td data-label='Nom Du Champion :'>$row[nom] </td>");
+				echo("<td data-label='Item de départ :'>$row[starting_item] </td>");
+				echo("<td data-label='Item mythique :'>$row[mythique] </td>");
+				echo("<td data-label='Core items :'>$row[core1] / $row[core2]</td>");
+				echo("<td data-label='Bottes :'>$row[bottes]</td>"); 
+				echo("<td data-label='Items secondaires :'>$row[option1] / $row[option2] / $row[option3]</td>");
 				echo("</tr>");
 			}
 			echo("</tbody>");
@@ -209,21 +209,6 @@
 		
 		}
 	?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	<?php
 
