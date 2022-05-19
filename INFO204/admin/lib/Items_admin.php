@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="../CSS/style_index.css">
   <link rel="icon" href="../image/league.png">
 </head>
-
 <body>
 <header>
 	<a href="../index_admin.php?action=disconnect">Deconnexion</a>
