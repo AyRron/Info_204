@@ -126,12 +126,15 @@
 
 		if(mysqli_num_rows($info)>0){ 
 			echo("<table>");
+			echo("<thead>");
 			echo("<tr>");
-			echo("<td>Id : </td>");
-			echo("<td>Pseudo : </td>");
-			echo("<td>Mot de passe : </td>");
-			echo("<td>Droit : </td>");
+			echo("<th>Id : </th>");
+			echo("<th>Pseudo : </th>");
+			echo("<th>Mot de passe : </th>");
+			echo("<th>Droit : </th>");
 			echo("</tr>");
+			echo("</thead>");
+			echo("<tbody>");
 
 			while($row = mysqli_fetch_assoc($info)){
 				echo("<tr>");
@@ -141,6 +144,7 @@
 				echo("<td>$row[Droit]</td>");
 				echo("</tr>");
 			}
+			echo("</tbody>");
 			echo("</table>");
 		} else{
 			echo("Champion non trouvé");

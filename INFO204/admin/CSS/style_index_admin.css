@@ -62,3 +62,7 @@ nav ul li:hover {
   background-color: var(--main);
   color: var(--second);
 }
+
+footer a {
+  padding: 0 5px;
+}

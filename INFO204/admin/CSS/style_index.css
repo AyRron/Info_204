@@ -151,6 +151,7 @@ header > a {
 #deleteuser .container form .form_delete input,
 #deleteuser .container form .delete input,
 #searchuser .container form .form_search input,
+#searchuser .container form .search input,
 #newsort .container form .nom input,
 #newsort .container form .create input,
 #updatesort .container form .nom input,
