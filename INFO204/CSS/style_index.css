@@ -28,7 +28,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -154,7 +154,7 @@ footer > a {
   }
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 920px) {
   .navigation {
     flex-direction: column;
   }
@@ -162,9 +162,18 @@ footer > a {
   .logo-lien {
     margin-right: 0px;
   }
+
+  .head-group h2 {
+    width: fit-content;
+    position: relative;
+    font-family: "BEYNO";
+    font-size: 60px;
+    z-index: 1;
+    color: var(--second);
+  }
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 770px) {
   .nav-lien:link,
   .nav-lien:visited {
     display: block;
@@ -186,6 +195,15 @@ footer > a {
     color: white;
     text-decoration: none;
   }
+
+  .head-group h2 {
+    width: fit-content;
+    position: relative;
+    font-family: "BEYNO";
+    font-size: 80px;
+    z-index: 1;
+    color: var(--second);
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -198,6 +216,15 @@ footer > a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  .head-group h2 {
+    width: fit-content;
+    position: relative;
+    font-family: "BEYNO";
+    font-size: 70px;
+    z-index: 1;
+    color: var(--second);
   }
 }
 
@@ -228,6 +255,7 @@ footer > a {
   filter: blur(5px) grayscale(90%);
   pointer-events: none;
 }
+
 .popup h2 {
   font-size: 38px;
   font-weight: 500;
@@ -310,16 +338,6 @@ footer > a {
   margin: 50px auto;
   height: 228px;
   position: relative;
-}
-
-.head-group h2 {
-  background-color: var(--main);
-  width: fit-content;
-  position: relative;
-  font-family: "BEYNO";
-  font-size: 80px;
-  z-index: 1;
-  color: var(--second);
 }
 
 .line {
