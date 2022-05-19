@@ -132,10 +132,10 @@ footer > a {
   color: black;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 2000px) {
   .nav-lien:link,
   .nav-lien:visited {
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px;
   }
   .navigation {
@@ -147,7 +147,7 @@ footer > a {
   }
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 940px) {
   .navigation {
     flex-direction: column;
   }
@@ -166,7 +166,7 @@ footer > a {
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 790px) {
   .nav-lien:link,
   .nav-lien:visited {
     display: block;
@@ -323,45 +323,42 @@ footer > a {
   width: 36%;
 }
 
-.contenu img{
-	cursor: pointer;
+.contenu img {
+  cursor: pointer;
 }
 
-
-
 #runes {
-	border: 1px solid var(--second);
-	padding: 1em;
-	margin: 1em;
+  border: 1px solid var(--second);
+  padding: 1em;
+  margin: 1em;
 }
 
 #items {
-	border: 1px solid var(--second);
-	padding: 1em;
-	margin: 1em;
+  border: 1px solid var(--second);
+  padding: 1em;
+  margin: 1em;
 }
 
 #sorts {
-	border: 1px solid var(--second);
-	padding: 1em;
-	margin: 1em;
+  border: 1px solid var(--second);
+  padding: 1em;
+  margin: 1em;
 }
 
 #matchups {
-	border: 1px solid var(--second);
-	padding: 1em;
-	margin: 1em;
+  border: 1px solid var(--second);
+  padding: 1em;
+  margin: 1em;
 }
 
-#tms table{
-	padding: 1em;
+#tms table {
+  padding: 1em;
 }
 
-#tms h2{
-	padding-left: 1em;
+#tms h2 {
+  padding-left: 1em;
 }
 
-#tms h3{
-	padding-left: 1em;
+#tms h3 {
+  padding-left: 1em;
 }
-

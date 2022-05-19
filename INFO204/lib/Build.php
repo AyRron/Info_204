@@ -21,7 +21,7 @@
 </nav>
 </header>
 
-<body class="bld" id="page_build">
+<body>
 <?php 
     include 'connect.php';
     include '../admin/lib/Build.crud.php';
