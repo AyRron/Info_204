@@ -60,7 +60,7 @@ function select_user($conn, $id){
 
 
 /*
-	Selectionne tout les Utilisateurs
+	Selectionne tous les Utilisateurs
 */
 function select_all_user($conn){
 	$sql="SELECT * FROM `utilisateur`" ;

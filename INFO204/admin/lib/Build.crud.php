@@ -59,7 +59,7 @@ function select_build($conn, $id){
 
 
 /*
-	Selectionne tout les Champions
+	Selectionne tous les Champions
 */
 function select_all_build($conn){
 	$sql="SELECT * FROM `build`" ;
