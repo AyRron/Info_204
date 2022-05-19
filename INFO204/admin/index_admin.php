@@ -1,5 +1,5 @@
 <?php
-include '../../lib/connect.php';
+include '../lib/connect.php';
 session_start() ; 
 if(isset($_GET["action"])){
 	$action=$_GET["action"] ;
@@ -61,5 +61,5 @@ if(isset($_GET["action"])){
 
 
 <?php
-include 'lib/disconnect.php';
+include '../lib/disconnect.php';
 ?>
