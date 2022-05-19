@@ -24,7 +24,9 @@ body {
 #newbuild,
 #updatebuild,
 #deletebuild,
-#searchbuild {
+#searchbuild,
+#newitem,
+#updateitem {
   background-color: rgb(33, 33, 33);
   padding: 25px 0;
 }
@@ -32,7 +34,9 @@ body {
 #newbuild .container,
 #updatebuild .container,
 #deletebuild .container,
-#searchbuild .container {
+#searchbuild .container,
+#newitem .container,
+#updateitem .container {
   max-width: 1100px;
   margin: 0px auto;
   display: flex;
@@ -49,7 +53,9 @@ body {
 #newbuild .container .title,
 #updatebuild .container .title,
 #deletebuild .container .title,
-#searchbuild .container .title {
+#searchbuild .container .title,
+#newitem .container .title,
+#update .container .title {
   font-size: 1.8em;
   text-align: center;
   margin-bottom: 50px;
@@ -58,7 +64,9 @@ body {
 #newbuild .container form,
 #updatebuild .container form,
 #deletebuild .container form,
-#searchbuild .container form {
+#searchbuild .container form,
+#newitem .container form,
+#updateitem .container form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -67,14 +75,15 @@ body {
 
 #newbuild .container form .nom input,
 #deletebuild .container form .nom input,
-#searchbuild .container form .nom input {
+#searchbuild .container form .nom input,
+#newbuild .container form .creat input,
+#updatebuild .container form .creat input,
+#deletebuild .container form .delete input,
+#searchbuild .container form .search input,
+#newitem .container form .nom input,
+#newitem .container form .create input,
+#updateitem .container form .update input {
   width: 100%;
-  margin: 5px;
-  padding: 5px;
-}
-
-#updatebuild .container form .idnom input {
-  width: 50%;
   margin: 5px;
   padding: 5px;
 }
@@ -87,24 +96,23 @@ body {
 }
 
 #newbuild .container form .second input,
-#updatebuild .container form .second input {
+#updatebuild .container form .idnom input,
+#updatebuild .container form .second input,
+#newitem .container form .core input,
+#updateitem .container form .idnom input,
+#updateitem .container form .core input {
   width: 50%;
   margin: 5px;
   padding: 5px;
 }
 
 #newbuild .container form .ajust input,
-#updatebuild .container form .ajust input {
+#updatebuild .container form .ajust input,
+#newitem .container form .start input,
+#newitem .container form .option input,
+#updateitem .container form .start input,
+#updateitem .container form .option input {
   width: 33%;
-  margin: 5px;
-  padding: 5px;
-}
-
-#newbuild .container form .creat input,
-#updatebuild .container form .creat input,
-#deletebuild .container form .delete input,
-#searchbuild .container form .search input {
-  width: 100%;
   margin: 5px;
   padding: 5px;
 }
@@ -112,7 +120,9 @@ body {
 #newbuild .container form div,
 #updatebuild .container form div,
 #deletebuild .container form div,
-#searchbuild .container form div {
+#searchbuild .container form div,
+#newitem .container form div,
+#updateitem .container form div {
   margin: 10px 0;
   padding: 10px;
   border: none;
@@ -122,19 +132,29 @@ body {
 }
 
 #newbuild .container form .nom,
+#newbuild .container form .fondament,
+#newbuild .container form .second,
+#newbuild .container form .ajust,
+#newbuild .container form .creat,
 #updatebuild .container form .idnom,
 #deletebuild .container form .nom,
 #searchbuild .container form .nom,
-#newbuild .container form .fondament,
 #updatebuild .container form .fondament,
-#newbuild .container form .second,
 #updatebuild .container form .second,
-#newbuild .container form .ajust,
 #updatebuild .container form .ajust,
-#newbuild .container form .creat,
 #updatebuild .container form .creat,
 #deletebuild .container form .delete,
-#searchbuild .container form .search {
+#searchbuild .container form .search,
+#newitem .container form .nom,
+#newitem .container form .core,
+#newitem .container form .start,
+#newitem .container form .option,
+#newitem .container form .create,
+#updateitem .container form .idnom,
+#updateitem .container form .start,
+#updateitem .container form .core,
+#updateitem .container form .option,
+#updateitem .container form .update {
   width: 100%;
   display: flex;
   flex-direction: row;

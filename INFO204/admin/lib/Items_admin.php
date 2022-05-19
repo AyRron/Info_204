@@ -18,30 +18,38 @@
 	<h1>Tous les items :</h1>
 </header>
 
-<section id="newbuild">
-	<div class="container">
-		<div class="title">
-			<h3>Créer un nouveau build d'items :</h3>
-		</div>
-		<form method="post" action="Items_admin.php">
-			<input type="text" name="nom_create" placeholder="Nom...">
-			<input type="text" name="starting_item_create" placeholder="Item de départ:">
-			
-			<input type="text" name="Mythique_create" placeholder="Item mythique:">
-			<input type="text" name="Bottes_create" placeholder="Bottes:">
-			<input type="text" name="Core1_create" placeholder="Core item 1:">
-			<input type="text" name="Core2_create" placeholder="Core item 2:">
+<section id="newitem">
+      <div class="container">
+        <div class="title">
+          <h3>Créer un nouveau build d'items :</h3>
+        </div>
+        <form method="post" action="Items_admin.php">
+          <div class="nom">
+            <input type="text" name="nom_create" placeholder="Nom..." />
+          </div>
+          
+          <div class="start">
+            <input type="text" name="starting_item_create" placeholder="Item de départ:" />
+            <input type="text" name="Mythique_create" placeholder="Item mythique:" />
+            <input type="text" name="Bottes_create" placeholder="Bottes:" />
+          </div>
 
-			<input type="text" name="Option1_create" placeholder="Item secondaire 1:">
-			<input type="text" name="Option2_create" placeholder="Item secondaire 2:">
-			<input type="text" name="Option3_create" placeholder="Item secondaire 3:">
-			
+          <div class="core">
+            <input type="text" name="Core1_create" placeholder="Core item 1:" />
+            <input type="text" name="Core2_create" placeholder="Core item 2:" />
+          </div>
 
+          <div class="option">
+            <input type="text" name="Option1_create" placeholder="Item secondaire 1:" />
+            <input type="text" name="Option2_create" placeholder="Item secondaire 2:" />
+            <input type="text" name="Option3_create" placeholder="Item secondaire 3:" />
+          </div>
 
-			<input type="submit" value="Créer">
-		</form>
-	</div>
-
+          <div class="create">
+            <input type="submit" value="Créer" />
+          </div>
+        </form>
+      </div>
 </section>
 
 	<?php
@@ -64,36 +72,44 @@
 
 
 
+<section id="updateitem">
+	<div class="container">
+		<div class="title">
+			<h3>Modifier un Build :</h3>
+		</div>
+		<form method="post" action="Items_admin.php">
+			<div class="idnom">
+				<input type="number" name="id_mod">
+				<input type="text" name="nom_mod">
+			</div>
 
-	<form method="post" action="Items_admin.php">
-	Modifier un Build :
-	<table>
-		<tr>
-			<td>Id et Nom : </td>
-			<td><input type="number" name="id_mod"></td>
-			<td><input type="text" name="nom_mod"></td>
-		</tr>
-		<tr>
-			<td>Item de départ : </td>
-			<td><input type="text" name="starting_item_mod"></td>
-		</tr>
-		<tr>
-			<td>Cores items: </td>
-			<td><input type="text" name="Mythique_mod"></td>
-			<td><input type="text" name="Bottes_mod"></td>
-			<td><input type="text" name="core1_mod"></td>
-			<td><input type="text" name="core2_mod"></td>
-		</tr>
-		<tr>
-			<td>Items secondaires : </td>
-			<td><input type="text" name="option1_mod"></td>
-			<td><input type="text" name="option2_mod"></td>
-			<td><input type="text" name="option3_mod"></td>
-		</tr>
-	</table>
+			<div class="start">
+            <input type="text" name="starting_item_create" placeholder="Item de départ:" />
+            <input type="text" name="Mythique_create" placeholder="Item mythique:" />
+            <input type="text" name="Bottes_create" placeholder="Bottes:" />
+          </div>
 
-	<input type="submit" value="Modifier">
+          <div class="core">
+            <input type="text" name="Core1_create" placeholder="Core item 1:" />
+            <input type="text" name="Core2_create" placeholder="Core item 2:" />
+          </div>
+
+          <div class="option">
+            <input type="text" name="Option1_create" placeholder="Item secondaire 1:" />
+            <input type="text" name="Option2_create" placeholder="Item secondaire 2:" />
+            <input type="text" name="Option3_create" placeholder="Item secondaire 3:" />
+          </div>
+		<div class="update">
+			<input type="submit" value="Modifier">
+		</div>
 	</form>
+	</div>
+</section>
+
+
+
+
+
 	<?php
 	if (isset($_POST["id_mod"])) {
 		$id =$_POST["id_mod"];
