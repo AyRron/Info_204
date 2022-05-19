@@ -1,5 +1,5 @@
 <?php
-include 'lib/connect.php';
+include '../../lib/connect.php';
 session_start() ; 
 if(isset($_GET["action"])){
 	$action=$_GET["action"] ;
