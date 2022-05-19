@@ -21,6 +21,20 @@ body {
   width: 100%;
 }
 
+.header-admin{
+  background-color: var(--second);
+  border-radius: 5px;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-admin > a{
+  text-decoration: none;
+  color: black;
+}
+
 #newbuild,
 #updatebuild,
 #deletebuild,
@@ -307,3 +321,5 @@ tr:nth-child(odd) {
 #tabitem tr {
   margin-bottom: 1rem;
 }
+
+

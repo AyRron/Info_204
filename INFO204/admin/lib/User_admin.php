@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<header>
+<header class="header-admin">
 	<a href="../index_admin.php?action=disconnect">Deconnexion</a>
 	<a href="../index_admin.php">Retour à la page d'accueil</a>
     <?php
