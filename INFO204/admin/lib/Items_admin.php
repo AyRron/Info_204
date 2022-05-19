@@ -132,20 +132,17 @@
 		<div class="title">
 			<h3>Supprimer un Item :</h3>
 		</div>
-	<form method="post" action="Items_admin.php">
-		<div class="nom">
-			<input type="text" name="nom_sup" placeholder="Nom...">
-		</div>
+		<form method="post" action="Items_admin.php">
+			<div class="nom">
+				<input type="text" name="nom_sup" placeholder="Nom...">
+			</div>
 
-		<div class="delete">
-			<input type="submit" value="Supprimer">
+        <div class="delete">
+		<input type="submit" value="Supprimer">
 		</div>
-
 	</form>
 	</div>
 </section>
-
-
 
 	<?php
 	if (isset($_POST["nom_sup"])) {
@@ -156,7 +153,7 @@
 
 
 
-<section id="searchitem">
+<section id="searchItem">
 	<div class="container">
 		<div class="title">
 			<h3>Chercher un Item :</h3>
