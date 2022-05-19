@@ -127,18 +127,26 @@
 	?>
 
 
+<section id="deleteitem">
+	<div class="container">
+		<div class="title">
+			<h3>Supprimer un Item :</h3>
+		</div>
+	<form method="post" action="Items_admin.php">
+		<div class="nom">
+			<input type="text" name="nom_sup" placeholder="Nom...">
+		</div>
 
-<form method="post" action="Items_admin.php">
-	Supprimer un Item :
-	<table>
-		<tr>
-			<td>ID du build : </td>
-			<td><input type="text" name="nom_sup"></td>
-		</tr>
-	</table>
+		<div class="delete">
+			<input type="submit" value="Supprimer">
+		</div>
 
-	<input type="submit" value="Supprimer">
 	</form>
+	</div>
+</section>
+
+
+
 	<?php
 	if (isset($_POST["nom_sup"])) {
 		$nom = $_POST["nom_sup"];
@@ -148,7 +156,7 @@
 
 
 
-<section id="searchItem">
+<section id="searchitem">
 	<div class="container">
 		<div class="title">
 			<h3>Chercher un Item :</h3>

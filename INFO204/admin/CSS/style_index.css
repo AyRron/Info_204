@@ -26,7 +26,9 @@ body {
 #deletebuild,
 #searchbuild,
 #newitem,
-#updateitem {
+#updateitem,
+#deleteitem,
+#searchitem {
   padding: 25px 0;
 }
 
@@ -35,7 +37,9 @@ body {
 #deletebuild .container,
 #searchbuild .container,
 #newitem .container,
-#updateitem .container {
+#updateitem .container,
+#deleteitem .container,
+#searchitem .container {
   max-width: 1100px;
   margin: 0px auto;
   display: flex;
@@ -54,7 +58,9 @@ body {
 #deletebuild .container .title,
 #searchbuild .container .title,
 #newitem .container .title,
-#update .container .title {
+#update .container .title,
+#deleteitem .container .title,
+#searchitem .container .title {
   font-size: 1.8em;
   text-align: center;
   margin-bottom: 50px;
@@ -65,7 +71,9 @@ body {
 #deletebuild .container form,
 #searchbuild .container form,
 #newitem .container form,
-#updateitem .container form {
+#updateitem .container form,
+#deleteitem .container form,
+#searchitem .container form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -81,7 +89,11 @@ body {
 #searchbuild .container form .search input,
 #newitem .container form .nom input,
 #newitem .container form .create input,
-#updateitem .container form .update input {
+#updateitem .container form .update input,
+#deleteitem .container form .nom input,
+#deleteitem .container form .delete input,
+#searchitem .container form .nom input,
+#searchitem .container form .search input {
   width: 100%;
   margin: 5px;
   padding: 5px;
@@ -121,7 +133,9 @@ body {
 #deletebuild .container form div,
 #searchbuild .container form div,
 #newitem .container form div,
-#updateitem .container form div {
+#updateitem .container form div,
+#deleteitem .container form div,
+#searchitem .container form div {
   margin: 10px 0;
   padding: 10px;
   border: none;
@@ -153,7 +167,11 @@ body {
 #updateitem .container form .start,
 #updateitem .container form .core,
 #updateitem .container form .option,
-#updateitem .container form .update {
+#updateitem .container form .update,
+#deleteitem .container form .nom,
+#deleteitem .container form .delete,
+#searchitem .container form .nom,
+#searchitem .container form .search {
   width: 100%;
   display: flex;
   flex-direction: row;
