@@ -322,3 +322,7 @@ footer > a {
   height: 36%;
   width: 36%;
 }
+
+.contenu img{
+	cursor: pointer;
+}

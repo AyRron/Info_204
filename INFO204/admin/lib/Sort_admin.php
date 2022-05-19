@@ -18,38 +18,42 @@
 </header>
 
 
-<form method="post" action="Sort_admin.php">
-	Créer une nouvelle Rune :  
-	<table>
-		<tr>
-			<td>Nom : </td>
-			<td><input type="text" name="nom_create"></td>
-		</tr>
-		<tr>
-			<td>Ordre_Sorts : </td>
-			<td><input type="text" name="a"></td>
-            <td><input type="text" name="b"></td>
-            <td><input type="text" name="c"></td>
-            <td><input type="text" name="d"></td>
-            <td><input type="text" name="e"></td>
-            <td><input type="text" name="f"></td>
-            <td><input type="text" name="g"></td>
-            <td><input type="text" name="h"></td>
-            <td><input type="text" name="i"></td>
-            <td><input type="text" name="j"></td>
-            <td><input type="text" name="k"></td>
-            <td><input type="text" name="l"></td>
-            <td><input type="text" name="m"></td>
-            <td><input type="text" name="n"></td>
-            <td><input type="text" name="o"></td>
-            <td><input type="text" name="p"></td>
-            <td><input type="text" name="q"></td>
-            <td><input type="text" name="r"></td>
-		</tr>
-	</table>
-
-	<input type="submit" value="Créer">
-	</form>
+<section id="newsort">
+      <div class="container">
+        <div class="title">
+          <h3>Créer un nouvel ordre de Sort : :</h3>
+        </div>
+        <form method="post" action="Sort_admin.php">
+            <div class="nom">
+                <input type="text" name="nom_create">
+            </div>
+            <div class="ordre">
+            <input type="text" name="a">
+            <input type="text" name="b">
+            <input type="text" name="c">
+            <input type="text" name="d">
+            <input type="text" name="e">
+            <input type="text" name="f">
+            <input type="text" name="g">
+            <input type="text" name="h">
+            <input type="text" name="i">
+            <input type="text" name="j">
+            <input type="text" name="k">
+            <input type="text" name="l">
+            <input type="text" name="m">
+            <input type="text" name="n">
+            <input type="text" name="o">
+            <input type="text" name="p">
+            <input type="text" name="q">
+            <input type="text" name="r">
+          </div>
+          <div class="create">
+            <input type="submit" value="Créer" />
+          </div>
+          </form>
+      </div>
+</section>
+			
 	<?php
 	if (isset($_POST["nom_create"])) {
 
@@ -78,40 +82,44 @@
 	?>
 
 
+<section id="updatesort">
+	<div class="container">
+		<div class="title">
+			<h3>Modifier ordre de Sort :</h3>
+		</div>
+		<form method="post" action="Sort_admin.php">
+			<div class="idnom">
+			<input type="number" name="id_mod">
+			<input type="text" name="nom_mod">
+			</div>
 
-	<form method="post" action="Sort_admin.php">
-	Modifier une Rune :
-	<table>
-		<tr>
-			<td>Id et Nom : </td>
-			<td><input type="number" name="id_mod"></td>
-			<td><input type="text" name="nom_mod"></td>
-		</tr>
-        <tr>
-			<td>Ordre_Sorts : </td>
-			<td><input type="text" name="a"></td>
-            <td><input type="text" name="b"></td>
-            <td><input type="text" name="c"></td>
-            <td><input type="text" name="d"></td>
-            <td><input type="text" name="e"></td>
-            <td><input type="text" name="f"></td>
-            <td><input type="text" name="g"></td>
-            <td><input type="text" name="h"></td>
-            <td><input type="text" name="i"></td>
-            <td><input type="text" name="j"></td>
-            <td><input type="text" name="k"></td>
-            <td><input type="text" name="l"></td>
-            <td><input type="text" name="m"></td>
-            <td><input type="text" name="n"></td>
-            <td><input type="text" name="o"></td>
-            <td><input type="text" name="p"></td>
-            <td><input type="text" name="q"></td>
-            <td><input type="text" name="r"></td>
-		</tr>
-	</table>
-
-	<input type="submit" value="Modifier">
+            <div class="ordre">
+            <input type="text" name="a">
+            <input type="text" name="b">
+            <input type="text" name="c">
+            <input type="text" name="d">
+            <input type="text" name="e">
+            <input type="text" name="f">
+            <input type="text" name="g">
+            <input type="text" name="h">
+            <input type="text" name="i">
+            <input type="text" name="j">
+            <input type="text" name="k">
+            <input type="text" name="l">
+            <input type="text" name="m">
+            <input type="text" name="n">
+            <input type="text" name="o">
+            <input type="text" name="p">
+            <input type="text" name="q">
+            <input type="text" name="r">
+          </div>
+		<div class="update">
+			<input type="submit" value="Modifier">
+		</div>
 	</form>
+	</div>
+</section>
+
 	<?php
 	if (isset($_POST["id_mod"])) {
 		$id =$_POST["id_mod"];
@@ -151,6 +159,28 @@
 
 	<input type="submit" value="Supprimer">
 	</form>
+
+
+
+<section id="deletesort">
+	<div class="container">
+		<div class="title">
+			<h3>Supprimer un ordre de Sort :</h3>
+		</div>
+		<form method="post" action="Sort_admin.php">
+			<div class="nom">
+				<input type="text" name="nom_sup" placeholder="Nom...">
+			</div>
+
+        <div class="delete">
+		<input type="submit" value="Supprimer">
+		</div>
+	</form>
+	</div>
+</section>
+
+
+
 	<?php
 	if (isset($_POST["nom_sup"])) {
 		$nom = $_POST["nom_sup"];
@@ -158,24 +188,48 @@
 		}
 	?>
 
+<section id="searchsort">
+	<div class="container">
+		<div class="title">
+			<h3>Cherche un ordre de Sort ::</h3>
+		</div>
+		<form method="post" action="Sort_admin.php">
+			<div class="nom">
+				<input type="text" name="nom_search" placeholder="Nom...">
+			</div>
 
+			<div class="search">
+			<input type="submit" value="Chercher">
+			</div>
+		</form>
+	</div>
+</section>
 
-
-<form method="post" action="Sort_admin.php">
-	Affiche un ordre de Sort :
-	<table>
-		<tr>
-			<td>Nom : </td>
-			<td><input type="text" name="nom_search"></td>
-		</tr>
-	</table>
-
-	<input type="submit" value="Rechercher">
-	</form>
 	<?php
 	if (isset($_POST["nom_search"])) {
 		$nom = $_POST["nom_search"];
-		affiche_sort($conn, $nom);
+        $result=mysqli_query($conn,"SELECT * FROM `sort` WHERE `nom`='$nom'");
+
+        echo("<table>");
+		echo("<tr>");
+    	echo("<td>Id de l'Ordre des Sorts : </td>");
+		echo("<td>Nom du Champion : </td>");
+		echo("<td>Ordre des Sorts : </td>");
+		echo("</tr>");
+		
+		while($row = mysqli_fetch_assoc($result)){
+			echo("<tr>");
+			echo("<td>$row[id]</td>");
+			echo("<td>$row[Nom]</td>");
+			echo("<td>$row[1] $row[2]$row[3]$row[4]$row[5]
+                $row[6]$row[7]$row[8]$row[9]$row[10]
+                $row[11]$row[12]$row[13]$row[14]$row[15]
+                $row[16]$row[17]$row[18]</td>");
+			echo("</tr>");
+		}
+		echo("</table>");
+
+
 		}
 	?>
 

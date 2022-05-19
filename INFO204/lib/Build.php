@@ -21,8 +21,8 @@
 </nav>
 </header>
 
-<body>
-<?php
+<body id="page_build">
+<?php 
     include 'connect.php';
     include '../admin/lib/Build.crud.php';
     include '../admin/lib/Items.crud.php';
@@ -32,7 +32,10 @@
             $nom = $_GET['id'];
         }
     }
-    
+?>
+
+<div id="runes">
+<?php 
     $champ_build=champ_info_nom($conn, $nom);
     
     
@@ -105,20 +108,13 @@
     } 
 echo("</table>\n");
 	
+?>
+</div>
 
 
+<div id="items">
 
-
-
-
-
-
-
-
-
-
-
-
+<?php
 $champ_item=affiche_item_nom($conn, $nom);
 
  echo("<table>\n");
@@ -188,11 +184,19 @@ $champ_item=affiche_item_nom($conn, $nom);
         }
     }
 echo("</table>\n");   
+?>
+</div>
 
+
+<div id="sorts">
+<?php
 echo("<p><strong>Ordre des sorts à ameliorer : </strong></p>\n");
 echo("<img class='sorts' src='../image/sorts/$nom.png'>\n");
+?>
+</div>
 
-
+<div id="matchups">
+<?php
 $counter_matchup=affiche_matchup_nom($conn, $nom);
 
  echo("<table>\n");	
@@ -262,7 +266,10 @@ function affiche_matchup_nom($conn, $nom){
 	}
 	return $ret ; 
 }
+?>
+</div>
 
+<?php
 include 'disconnect.php';
 ?>
 </body>
