@@ -24,7 +24,7 @@
     
 <h2 class="combattant"> Items combattants:</h2>
 <br>
-<h3> Items mythiques </h3>
+<h3> Items mythiques :</h3>
 
 <table class="mythique">
     <tr>
@@ -43,7 +43,7 @@
     </tr>
 </table>
 
-<h3> Items légendaires </h3>
+<h3> Items légendaires :</h3>
 <table class="legendaire">
     <tr>
         <th><img class="combattant" src="../image/items/combattant/Lame_enragee_de_Guinsoo.webp" /></th>
@@ -86,7 +86,7 @@
 
 <h2 class="tireur"> Items tireurs:</h2>
 <br>
-<h3> Items mythiques </h3>
+<h3> Items mythiques :</h3>
 
 <table class="mythique">
     <tr>
@@ -102,7 +102,7 @@
 </table>
 
 
-<h3> Items légendaires </h3>
+<h3> Items légendaires :</h3>
 
 <table class="legendaire">
     <tr>
@@ -149,7 +149,7 @@
 
 <h2 class="assassin"> Items assassins:</h2>
 <br>
-<h3> Items mythiques </h3>
+<h3> Items mythiques :</h3>
 
 <table class="mythique">
     <tr>
@@ -164,7 +164,7 @@
     </tr>
 </table>
 
-<h3> Items légendaires </h3>
+<h3> Items légendaires :</h3>
 
 
 <table class="legendaire">
@@ -205,7 +205,7 @@
 
 <h2 class="mage"> Items mages:</h2>
 <br>
-<h3> Items mythiques </h3>
+<h3> Items mythiques :</h3>
 
 <table class="mythique">
     <tr>
@@ -228,7 +228,7 @@
     </tr>
 </table>
 
-<h3> Items légendaires </h3>
+<h3> Items légendaires :</h3>
 
 <table class="legendaire">
     <tr>
@@ -268,7 +268,7 @@
 
 <h2 class="tank"> Items tanks:</h2>
 <br>
-<h3> Items mythiques </h3>
+<h3> Items mythiques :</h3>
 
 <table class="mythique">
     <tr>
@@ -287,7 +287,7 @@
     </tr>
 </table>
 
-<h3> Items légendaires </h3>
+<h3> Items légendaires :</h3>
 
 <table class="legendaire">
     <tr>
@@ -311,7 +311,7 @@
     <tr>
         <th><p>Vœu du chevalier</p></th>
         <th><p>Convergence de Zéké</p></th>
-        <th><p>Cœr gelé</p></th>
+        <th><p>Coeur gelé</p></th>
         <th><p>Chaines de l'anatheme</p></th>
         <th><p>Approche de l'hiver</p></th>
         <th><p>Masque abyssal</p></th>
@@ -331,7 +331,7 @@
 
 <h2 class="support"> Items supports:</h2>
 <br>
-<h3> Items mythiques </h3>
+<h3> Items mythiques :</h3>
 
 <table class="mythique">
     <tr>
@@ -352,7 +352,7 @@
     </tr>
 </table>
 
-<h3> Items légendaires </h3>
+<h3> Items légendaires :</h3>
 
 <table class="legendaire">
     <tr>
@@ -366,8 +366,8 @@
         <th><img class="support" src="../image/items/support/Approche_de_l_hiver.webp" /></th>
         <th><img class="support" src="../image/items/support/Masque_abyssal.webp" /></th>
     </tr>
-    <tr id="sup">
-        <th><p>Encensoir ardent</p></th>
+    <tr>
+        <th>Encensoir ardent</th>
         <th><p>Putrificateur techno-chimique</p></th>
         <th><p>Bâton des flots</p></th>
         <th><p>Bénédiction de Mikael</p></th>
