@@ -77,6 +77,7 @@ echo('	popup.classList.add("open-popup");');
 echo('	back1.classList.add("back");');
 echo('	back2.classList.add("back");');
 echo('	back3.classList.add("back");');
+echo('	fond.classList.add("back");');
 	
 echo('}');
 
@@ -94,6 +95,7 @@ echo('	popup.classList.remove("open-popup");');
 echo('	back1.classList.remove("back");');
 echo('	back2.classList.remove("back");');
 echo('	back3.classList.remove("back");');
+echo('	fond.classList.remove("back");');
 echo('}');
 echo('</script>');
 }

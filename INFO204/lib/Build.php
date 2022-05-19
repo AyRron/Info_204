@@ -73,20 +73,25 @@
                 echo("</tr>\n");
             }
 
-        } elseif($key == "sup1" || $key == "sup3" ){
+        } elseif($key == "sup1" || $key == "sup2"|| $key == "sup3" ){
             if($key == "sup1"){
                 echo("<tr>\n");
                 echo("<th>\n");
-                echo("<img src='../image/runes/$value.webp'>\n");
+                echo("<img class='petit' src='../image/runes/$value.webp'>\n");
                 $nom_item=str_replace("_", " ", $value);
                 echo("<p>$nom_item</p>\n");
-            }else{
-                echo("<img src='../image/runes/$value.webp'>\n");
+            }elseif($key == "sup3"){
+                echo("<img class='petit' src='../image/runes/$value.webp'>\n");
                 $nom_item=str_replace("_", " ", $value);
                 echo("<p>$nom_item</p>\n");
                 echo("</th>\n");
                 echo("</tr>\n");
+			}else{
+                echo("<img class='petit' src='../image/runes/$value.webp'>\n");
+				$nom_item=str_replace("_", " ", $value);
+				echo("<p>$nom_item</p>\n");
             }
+        
         
 
         } elseif($key == "id" || $key == "Nom_champ" ){
