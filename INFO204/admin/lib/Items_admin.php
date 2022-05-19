@@ -145,7 +145,78 @@
 		delete_item_id($conn, $nom);
 		}
 	?>
-	
+
+
+
+<section id="searchItem">
+	<div class="container">
+		<div class="title">
+			<h3>Chercher un Item :</h3>
+		</div>
+		<form method="post" action="Items_admin.php">
+			<div class="nom">
+				<input type="text" name="nom_search" placeholder="Nom...">
+			</div>
+
+			<div class="search">
+			<input type="submit" value="Chercher">
+			</div>
+		</form>
+	</div>
+</section>
+
+
+	<?php
+	if (isset($_POST["nom_search"])) {
+		$nom = $_POST["nom_search"];
+		$info=mysqli_query($conn,"SELECT * FROM `item` WHERE `nom`='$nom'");
+
+		if(mysqli_num_rows($info)>0){ 
+			echo("<table>");
+			echo("<tr>");
+			echo("<td>Id des Items : </td>");
+			echo("<td>Nom Du Champion : </td>");
+			echo("<td>Objet de départ : </td>");
+			echo("<td>Bottes : </td>");
+			echo("<td>Objet Mythique : </td>");
+			echo("<td>Items principales : </td>");
+			echo("<td>Items Situationnelles : </td>");
+			echo("</tr>");
+
+			while($row = mysqli_fetch_assoc($info)){
+				echo("<tr>");
+				echo("<td>$row[id]</td>");
+				echo("<td>$row[nom] </td>");
+				echo("<td>$row[starting_item]</td>");
+				echo("<td>$row[bottes]</td>");
+				echo("<td>$row[mythique]</td>");
+				echo("<td>$row[core1] $row[core2]</td>");
+				echo("<td>$row[option1] $row[option2] $row[option3]</td>");
+				echo("</tr>");
+			}
+			echo("</table>");
+		} else{
+			echo("Items non trouvé");
+		}
+		
+		}
+	?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<?php
 
 	$result=mysqli_query($conn,"SELECT * FROM `item`");
