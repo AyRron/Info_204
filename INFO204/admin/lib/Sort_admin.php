@@ -25,40 +25,39 @@
         </div>
         <form method="post" action="Sort_admin.php">
             <div class="nom">
-                <input type="text" name="nom_create">
+                <input type="text" name="nom_create" placeholder="Nom...">
             </div>
             <div class="ordre1">
-            <input type="text" name="a">
-            <input type="text" name="b">
-            <input type="text" name="c">
-            <input type="text" name="d">
+            <input type="text" name="a" placeholder="1er">
+            <input type="text" name="b" placeholder="2ème">
+            <input type="text" name="c" placeholder="3ème">
+            <input type="text" name="d" placeholder="4ème">
             </div>
             <div class="ordre2">
-            <input type="text" name="e">
-            <input type="text" name="f">
-            <input type="text" name="g">
-            <input type="text" name="h">
+            <input type="text" name="e" placeholder="5ème">
+            <input type="text" name="f" placeholder="6ème">
+            <input type="text" name="g" placeholder="7ème">
+            <input type="text" name="h" placeholder="8ème">
             </div>
             <div class="ordre3">
-            <input type="text" name="i">
-            <input type="text" name="j">
-            <input type="text" name="k">
-            <input type="text" name="l">
+            <input type="text" name="i" placeholder="9ème">
+            <input type="text" name="j" placeholder="10ème">
+            <input type="text" name="k" placeholder="11ème">
+            <input type="text" name="l" placeholder="12ème">
             </div>
             <div class="ordre4">
-            <input type="text" name="m">
-            <input type="text" name="n">
-            <input type="text" name="o">
-            <input type="text" name="p">
+            <input type="text" name="m" placeholder="13ème">
+            <input type="text" name="n" placeholder="14ème">
+            <input type="text" name="o" placeholder="15ème">
+            <input type="text" name="p" placeholder="16ème">
             </div>
             <div class="ordre5">
-            <input type="text" name="q">
-            <input type="text" name="r">
+            <input type="text" name="q" placeholder="17ème">
+            <input type="text" name="r" placeholder="18ème">
             </div>
           <div class="create">
             <input type="submit" value="Créer" />
           </div>
-        </div>
         </form>
       </div>
 </section>
@@ -98,42 +97,41 @@
 		</div>
 		<form method="post" action="Sort_admin.php">
 			<div class="idnom">
-			<input type="number" name="id_mod">
-			<input type="text" name="nom_mod">
-			</div>
-
-      <div class="ordre1">
-            <input type="text" name="a">
-            <input type="text" name="b">
-            <input type="text" name="c">
-            <input type="text" name="d">
-            </div>
-            <div class="ordre2">
-            <input type="text" name="e">
-            <input type="text" name="f">
-            <input type="text" name="g">
-            <input type="text" name="h">
-            </div>
-            <div class="ordre3">
-            <input type="text" name="i">
-            <input type="text" name="j">
-            <input type="text" name="k">
-            <input type="text" name="l">
-            </div>
-            <div class="ordre4">
-            <input type="text" name="m">
-            <input type="text" name="n">
-            <input type="text" name="o">
-            <input type="text" name="p">
-            </div>
-            <div class="ordre5">
-            <input type="text" name="q">
-            <input type="text" name="r">
-            </div>
-		<div class="update">
-			<input type="submit" value="Modifier">
-		</div>
-	</form>
+			  <input type="number" name="id_mod" placeholder="id">
+			  <input type="text" name="nom_mod" placeholder="Nom...">
+      </div>
+        <div class="ordre1">
+          <input type="text" name="a" placeholder="1er">
+          <input type="text" name="b" placeholder="2ème">
+          <input type="text" name="c" placeholder="3ème">
+          <input type="text" name="d" placeholder="4ème">
+        </div>
+        <div class="ordre2">
+          <input type="text" name="e" placeholder="5ème">
+          <input type="text" name="f" placeholder="6ème">
+          <input type="text" name="g" placeholder="7ème">
+          <input type="text" name="h" placeholder="8ème">
+        </div>
+        <div class="ordre3">
+          <input type="text" name="i" placeholder="9ème">
+          <input type="text" name="j" placeholder="10ème">
+          <input type="text" name="k" placeholder="11ème">
+          <input type="text" name="l" placeholder="12ème">
+        </div>
+        <div class="ordre4">
+          <input type="text" name="m" placeholder="13ème">
+          <input type="text" name="n" placeholder="14ème">
+          <input type="text" name="o" placeholder="15ème">
+          <input type="text" name="p" placeholder="16ème">
+        </div>
+        <div class="ordre5">
+          <input type="text" name="q" placeholder="17ème">
+          <input type="text" name="r" placeholder="18ème">
+        </div>
+        <div class="update">
+          <input type="submit" value="Modifier">
+        </div>
+    </form>
 	</div>
 </section>
 
@@ -195,7 +193,7 @@
 <section id="searchsort">
 	<div class="container">
 		<div class="title">
-			<h3>Cherche un ordre de Sort ::</h3>
+			<h3>Chercher un ordre de Sort :</h3>
 		</div>
 		<form method="post" action="Sort_admin.php">
 			<div class="nom">
@@ -203,7 +201,7 @@
 			</div>
 
 			<div class="search">
-			<input type="submit" value="Chercher">
+			  <input type="submit" value="Chercher">
 			</div>
 		</form>
 	</div>

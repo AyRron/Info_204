@@ -53,7 +53,8 @@ header > a {
 #deleteuser,
 #searchuser,
 #newsort,
-#updatesort {
+#updatesort,
+#searchsort {
   padding: 25px 0;
 }
 
@@ -71,7 +72,8 @@ header > a {
 #deleteuser .container,
 #searchuser .container,
 #newsort .container,
-#updatesort .container {
+#updatesort .container,
+#searchsort .container {
   max-width: 1100px;
   margin: 0px auto;
   display: flex;
@@ -99,7 +101,8 @@ header > a {
 #deleteuser .container .title,
 #searchuser .container .title,
 #newsort .container .title,
-#updatesort .container .title {
+#updatesort .container .title,
+#searchsort .container .title {
   font-size: 1.8em;
   text-align: center;
   margin-bottom: 50px;
@@ -119,7 +122,8 @@ header > a {
 #deleteuser .container form,
 #searchuser .container form,
 #newsort .container form,
-#updatesort .container form {
+#updatesort .container form,
+#searchsort .container form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -147,10 +151,12 @@ header > a {
 #deleteuser .container form .form_delete input,
 #deleteuser .container form .delete input,
 #searchuser .container form .form_search input,
-#newsort .container form .nom,
-#newsort .container form .create,
-#updatesort .container form .nom,
-#updatesort .container form .update {
+#newsort .container form .nom input,
+#newsort .container form .create input,
+#updatesort .container form .nom input,
+#updatesort .container form .update input,
+#searchsort .container form .nom input,
+#searchsort .container form .search input {
   width: 100%;
   margin: 5px;
   padding: 5px;
@@ -159,14 +165,14 @@ header > a {
 #newbuild .container form .fondament input,
 #updatebuild .container form .fondament input,
 #updateuser .container form .form_update input,
-#newsort .container form .ordre1,
-#newsort .container form .ordre2,
-#newsort .container form .ordre3,
-#newsort .container form .ordre4,
-#updatesort .container form .ordre1,
-#updatesort .container form .ordre2,
-#updatesort .container form .ordre3,
-#updatesort .container form .ordre4 {
+#newsort .container form .ordre1 input,
+#newsort .container form .ordre2 input,
+#newsort .container form .ordre3 input,
+#newsort .container form .ordre4 input,
+#updatesort .container form .ordre1 input,
+#updatesort .container form .ordre2 input,
+#updatesort .container form .ordre3 input,
+#updatesort .container form .ordre4 input {
   width: 25%;
   margin: 5px;
   padding: 5px;
@@ -178,9 +184,9 @@ header > a {
 #newitem .container form .core input,
 #updateitem .container form .idnom input,
 #updateitem .container form .core input,
-#newsort .container form .ordre5,
-#updatesort .container form .idnom,
-#updatesort .container form .ordre5 {
+#newsort .container form .ordre5 input,
+#updatesort .container form .idnom input,
+#updatesort .container form .ordre5 input {
   width: 50%;
   margin: 5px;
   padding: 5px;
@@ -212,7 +218,8 @@ header > a {
 #deleteuser .container form div,
 #searchuser .container form div,
 #newsort .container form div,
-#updatesort .container form div {
+#updatesort .container form div,
+#searchsort .container form div {
   margin: 10px 0;
   padding: 10px;
   border: none;
@@ -249,8 +256,6 @@ header > a {
 #deleteitem .container form .delete,
 #searchitem .container form .nom,
 #searchitem .container form .search,
-#deletesort .container form .nom,
-#deletesort .container form .delete,
 #newuser .container form .form_create,
 #newuser .container form .create,
 #updateuser .container form .form_update,
@@ -272,7 +277,11 @@ header > a {
 #updatesort .container form .ordre3,
 #updatesort .container form .ordre4,
 #updatesort .container form .ordre5,
-#updatesort .container form .update {
+#updatesort .container form .update,
+#deletesort .container form .nom,
+#deletesort .container form .delete,
+#searchsort .container form .nom,
+#searchsort .container form .search {
   width: 100%;
   display: flex;
   flex-direction: row;
