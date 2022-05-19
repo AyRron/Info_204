@@ -21,7 +21,7 @@
 <section id="newsort">
       <div class="container">
         <div class="title">
-          <h3>Créer un nouvel ordre de Sort : :</h3>
+          <h3>Créer un nouvel ordre de Sort : </h3>
         </div>
         <form method="post" action="Sort_admin.php">
             <div class="nom">
