@@ -20,7 +20,7 @@
 </nav>
 </header>
 
-<body>
+<body id="tms">
     
 <h2 class="combattant"> Items combattants:</h2>
 <br>
@@ -153,14 +153,14 @@
 
 <table class="mythique">
     <tr>
+	    <th><img class="assassin" src="../image/items/assassin/Eclipse.webp" /></th>
         <th><img class="assassin" src="../image/items/assassin/Epee_vesperale_de_Draktharr.webp" /></th>
         <th><img class="assassin" src="../image/items/assassin/Griffes_du_rodeur.webp" /></th>
-        <th><img class="assassin" src="../image/items/assassin/Eclipse.webp" /></th>
     </tr>
     <tr>
+		<th><p>Éclipse</p></th>
         <th><p>Épée vesperale de Draktharr</p></th>
         <th><p>Griffes du rodeur</p></th>
-        <th><p>Éclipse</p></th>
     </tr>
 </table>
 
@@ -287,11 +287,7 @@
     </tr>
 </table>
 
-
 <h3> Items légendaires </h3>
-
-<th>
-
 
 <table class="legendaire">
     <tr>
@@ -330,6 +326,8 @@
         <th><p>Lithoplastron de gargouille</p></th>
         <th><p>Hydre titanesque</p></th>
     </tr>
+</table>
+
 
 <h2 class="support"> Items supports:</h2>
 <br>
@@ -368,7 +366,7 @@
         <th><img class="support" src="../image/items/support/Approche_de_l_hiver.webp" /></th>
         <th><img class="support" src="../image/items/support/Masque_abyssal.webp" /></th>
     </tr>
-    <tr>
+    <tr id="sup">
         <th><p>Encensoir ardent</p></th>
         <th><p>Putrificateur techno-chimique</p></th>
         <th><p>Bâton des flots</p></th>

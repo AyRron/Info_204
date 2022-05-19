@@ -326,3 +326,42 @@ footer > a {
 .contenu img{
 	cursor: pointer;
 }
+
+
+
+#runes {
+	border: 1px solid var(--second);
+	padding: 1em;
+	margin: 1em;
+}
+
+#items {
+	border: 1px solid var(--second);
+	padding: 1em;
+	margin: 1em;
+}
+
+#sorts {
+	border: 1px solid var(--second);
+	padding: 1em;
+	margin: 1em;
+}
+
+#matchups {
+	border: 1px solid var(--second);
+	padding: 1em;
+	margin: 1em;
+}
+
+#tms table{
+	padding: 1em;
+}
+
+#tms h2{
+	padding-left: 1em;
+}
+
+#tms h3{
+	padding-left: 1em;
+}
+

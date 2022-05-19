@@ -21,7 +21,7 @@
 </nav>
 </header>
 
-<body id="page_build">
+<body class="bld" id="page_build">
 <?php 
     include 'connect.php';
     include '../admin/lib/Build.crud.php';
@@ -34,7 +34,7 @@
     }
 ?>
 
-<div id="runes">
+<div class="bld" id="runes">
 <?php 
     $champ_build=champ_info_nom($conn, $nom);
     
@@ -112,7 +112,7 @@ echo("</table>\n");
 </div>
 
 
-<div id="items">
+<div class="bld" id="items">
 
 <?php
 $champ_item=affiche_item_nom($conn, $nom);
@@ -188,7 +188,7 @@ echo("</table>\n");
 </div>
 
 
-<div id="sorts">
+<div class="bld" id="sorts">
 <?php
 echo("<p><strong>Ordre des sorts à ameliorer : </strong></p>\n");
 echo("<img class='sorts' src='../image/sorts/$nom.png'>\n");
