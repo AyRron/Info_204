@@ -26,7 +26,7 @@ if(isset($_GET["action"])){
 
 <header>
 	<?php
-		include 'lib/connexion.php';
+		include 'lib/connexion_uwamp.php';
 	?>
 </header>
 

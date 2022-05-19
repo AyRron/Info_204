@@ -23,7 +23,7 @@
 
 <body>
 <?php
-    include 'connect.php';
+    include 'connect_uwamp.php';
     include '../admin/lib/Build.crud.php';
     include '../admin/lib/Items.crud.php';
 

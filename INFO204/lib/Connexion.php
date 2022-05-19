@@ -1,5 +1,5 @@
 <?php
-include 'connect.php';
+include 'connect_uwamp.php';
 
 session_start() ;
 if(isset($_POST["login"])){
