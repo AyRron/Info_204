@@ -306,31 +306,6 @@ footer > a {
   stroke-width: 10px;
 }
 
-.mythique {
-  margin-bottom: 1em;
-  margin-left: 1em;
-}
-
-.mythique p {
-  padding-right: 1em;
-}
-.legendaire {
-  margin-bottom: 4em;
-  margin-left: 1em;
-}
-
-#tms table {
-  padding: 1em;
-}
-
-#tms h2 {
-  padding-left: 1em;
-}
-
-#tms h3 {
-  padding-left: 1.4em;
-}
-
 .petit {
   height: 36%;
   width: 36%;
@@ -368,4 +343,37 @@ footer > a {
   margin: 1em;
   right: 15%;
   top: 57%;
+}
+
+#tab_item {
+	border-collapse: collapse;
+	min-width: 400px;
+	width: auto;
+	box-shadow: 0 5px 50px rgba(171, 5, 242,1);
+	cursor: pointer;
+	margin: 1.15em;
+	border: 2px solid var(--second);
+}
+
+thead tr, #gauche1, #gauche2{
+	background-color: var(--second);
+	text-align: left;
+	color: black;
+}
+
+#tab_item th, td{
+	padding: 15px 20px;
+}
+
+#body_item .tr_item, .th_item, .td_item{
+	border: 1px solid var(--second);
+}
+
+#tab_item img{
+	padding: 4px;
+}
+
+#tab_rune {
+	width: 100%;
+	margin: auto;
 }
