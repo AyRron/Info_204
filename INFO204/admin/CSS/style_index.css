@@ -165,6 +165,7 @@ table {
   border-collapse: collapse;
   margin: auto;
   margin-bottom: 25px;
+  background-color: #333333;
 }
 
 th,
@@ -175,7 +176,7 @@ td {
 }
 
 th {
-  background-color: var(--main);
+  background-color: #181818;
   color: white;
 }
 
@@ -191,6 +192,10 @@ tr:nth-child(odd) {
   th,
   td {
     display: block;
+  }
+
+  table {
+    background-color: var(--main);
   }
 
   thead {

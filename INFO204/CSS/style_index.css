@@ -129,7 +129,6 @@ footer {
   background-color: var(--second);
   border-radius: 5px;
   margin: 25px;
-  margin-bottom: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,7 +378,7 @@ footer > a {
   margin-bottom: 4em;
 }
 
-.petit{
-	height: 36%;
-	width: 36%;
+.petit {
+  height: 36%;
+  width: 36%;
 }
