@@ -26,7 +26,7 @@
 			<div class="form_create">
 				<input type="text" name="pseudo_create" placeholder="Pseudo...">
 				<input type="text" name="mdp_create" placeholder="Mot de passe:">
-				<input type="number" name="droit_create" placeholder="Les droits (1 admin/0 user">
+				<input type="number" name="droit_create" placeholder="Les droits (1 admin/0 user)">
 			</div>
 			
 			<div class="create">
@@ -58,7 +58,7 @@
                 <input type="number" name="id_update" placeholder="identifiant:">
 				<input type="text" name="pseudo_update" placeholder="Pseudo...">
 				<input type="text" name="mdp_update" placeholder="Mot de passe:">
-				<input type="number" name="droit_update" placeholder="Les droits (1 admin/0 user">
+				<input type="number" name="droit_update" placeholder="Les droits (1 admin/0 user)">
 			</div>
 
 			<div class="update">
