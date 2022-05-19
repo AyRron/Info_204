@@ -43,6 +43,7 @@ if(isset($_GET["action"])){
 
 	<a href="lib/Build_admin.php"> Modifier le Build </a>
 	<a href="lib/Items_admin.php"> Modifier les items </a>
+	<a href="lib/Sort_admin.php"> Modifier l'Ordre des Sortd </a>
 
 	<h2>Page des Utilisateurs </h2>
 

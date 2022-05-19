@@ -140,8 +140,8 @@
 
 
 
-<form method="post" action="Rune_admin.php">
-	Supprimer une Rune :
+<form method="post" action="Sort_admin.php">
+	Supprimer un ordre de Sort :
 	<table>
 		<tr>
 			<td>Nom : </td>
@@ -154,31 +154,52 @@
 	<?php
 	if (isset($_POST["nom_sup"])) {
 		$nom = $_POST["nom_sup"];
-		delete_rune_nom($conn, $nom);
+		delete_sort($conn, $id);
 		}
 	?>
 
 
 
 
+<form method="post" action="Sort_admin.php">
+	Affiche un ordre de Sort :
+	<table>
+		<tr>
+			<td>Nom : </td>
+			<td><input type="text" name="nom_search"></td>
+		</tr>
+	</table>
+
+	<input type="submit" value="Rechercher">
+	</form>
+	<?php
+	if (isset($_POST["nom_search"])) {
+		$nom = $_POST["nom_search"];
+		affiche_sort($conn, $nom);
+		}
+	?>
+
 
 
 	<?php
 
-	$result=mysqli_query($conn,"SELECT * FROM `rune`");
+	$result=mysqli_query($conn,"SELECT * FROM `sort`");
 		
 		echo("<table>");
 		echo("<tr>");
-    	echo("<td>Id de la Rune : </td>");
-		echo("<td>Nom de la Rune : </td>");
-		echo("<td>Description de la Rune : </td>");
+    	echo("<td>Id de l'Ordre des Sorts : </td>");
+		echo("<td>Nom du Champion : </td>");
+		echo("<td>Ordre des Sorts : </td>");
 		echo("</tr>");
 		
 		while($row = mysqli_fetch_assoc($result)){
 			echo("<tr>");
 			echo("<td>$row[id]</td>");
 			echo("<td>$row[Nom]</td>");
-			echo("<td>$row[Description]</td>");
+			echo("<td>$row[1] $row[2]$row[3]$row[4]$row[5]
+                $row[6]$row[7]$row[8]$row[9]$row[10]
+                $row[11]$row[12]$row[13]$row[14]$row[15]
+                $row[16]$row[17]$row[18]</td>");
 			echo("</tr>");
 		}
 		echo("</table>");
