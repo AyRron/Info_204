@@ -21,7 +21,7 @@ body {
   width: 100%;
 }
 
-.header-admin{
+header{
   background-color: var(--second);
   border-radius: 5px;
   margin: 25px;
@@ -30,7 +30,7 @@ body {
   align-items: center;
 }
 
-.header-admin > a{
+header > a{
   text-decoration: none;
   color: black;
 }

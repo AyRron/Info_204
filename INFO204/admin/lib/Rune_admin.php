@@ -14,7 +14,6 @@
     include '../../lib/connect.php';
 	include 'Rune.crud.php';
     ?>
-    <h1>Toutes les Runes : </h1>
 </header>
 
 

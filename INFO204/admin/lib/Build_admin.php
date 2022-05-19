@@ -15,7 +15,6 @@
     include '../../lib/connect.php';
 	include 'Build.crud.php';
     ?>
-    <h1>Tous les Builds : </h1>
 </header>
 
 <section id="newbuild">

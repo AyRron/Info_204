@@ -14,7 +14,6 @@
     include '../../lib/connect.php';
 	include 'Items.crud.php';
     ?>
-	<h1>Tous les items :</h1>
 </header>
 
 <section id="newitem">
