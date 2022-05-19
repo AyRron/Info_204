@@ -129,7 +129,7 @@
 
 
 <form method="post" action="Items_admin.php">
-	Supprimer un Build :
+	Supprimer un Item :
 	<table>
 		<tr>
 			<td>ID du build : </td>
