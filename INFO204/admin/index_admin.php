@@ -34,7 +34,7 @@ if(isset($_GET["action"])){
 <nav>
       <ul>
         <li>
-          <a href="lib/Rune_admin.php">Runes</a>
+          <a href="lib/User_admin.php">Utilisateurs</a>
           <span></span><span></span><span></span><span></span>
         </li>
         <li>

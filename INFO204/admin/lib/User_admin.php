@@ -2,13 +2,13 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>User_admin</title>
+  <title>User admin</title>
   <link rel="stylesheet" href="../CSS/style_index.css">
   <link rel="icon" href="../image/league.png">
 </head>
 
 <body>
-<header class="header-admin">
+<header>
 	<a href="../index_admin.php?action=disconnect">Deconnexion</a>
 	<a href="../index_admin.php">Retour à la page d'accueil</a>
     <?php
@@ -17,7 +17,7 @@
     ?>
 </header>
 
-<section id="newUser">
+<section id="newuser">
 	<div class="container">
 		<div class="title">
 			<h3>Créer un nouvel Utilisateur :</h3>
@@ -26,10 +26,10 @@
 			<div class="form_create">
 				<input type="text" name="pseudo_create" placeholder="Pseudo...">
 				<input type="text" name="mdp_create" placeholder="Mot de passe:">
-				<input type="number" name="droit_create" placeholder="Les droit ( 1 pour admin et 0 pour un simple user )">
+				<input type="number" name="droit_create" placeholder="Les droits (1 admin/0 user">
 			</div>
 			
-			<div class="creat">
+			<div class="create">
 				<input type="submit" value="Créer">
 			</div>
 		</form>
@@ -48,7 +48,7 @@
 	?>
 
 
-<section id="updateUser">
+<section id="updateuser">
 	<div class="container">
 		<div class="title">
 			<h3>Modifier un Utilisateur :</h3>
@@ -58,7 +58,7 @@
                 <input type="number" name="id_update" placeholder="identifiant:">
 				<input type="text" name="pseudo_update" placeholder="Pseudo...">
 				<input type="text" name="mdp_update" placeholder="Mot de passe:">
-				<input type="number" name="droit_update" placeholder="Les droit ( 1 pour admin et 0 pour un simple user )">
+				<input type="number" name="droit_update" placeholder="Les droits (1 admin/0 user">
 			</div>
 
 			<div class="update">
@@ -79,7 +79,7 @@
 	?>
 
 
-<section id="deleteUser">
+<section id="deleteuser">
 	<div class="container">
 		<div class="title">
 			<h3>Supprimer un Build :</h3>
@@ -103,7 +103,7 @@
 	?>
 
 
-<section id="searchUser">
+<section id="searchuser">
 	<div class="container">
 		<div class="title">
 			<h3>Chercher un Utilisateur :</h3>
@@ -159,10 +159,10 @@
 		echo("<table>");
 		echo("<thead>");
 		echo("<tr>");
-        echo("<td>Id : </td>");
-        echo("<td>Pseudo : </td>");
-        echo("<td>Mot de passe : </td>");
-        echo("<td>Droit : </td>");
+        echo("<th>Id : </th>");
+        echo("<th>Pseudo : </th>");
+        echo("<th>Mot de passe : </th>");
+        echo("<th>Droit : </th>");
 		echo("</tr>");
 		echo("</thead>");
 		echo("<tbody>");

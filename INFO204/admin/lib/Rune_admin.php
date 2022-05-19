@@ -99,7 +99,7 @@
 
 	<?php
 
-	$result=mysqli_query($conn,"SELECT * FROM `rune`");
+	$result=mysqli_query($conn,"SELECT * FROM `matchup`");
 		
 		echo("<table>");
 		echo("<tr>");

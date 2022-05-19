@@ -27,30 +27,39 @@
             <div class="nom">
                 <input type="text" name="nom_create">
             </div>
-            <div class="ordre">
+            <div class="ordre1">
             <input type="text" name="a">
             <input type="text" name="b">
             <input type="text" name="c">
             <input type="text" name="d">
+            </div>
+            <div class="ordre2">
             <input type="text" name="e">
             <input type="text" name="f">
             <input type="text" name="g">
             <input type="text" name="h">
+            </div>
+            <div class="ordre3">
             <input type="text" name="i">
             <input type="text" name="j">
             <input type="text" name="k">
             <input type="text" name="l">
+            </div>
+            <div class="ordre4">
             <input type="text" name="m">
             <input type="text" name="n">
             <input type="text" name="o">
             <input type="text" name="p">
+            </div>
+            <div class="ordre5">
             <input type="text" name="q">
             <input type="text" name="r">
-          </div>
+            </div>
           <div class="create">
             <input type="submit" value="Créer" />
           </div>
-          </form>
+        </div>
+        </form>
       </div>
 </section>
 			
@@ -93,26 +102,34 @@
 			<input type="text" name="nom_mod">
 			</div>
 
-            <div class="ordre">
+      <div class="ordre1">
             <input type="text" name="a">
             <input type="text" name="b">
             <input type="text" name="c">
             <input type="text" name="d">
+            </div>
+            <div class="ordre2">
             <input type="text" name="e">
             <input type="text" name="f">
             <input type="text" name="g">
             <input type="text" name="h">
+            </div>
+            <div class="ordre3">
             <input type="text" name="i">
             <input type="text" name="j">
             <input type="text" name="k">
             <input type="text" name="l">
+            </div>
+            <div class="ordre4">
             <input type="text" name="m">
             <input type="text" name="n">
             <input type="text" name="o">
             <input type="text" name="p">
+            </div>
+            <div class="ordre5">
             <input type="text" name="q">
             <input type="text" name="r">
-          </div>
+            </div>
 		<div class="update">
 			<input type="submit" value="Modifier">
 		</div>

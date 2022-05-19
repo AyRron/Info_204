@@ -21,18 +21,22 @@ body {
   width: 100%;
 }
 
-header{
+header {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
   background-color: var(--second);
   border-radius: 5px;
   margin: 25px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header > a{
+header > a {
   text-decoration: none;
   color: black;
+  padding: 0 10px;
 }
 
 #newbuild,
@@ -43,7 +47,13 @@ header > a{
 #updateitem,
 #deleteitem,
 #searchitem,
-#deletesort {
+#deletesort,
+#newuser,
+#updateuser,
+#deleteuser,
+#searchuser,
+#newsort,
+#updatesort {
   padding: 25px 0;
 }
 
@@ -55,7 +65,13 @@ header > a{
 #updateitem .container,
 #deleteitem .container,
 #deletesort .container,
-#searchitem .container {
+#searchitem .container,
+#newuser .container,
+#updateuser .container,
+#deleteuser .container,
+#searchuser .container,
+#newsort .container,
+#updatesort .container {
   max-width: 1100px;
   margin: 0px auto;
   display: flex;
@@ -77,7 +93,13 @@ header > a{
 #update .container .title,
 #deleteitem .container .title,
 #deletesort .container .title,
-#searchitem .container .title {
+#searchitem .container .title,
+#newbuild .container .title,
+#updateuser .container .title,
+#deleteuser .container .title,
+#searchuser .container .title,
+#newsort .container .title,
+#updatesort .container .title {
   font-size: 1.8em;
   text-align: center;
   margin-bottom: 50px;
@@ -91,7 +113,13 @@ header > a{
 #updateitem .container form,
 #deleteitem .container form,
 #deletesort .container form,
-#searchitem .container form {
+#searchitem .container form,
+#newbuild .container form,
+#updateuser .container form,
+#deleteuser .container form,
+#searchuser .container form,
+#newsort .container form,
+#updatesort .container form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -113,14 +141,32 @@ header > a{
 #deletesort .container form .nom input,
 #deletesort .container form .delete input,
 #searchitem .container form .nom input,
-#searchitem .container form .search input {
+#searchitem .container form .search input,
+#newuser .container form .create input,
+#updateuser .container form .update input,
+#deleteuser .container form .form_delete input,
+#deleteuser .container form .delete input,
+#searchuser .container form .form_search input,
+#newsort .container form .nom,
+#newsort .container form .create,
+#updatesort .container form .nom,
+#updatesort .container form .update {
   width: 100%;
   margin: 5px;
   padding: 5px;
 }
 
 #newbuild .container form .fondament input,
-#updatebuild .container form .fondament input {
+#updatebuild .container form .fondament input,
+#updateuser .container form .form_update input,
+#newsort .container form .ordre1,
+#newsort .container form .ordre2,
+#newsort .container form .ordre3,
+#newsort .container form .ordre4,
+#updatesort .container form .ordre1,
+#updatesort .container form .ordre2,
+#updatesort .container form .ordre3,
+#updatesort .container form .ordre4 {
   width: 25%;
   margin: 5px;
   padding: 5px;
@@ -131,7 +177,10 @@ header > a{
 #updatebuild .container form .second input,
 #newitem .container form .core input,
 #updateitem .container form .idnom input,
-#updateitem .container form .core input {
+#updateitem .container form .core input,
+#newsort .container form .ordre5,
+#updatesort .container form .idnom,
+#updatesort .container form .ordre5 {
   width: 50%;
   margin: 5px;
   padding: 5px;
@@ -142,7 +191,8 @@ header > a{
 #newitem .container form .start input,
 #newitem .container form .option input,
 #updateitem .container form .start input,
-#updateitem .container form .option input {
+#updateitem .container form .option input,
+#newuser .container form .form_create input {
   width: 33%;
   margin: 5px;
   padding: 5px;
@@ -155,7 +205,14 @@ header > a{
 #newitem .container form div,
 #updateitem .container form div,
 #deleteitem .container form div,
-#searchitem .container form div {
+#deletesort .container form div,
+#searchitem .container form div,
+#newuser .container form div,
+#updateuser .container form div,
+#deleteuser .container form div,
+#searchuser .container form div,
+#newsort .container form div,
+#updatesort .container form div {
   margin: 10px 0;
   padding: 10px;
   border: none;
@@ -191,7 +248,31 @@ header > a{
 #deleteitem .container form .nom,
 #deleteitem .container form .delete,
 #searchitem .container form .nom,
-#searchitem .container form .search {
+#searchitem .container form .search,
+#deletesort .container form .nom,
+#deletesort .container form .delete,
+#newuser .container form .form_create,
+#newuser .container form .create,
+#updateuser .container form .form_update,
+#updateuser .container form .form_update,
+#deleteuser .container form .form_delete,
+#deleteuser .container form .delete,
+#searchuser .container form .form_search,
+#searchuser .container form .search,
+#newsort .container form .nom,
+#newsort .container form .ordre1,
+#newsort .container form .ordre2,
+#newsort .container form .ordre3,
+#newsort .container form .ordre4,
+#newsort .container form .ordre5,
+#newsort .container form .create,
+#updatesort .container form .idnom,
+#updatesort .container form .ordre1,
+#updatesort .container form .ordre2,
+#updatesort .container form .ordre3,
+#updatesort .container form .ordre4,
+#updatesort .container form .ordre5,
+#updatesort .container form .update {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -321,5 +402,3 @@ tr:nth-child(odd) {
 #tabitem tr {
   margin-bottom: 1rem;
 }
-
-
