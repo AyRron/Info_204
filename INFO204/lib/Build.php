@@ -192,8 +192,70 @@ echo("</table>\n");
 echo("<p><strong>Ordre des sorts à ameliorer : </strong></p>\n");
 echo("<img class='sorts' src='../image/sorts/$nom.png'>\n");
 
-include 'disconnect.php';
 
+$counter_matchup=affiche_matchup_nom($conn, $nom);
+
+ echo("<table>\n");
+    foreach($counter_matchup as $key => $value){
+
+        if($key == "C1"){
+            echo("<tr>\n");
+            echo("<th>\n");
+            echo("<img src='../image/champions/$value.webp'>\n");
+            $nom_champ=str_replace("_", " ", $value);
+            echo("<p>$nom_champ</p>\n");
+            echo("</th>\n");
+         
+        } elseif($key == "C2" ){
+            echo("<th>\n");
+            echo("<img src='../image/champions/$value.webp'>\n");
+            $nom_champ=str_replace("_", " ", $value);
+            echo("<p>$nom_champ</p>\n");
+            echo("</th>\n");
+		
+		} elseif($key == "C3" ){
+            echo("<th>\n");
+            echo("<img src='../image/champions/$value.webp'>\n");
+            $nom_champ=str_replace("_", " ", $value);
+            echo("<p>$nom_champ</p>\n");
+            echo("</th>\n");
+			
+		} elseif($key == "M1" ){
+            echo("<th>\n");
+            echo("<img src='../image/champions/$value.webp'>\n");
+            $nom_champ=str_replace("_", " ", $value);
+            echo("<p>$nom_champ</p>\n");
+            echo("</th>\n");
+			
+		} elseif($key == "M2" ){
+            echo("<th>\n");
+            echo("<img src='../image/champions/$value.webp'>\n");
+            $nom_champ=str_replace("_", " ", $value);
+            echo("<p>$nom_champ</p>\n");
+            echo("</th>\n");
+			
+		} elseif($key == "M3" ){
+            echo("<th>\n");
+            echo("<img src='../image/champions/$value.webp'>\n");
+            $nom_champ=str_replace("_", " ", $value);
+            echo("<p>$nom_champ</p>\n");
+            echo("</th>\n");
+			echo("</tr>\n");	
+			}
+		}
+echo("</table>\n");             
+			
+function affiche_matchup_nom($conn, $nom){
+	$sql="SELECT * FROM `matchup` WHERE `nom`='$nom'" ;
+	if($ret=mysqli_query($conn, $sql)){
+		$ret=mysqli_fetch_assoc($ret);
+	} else{
+		echo("Les matchups de ce personages n'existent pas");
+	}
+	return $ret ; 
+}
+
+include 'disconnect.php';
 ?>
 </body>
 
