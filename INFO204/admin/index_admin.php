@@ -19,7 +19,7 @@ if(isset($_GET["action"])){
 <head>
   <meta charset="utf-8">
   <title>Admin</title>
-  <link rel="stylesheet" href="CSS/style_index.css">
+  <link rel="stylesheet" href="CSS/style_index_admin.css">
   <link rel="icon" href="image/league.png">
 </head>
 
@@ -30,25 +30,27 @@ if(isset($_GET["action"])){
 	?>
 </header>
 
-
-
 <body>
-
-	<h2>Page des Runes </h2>
-
-	<a href="lib/Rune_admin.php"> Modifier les Runes </a>
-
-
-	<h2>Page de Build </h2>
-
-	<a href="lib/Build_admin.php"> Modifier le Build </a>
-	<a href="lib/Items_admin.php"> Modifier les items </a>
-	<a href="lib/Sort_admin.php"> Modifier l'Ordre des Sort </a>
-
-	<h2>Page des Utilisateurs </h2>
-
-	<a href="lib/User_admin.php"> Modifier les Utilisateurs </a>
-
+<nav>
+      <ul>
+        <li>
+          <a href="lib/Rune_admin.php">Runes</a>
+          <span></span><span></span><span></span><span></span>
+        </li>
+        <li>
+          <a href="lib/Build_admin.php">Build</a>
+          <span></span><span></span><span></span><span></span>
+        </li>
+        <li>
+          <a href="lib/Items_admin.php">Items</a>
+          <span></span><span></span><span></span><span></span>
+        </li>
+        <li>
+          <a href="lib/Sort_admin.php">Sorts</a>
+          <span></span><span></span><span></span><span></span>
+        </li>
+      </ul>
+    </nav>
 </body>
 
 <footer>

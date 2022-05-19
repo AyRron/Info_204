@@ -176,13 +176,16 @@
 
 		if(mysqli_num_rows($info)>0){ 
 			echo("<table>");
+			echo("<thead>");
 			echo("<tr>");
-			echo("<td>Id du Champion : </td>");
-			echo("<td>Nom Du Champion : </td>");
-			echo("<td>Runes Fondamentales : </td>");
-			echo("<td>Runes Secondaires : </td>");
-			echo("<td>Ajustements : </td>");
+			echo("<th>Id du Champion : </th>");
+			echo("<th>Nom Du Champion : </th>");
+			echo("<th>Runes Fondamentales : </th>");
+			echo("<th>Runes Secondaires : </th>");
+			echo("<th>Ajustements : </th>");
 			echo("</tr>");
+			echo("</thead>");
+			echo("</tbody>");
 
 			while($row = mysqli_fetch_assoc($info)){
 				echo("<tr>");
@@ -193,6 +196,7 @@
 				echo("<td>$row[sup1] $row[sup2] $row[sup3]</td>");
 				echo("</tr>");
 			}
+			echo("</tbody>");
 			echo("</table>");
 		} else{
 			echo("Champion non trouvé");
