@@ -41,11 +41,11 @@ include 'disconnect.php';
 <body>
 
 <div class="container">
-<form >
+<form method="POST" action="Connexion.php">
 	<p>Connexion</p>
-	<input type="text" name="login" placeholder="Identifiant"><br>
-	<input type="password" name="password" placeholder="Mot de passe"><br>
-	<input type="submit" value="Envoyer"><br>
+	<input type="text" name="login" placeholder="Identifiant">
+	<input type="password" name="password" placeholder="Mot de passe">
+	<input type="submit" value="Envoyer">
 </form>
 
 <div class="drop drop-1"></div>

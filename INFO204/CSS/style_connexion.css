@@ -1,5 +1,11 @@
+:root {
+  --main: #0d0d0d;
+  --second: #ab05f2;
+  --accent: #0cf2b1;
+}
+
 body {
-  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  background: linear-gradient(45deg, var(--second), var(--main));
   height: 100vh;
   font-family: arial, sans-serif;
   display: flex;
@@ -12,16 +18,19 @@ body {
 }
 
 form {
-  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--main);
   padding: 3rem;
   height: 320px;
   border-radius: 20px;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid var(--second);
+  border-top: 1px solid var(--second);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   -moz-backdrop-filter: blur(10px);
-  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  box-shadow: 20px 20px 40px -6px var(--second);
   text-align: center;
 }
 
@@ -35,7 +44,7 @@ p {
 }
 
 input {
-  background: transparent;
+  background-color: #505050;
   border: none;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -69,54 +78,4 @@ input[type="button"] {
 
 ::placeholder {
   color: #fff;
-}
-
-.drop {
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  transition: all 0.2s ease;
-}
-
-.drop-1 {
-  height: 80px;
-  width: 80px;
-  top: -20px;
-  left: -40px;
-  z-index: -1;
-}
-
-.drop-2 {
-  height: 80px;
-  width: 80px;
-  bottom: -30px;
-  right: -10px;
-}
-
-.drop-3 {
-  height: 100px;
-  width: 100px;
-  bottom: 120px;
-  right: -50px;
-  z-index: -1;
-}
-
-.drop-4 {
-  height: 120px;
-  width: 120px;
-  top: -60px;
-  right: -60px;
-}
-
-.drop-5 {
-  height: 60px;
-  width: 60px;
-  bottom: 170px;
-  left: 90px;
-  z-index: -1;
 }
