@@ -27,7 +27,6 @@ body {
 #searchbuild,
 #newitem,
 #updateitem {
-  background-color: rgb(33, 33, 33);
   padding: 25px 0;
 }
 
@@ -162,15 +161,17 @@ body {
 }
 
 table {
-  width: 100%;
+  width: 95%;
   border-collapse: collapse;
+  margin: auto;
+  margin-bottom: 25px;
 }
 
 th,
 td {
   padding: 10px;
   text-align: left;
-  border: solid 1px var(--second);
+  border: solid 2px var(--second);
 }
 
 th {
@@ -179,5 +180,52 @@ th {
 }
 
 tr:nth-child(odd) {
-  background-color: #eee;
+  background-color: #505050;
+}
+
+@media only screen and (max-width: 840px) {
+  table,
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  td {
+    padding-left: 220px;
+    position: relative;
+    background-color: #505050;
+  }
+
+  td:nth-child(odd) {
+    background-color: #909090;
+  }
+
+  td:nth-child(event) {
+    background-color: #505050;
+  }
+
+  td::before {
+    padding: 10px;
+    content: attr(data-label);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    bottom: 0;
+    background-color: var(--main);
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+  }
 }
