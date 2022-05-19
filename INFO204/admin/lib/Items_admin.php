@@ -173,6 +173,7 @@
 
 		if(mysqli_num_rows($info)>0){ 
 			echo("<table>");
+			echo("<thead>");
 			echo("<tr>");
 			echo("<td>Id des Items : </td>");
 			echo("<td>Nom Du Champion : </td>");
@@ -182,6 +183,8 @@
 			echo("<td>Items principales : </td>");
 			echo("<td>Items Situationnelles : </td>");
 			echo("</tr>");
+			echo("</thead>");
+			echo("<tbody>");
 
 			while($row = mysqli_fetch_assoc($info)){
 				echo("<tr>");
@@ -194,6 +197,7 @@
 				echo("<td>$row[option1] $row[option2] $row[option3]</td>");
 				echo("</tr>");
 			}
+			echo("</tbody>");
 			echo("</table>");
 		} else{
 			echo("Items non trouvé");
