@@ -152,7 +152,7 @@
 
 
 
-<section id="searchItem">
+<section id="searchitem">
 	<div class="container">
 		<div class="title">
 			<h3>Chercher un Item :</h3>
