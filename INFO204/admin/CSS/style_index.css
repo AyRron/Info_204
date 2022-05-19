@@ -28,7 +28,8 @@ body {
 #newitem,
 #updateitem,
 #deleteitem,
-#searchitem {
+#searchitem,
+#deletesort {
   padding: 25px 0;
 }
 
@@ -39,6 +40,7 @@ body {
 #newitem .container,
 #updateitem .container,
 #deleteitem .container,
+#deletesort .container,
 #searchitem .container {
   max-width: 1100px;
   margin: 0px auto;
@@ -60,6 +62,7 @@ body {
 #newitem .container .title,
 #update .container .title,
 #deleteitem .container .title,
+#deletesort .container .title,
 #searchitem .container .title {
   font-size: 1.8em;
   text-align: center;
@@ -73,6 +76,7 @@ body {
 #newitem .container form,
 #updateitem .container form,
 #deleteitem .container form,
+#deletesort .container form,
 #searchitem .container form {
   display: flex;
   flex-direction: column;
@@ -92,6 +96,8 @@ body {
 #updateitem .container form .update input,
 #deleteitem .container form .nom input,
 #deleteitem .container form .delete input,
+#deletesort .container form .nom input,
+#deletesort .container form .delete input,
 #searchitem .container form .nom input,
 #searchitem .container form .search input {
   width: 100%;

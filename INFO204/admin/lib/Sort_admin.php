@@ -148,19 +148,6 @@
 
 
 
-<form method="post" action="Sort_admin.php">
-	Supprimer un ordre de Sort :
-	<table>
-		<tr>
-			<td>Nom : </td>
-			<td><input type="text" name="nom_sup"></td>
-		</tr>
-	</table>
-
-	<input type="submit" value="Supprimer">
-	</form>
-
-
 
 <section id="deletesort">
 	<div class="container">
