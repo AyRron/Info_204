@@ -162,36 +162,22 @@ body {
 }
 
 table {
-  background-color: #ab05f2;
+  width: 100%;
   border-collapse: collapse;
-  margin: 25px;
-  font-size: 1em;
-  min-width: 40%;
-  border-radius: 5px 5px 0 0;
-  box-sizing: border-box;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-table thead tr {
-  background-color: red;
-  color: #fff;
+th,
+td {
+  padding: 10px;
   text-align: left;
-  font-weight: bold;
+  border: solid 1px var(--second);
 }
 
-table td {
-  padding: 2% 3%;
+th {
+  background-color: var(--main);
+  color: white;
 }
 
-table tbody tr {
-  border-bottom: 1px solid rgb(163, 163, 163);
-}
-
-table tbody tr:nth-of-type(even) {
-  background-color: green;
-}
-
-table tbody tr:last-of-type {
-  border-bottom: 2px solid blueviolet;
+tr:nth-child(odd) {
+  background-color: #eee;
 }
