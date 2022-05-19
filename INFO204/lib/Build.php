@@ -195,12 +195,15 @@ echo("<img class='sorts' src='../image/sorts/$nom.png'>\n");
 
 $counter_matchup=affiche_matchup_nom($conn, $nom);
 
- echo("<table>\n");
+ echo("<table>\n");	
     foreach($counter_matchup as $key => $value){
-
+    
         if($key == "C1"){
-            echo("<tr>\n");
+			echo("<tr>\n");
             echo("<th>\n");
+			echo("Pires matchups");
+			echo("</th>\n");
+			echo("<th>\n");
             echo("<img src='../image/champions/$value.webp'>\n");
             $nom_champ=str_replace("_", " ", $value);
             echo("<p>$nom_champ</p>\n");
@@ -218,10 +221,13 @@ $counter_matchup=affiche_matchup_nom($conn, $nom);
             echo("<img src='../image/champions/$value.webp'>\n");
             $nom_champ=str_replace("_", " ", $value);
             echo("<p>$nom_champ</p>\n");
-            echo("</th>\n");
-			
+			echo("</th>\n");
+				
 		} elseif($key == "M1" ){
             echo("<th>\n");
+			echo("Meilleurs matchups");
+			echo("</th>\n");
+			echo("<th>\n");
             echo("<img src='../image/champions/$value.webp'>\n");
             $nom_champ=str_replace("_", " ", $value);
             echo("<p>$nom_champ</p>\n");
@@ -242,7 +248,9 @@ $counter_matchup=affiche_matchup_nom($conn, $nom);
             echo("</th>\n");
 			echo("</tr>\n");	
 			}
+		echo("</th>\n");
 		}
+		
 echo("</table>\n");             
 			
 function affiche_matchup_nom($conn, $nom){
