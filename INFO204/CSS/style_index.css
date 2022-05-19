@@ -308,14 +308,27 @@ footer > a {
 
 .mythique {
   margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 .mythique p {
-  padding-left: 1em;
   padding-right: 1em;
 }
 .legendaire {
   margin-bottom: 4em;
+  margin-left: 1em;
+}
+
+#tms table {
+  padding: 1em;
+}
+
+#tms h2 {
+  padding-left: 1em;
+}
+
+#tms h3 {
+  padding-left: 1.4em;
 }
 
 .petit {
@@ -354,17 +367,5 @@ footer > a {
   padding: 1em;
   margin: 1em;
   right: 15%;
-  top: 61%;
-}
-
-#tms table {
-  padding: 1em;
-}
-
-#tms h2 {
-  padding-left: 1em;
-}
-
-#tms h3 {
-  padding-left: 1em;
+  top: 57%;
 }
