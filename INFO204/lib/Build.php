@@ -193,8 +193,8 @@ echo("</table>");
 
 $champ_sort=affiche_sort($conn,$nom);
 echo("<table>");
-echo("<tr>");
 
+echo("<tr>");
 for ( $i = 1; $i < 19; $i++){
     echo("<th>nv°$i</th>");
 }
