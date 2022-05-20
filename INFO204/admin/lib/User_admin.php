@@ -82,7 +82,7 @@
 <section id="deleteuser">
 	<div class="container">
 		<div class="title">
-			<h3>Supprimer un Build :</h3>
+			<h3>Supprimer un Utilisateur :</h3>
 		</div>
 		<form method="post" action="User_admin.php">
 			<div class="form_delete">
