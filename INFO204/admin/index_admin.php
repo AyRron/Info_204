@@ -34,10 +34,6 @@ if(isset($_GET["action"])){
 <nav>
       <ul>
         <li>
-          <a href="lib/User_admin.php">Utilisateurs</a>
-          <span></span><span></span><span></span><span></span>
-        </li>
-        <li>
           <a href="lib/Build_admin.php">Build</a>
           <span></span><span></span><span></span><span></span>
         </li>
@@ -47,6 +43,10 @@ if(isset($_GET["action"])){
         </li>
         <li>
           <a href="lib/Sort_admin.php">Sorts</a>
+          <span></span><span></span><span></span><span></span>
+        </li>
+        <li>
+          <a href="lib/User_admin.php">Utilisateurs</a>
           <span></span><span></span><span></span><span></span>
         </li>
       </ul>
