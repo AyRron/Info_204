@@ -203,7 +203,7 @@ echo("</tr>\n");
 foreach($champ_sort as $key => $value){
     if($key == "Nom" ||$key == "id"){
     } else{
-    echo("<td>$value</td>");
+    echo("<th>$value</th>");
     }
 }
 echo("</table>");  
