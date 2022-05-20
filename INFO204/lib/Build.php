@@ -208,10 +208,6 @@ foreach($champ_sort as $key => $value){
 }
 echo("</table>");  
 
-/*
-echo("<p><strong>Ordre des sorts à ameliorer : </strong></p>\n");
-echo("<img class='sorts' src='../image/sorts/$nom.png'>\n");
-*/
 ?>
 </div>
 
