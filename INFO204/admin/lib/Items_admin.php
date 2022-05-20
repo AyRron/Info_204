@@ -19,7 +19,7 @@
 <section id="newitem">
       <div class="container">
         <div class="title">
-          <h3>Créer un nouveau build d'items :</h3>
+          <h3>Créer un nouvel ensemble d'Items :</h3>
         </div>
         <form method="post" action="Items_admin.php">
           <div class="nom">
@@ -73,7 +73,7 @@
 <section id="updateitem">
 	<div class="container">
 		<div class="title">
-			<h3>Modifier un Build :</h3>
+			<h3>Modifier un ensemble d'Items :</h3>
 		</div>
 		<form method="post" action="Items_admin.php">
 			<div class="idnom">
@@ -129,7 +129,7 @@
 <section id="deleteitem">
 	<div class="container">
 		<div class="title">
-			<h3>Supprimer un Item :</h3>
+			<h3>Supprimer un ensemble d'Items :</h3>
 		</div>
 		<form method="post" action="Items_admin.php">
 			<div class="nom">
@@ -155,7 +155,7 @@
 <section id="searchitem">
 	<div class="container">
 		<div class="title">
-			<h3>Chercher un Item :</h3>
+			<h3>Chercher un ensemble d'Items :</h3>
 		</div>
 		<form method="post" action="Items_admin.php">
 			<div class="nom">

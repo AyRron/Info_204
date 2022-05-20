@@ -93,7 +93,7 @@
 <section id="updatesort">
 	<div class="container">
 		<div class="title">
-			<h3>Modifier ordre de Sort :</h3>
+			<h3>Modifier un ordre de Sort :</h3>
 		</div>
 		<form method="post" action="Sort_admin.php">
 			<div class="idnom">
