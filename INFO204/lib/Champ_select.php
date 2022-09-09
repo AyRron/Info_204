@@ -10,6 +10,9 @@
 <body>
 
 <header>
+  <?php
+  include '../admin/lib/Build.crud.php'
+  ?>
 <nav class="navigation">
   <a href="../index.php" class="logo-lien">
     <img src="../image/logo.png" alt="Logo" class="logo-image">
@@ -20,6 +23,45 @@
     <a href="Champ_select.php" class="nav-lien">Champions</a>
   </div>
 </nav>
+
+
+<section id="search_Champ">
+	<div class="container">
+		<div class="title">
+			<h3>Chercher un Champion :</h3>
+		</div>
+		<form method="post" action="Champ_select.php">
+      <div class="form_search">
+        <input type="text" name="champ_search" placeholder="Nom du Champion...">
+			</div>
+
+			<div class="search">
+				<input type="submit" value="Chercher">
+			</div>
+		</form>
+	</div>
+</section>
+	<?php
+	if (isset($_POST["champ_search"])) {
+		$nom_champ =$_POST["champ_search"];
+
+    $sql="SELECT * FROM `build` WHERE `Nom_champ`='$nom_champ'" ;
+	  if($ret=mysqli_query($conn, $sql)){
+		  header("Location: Build.php?id=$nom_champ");
+    } else{
+      echo("Ce personnage n'existe pas");
+    }
+
+    if(update_user($conn, $id, $pseudo, $mdp, $droit)) {
+      
+    }
+		}
+	?>
+
+
+
+
+
 </header>
 
 <section class="select">

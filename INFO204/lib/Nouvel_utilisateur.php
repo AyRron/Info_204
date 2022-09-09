@@ -1,5 +1,5 @@
 <?php
-include 'connect.php';
+include 'connect_uwamp.php';
 ?>
 
 <!DOCTYPE html>

@@ -1,5 +1,5 @@
 <?php
-include '../lib/connect.php';
+include '../lib/connect_uwamp.php';
 session_start() ; 
 if(isset($_GET["action"])){
 	$action=$_GET["action"] ;
@@ -26,7 +26,7 @@ if(isset($_GET["action"])){
 
 <header>
 	<?php
-		include 'lib/connexion.php';
+		/*include 'lib/connexion.php';*/
 	?>
 </header>
 
