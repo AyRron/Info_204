@@ -6,42 +6,48 @@
   <link rel="stylesheet" href="../CSS/style_index.css">
   <link rel="icon" href="../image/league.png">
 </head>
-
 <body>
-<header>
+<header class="header_admin">
 	<a href="../index_admin.php?action=disconnect">Deconnexion</a>
-	<a href="admin.php">Retour à la page d'accueil</a>
+	<a href="../index_admin.php">Retour à la page d'accueil</a>
     <?php
     include '../../lib/connect.php';
 	include 'Items.crud.php';
     ?>
-	<h1>Tous les items :</h1>
 </header>
 
-<section id="newbuild">
-	<div class="container">
-		<div class="title">
-			<h3>Créer un nouveau build d'items :</h3>
-		</div>
-		<form method="post" action="Items_admin.php">
-			<input type="text" name="nom_create" placeholder="Nom...">
-			<input type="text" name="starting_item_create" placeholder="Item de départ:">
-			
-			<input type="text" name="Mythique_create" placeholder="Item mythique:">
-			<input type="text" name="Bottes_create" placeholder="Bottes:">
-			<input type="text" name="Core1_create" placeholder="Core item 1:">
-			<input type="text" name="Core2_create" placeholder="Core item 2:">
+<section id="newitem">
+      <div class="container">
+        <div class="title">
+          <h3>Créer un nouvel ensemble d'Items :</h3>
+        </div>
+        <form method="post" action="Items_admin.php">
+          <div class="nom">
+            <input type="text" name="nom_create" placeholder="Nom..." />
+          </div>
+          
+          <div class="start">
+            <input type="text" name="starting_item_create" placeholder="Item de départ:" />
+            <input type="text" name="Mythique_create" placeholder="Item mythique:" />
+            <input type="text" name="Bottes_create" placeholder="Bottes:" />
+          </div>
 
-			<input type="text" name="Option1_create" placeholder="Item secondaire 1:">
-			<input type="text" name="Option2_create" placeholder="Item secondaire 2:">
-			<input type="text" name="Option3_create" placeholder="Item secondaire 3:">
-			
+          <div class="core">
+            <input type="text" name="Core1_create" placeholder="Core item 1:" />
+            <input type="text" name="Core2_create" placeholder="Core item 2:" />
+          </div>
 
+          <div class="option">
+            <input type="text" name="Option1_create" placeholder="Item secondaire 1:" />
+            <input type="text" name="Option2_create" placeholder="Item secondaire 2:" />
+            <input type="text" name="Option3_create" placeholder="Item secondaire 3:" />
+          </div>
 
-			<input type="submit" value="Créer">
-		</form>
-	</div>
-
+          <div class="create">
+            <input type="submit" value="Créer" />
+          </div>
+        </form>
+      </div>
 </section>
 
 	<?php
@@ -64,36 +70,44 @@
 
 
 
+<section id="updateitem">
+	<div class="container">
+		<div class="title">
+			<h3>Modifier un ensemble d'Items :</h3>
+		</div>
+		<form method="post" action="Items_admin.php">
+			<div class="idnom">
+				<input type="number" name="id_mod">
+				<input type="text" name="nom_mod">
+			</div>
 
-	<form method="post" action="Items_admin.php">
-	Modifier un Build :
-	<table>
-		<tr>
-			<td>Id et Nom : </td>
-			<td><input type="number" name="id_mod"></td>
-			<td><input type="text" name="nom_mod"></td>
-		</tr>
-		<tr>
-			<td>Item de départ : </td>
-			<td><input type="text" name="starting_item_mod"></td>
-		</tr>
-		<tr>
-			<td>Cores items: </td>
-			<td><input type="text" name="Mythique_mod"></td>
-			<td><input type="text" name="Bottes_mod"></td>
-			<td><input type="text" name="core1_mod"></td>
-			<td><input type="text" name="core2_mod"></td>
-		</tr>
-		<tr>
-			<td>Items secondaires : </td>
-			<td><input type="text" name="option1_mod"></td>
-			<td><input type="text" name="option2_mod"></td>
-			<td><input type="text" name="option3_mod"></td>
-		</tr>
-	</table>
+			<div class="start">
+            <input type="text" name="starting_item_create" placeholder="Item de départ:" />
+            <input type="text" name="Mythique_create" placeholder="Item mythique:" />
+            <input type="text" name="Bottes_create" placeholder="Bottes:" />
+          </div>
 
-	<input type="submit" value="Modifier">
+          <div class="core">
+            <input type="text" name="Core1_create" placeholder="Core item 1:" />
+            <input type="text" name="Core2_create" placeholder="Core item 2:" />
+          </div>
+
+          <div class="option">
+            <input type="text" name="Option1_create" placeholder="Item secondaire 1:" />
+            <input type="text" name="Option2_create" placeholder="Item secondaire 2:" />
+            <input type="text" name="Option3_create" placeholder="Item secondaire 3:" />
+          </div>
+		<div class="update">
+			<input type="submit" value="Modifier">
+		</div>
 	</form>
+	</div>
+</section>
+
+
+
+
+
 	<?php
 	if (isset($_POST["id_mod"])) {
 		$id =$_POST["id_mod"];
@@ -112,51 +126,120 @@
 	?>
 
 
+<section id="deleteitem">
+	<div class="container">
+		<div class="title">
+			<h3>Supprimer un ensemble d'Items :</h3>
+		</div>
+		<form method="post" action="Items_admin.php">
+			<div class="nom">
+				<input type="text" name="nom_sup" placeholder="Nom...">
+			</div>
 
-<form method="post" action="Items_admin.php">
-	Supprimer un Build :
-	<table>
-		<tr>
-			<td>ID du build : </td>
-			<td><input type="text" name="nom_sup"></td>
-		</tr>
-	</table>
-
-	<input type="submit" value="Supprimer">
+        <div class="delete">
+		<input type="submit" value="Supprimer">
+		</div>
 	</form>
+	</div>
+</section>
+
 	<?php
 	if (isset($_POST["nom_sup"])) {
 		$nom = $_POST["nom_sup"];
 		delete_item_id($conn, $nom);
 		}
 	?>
-	
+
+
+
+<section id="searchitem">
+	<div class="container">
+		<div class="title">
+			<h3>Chercher un ensemble d'Items :</h3>
+		</div>
+		<form method="post" action="Items_admin.php">
+			<div class="nom">
+				<input type="text" name="nom_search" placeholder="Nom...">
+			</div>
+
+			<div class="search">
+			<input type="submit" value="Chercher">
+			</div>
+		</form>
+	</div>
+</section>
+
+
+	<?php
+	if (isset($_POST["nom_search"])) {
+		$nom = $_POST["nom_search"];
+		$info=mysqli_query($conn,"SELECT * FROM `item` WHERE `nom`='$nom'");
+
+		if(mysqli_num_rows($info)>0){ 
+			echo("<table>");
+			echo("<thead>");
+			echo("<tr>");
+			echo("<th>Id des Items : </th>");
+			echo("<th>Nom Du Champion : </th>");
+			echo("<th>Objet de départ : </th>");
+			echo("<th>Bottes : </th>");
+			echo("<th>Objet Mythique : </th>");
+			echo("<th>Items principales : </th>");
+			echo("<th>Items Situationnelles : </th>");
+			echo("</tr>");
+			echo("</thead>");
+			echo("<tbody>");
+
+			while($row = mysqli_fetch_assoc($info)){
+				echo("<tr>");
+				echo("<td data-label='Id du Champion :'>$row[id]</td>");
+				echo("<td data-label='Nom Du Champion :'>$row[nom] </td>");
+				echo("<td data-label='Item de départ :'>$row[starting_item] </td>");
+				echo("<td data-label='Item mythique :'>$row[mythique] </td>");
+				echo("<td data-label='Core items :'>$row[core1] / $row[core2]</td>");
+				echo("<td data-label='Bottes :'>$row[bottes]</td>"); 
+				echo("<td data-label='Items secondaires :'>$row[option1] / $row[option2] / $row[option3]</td>");
+				echo("</tr>");
+			}
+			echo("</tbody>");
+			echo("</table>");
+		} else{
+			echo("Items non trouvé");
+		}
+		
+		}
+	?>
+
 	<?php
 
 	$result=mysqli_query($conn,"SELECT * FROM `item`");
 		
-		echo("<table>");
+		echo("<table id='tabitem'>");
+		echo("<thead>");
 		echo("<tr>");
-		echo("<td>Id du Champion : </td>");
-		echo("<td>Nom Du Champion : </td>");
-		echo("<td>Item de départ : </td>");
-		echo("<td>Item mythique : </td>");
-		echo("<td>Core items : </td>");
-		echo("<td>Bottes: </td>");
-		echo("<td>Items secondaires : </td>");
+		echo("<th>Id du Champion : </th>");
+		echo("<th>Nom Du Champion : </th>");
+		echo("<th>Item de départ : </th>");
+		echo("<th>Item mythique : </th>");
+		echo("<th>Core items : </th>");
+		echo("<th>Bottes : </th>");
+		echo("<th>Items secondaires : </th>");
 		echo("</tr>");
+		echo("</thead>");
+		echo("<tbody>");
 		
 		while($row = mysqli_fetch_assoc($result)){
 			echo("<tr>");
-			echo("<td>$row[id]</td>");
-			echo("<td>$row[nom] </td>");
-			echo("<td>$row[starting_item] </td>");
-			echo("<td>$row[mythique] </td>");
-			echo("<td>$row[core1] / $row[core2]</td>");
-			echo("<td>$row[bottes]</td>"); 
-			echo("<td>$row[option1] / $row[option2] / $row[option3]</td>");
+			echo("<td data-label='Id du Champion :'>$row[id]</td>");
+			echo("<td data-label='Nom Du Champion :'>$row[nom] </td>");
+			echo("<td data-label='Item de départ :'>$row[starting_item] </td>");
+			echo("<td data-label='Item mythique :'>$row[mythique] </td>");
+			echo("<td data-label='Core items :'>$row[core1] / $row[core2]</td>");
+			echo("<td data-label='Bottes :'>$row[bottes]</td>"); 
+			echo("<td data-label='Items secondaires :'>$row[option1] / $row[option2] / $row[option3]</td>");
 			echo("</tr>");
 		}
+		echo("</tbody>");
 		echo("</table>");
 	?>	
 </body>

@@ -7,14 +7,13 @@
   <link rel="icon" href="../image/league.png">
 </head>
 <body>
-<header>
+<header class="header_admin">
 	<a href="../index_admin.php?action=disconnect">Deconnexion</a>
-	<a href="admin.php">Retour à la page d'accueil</a>
+	<a href="../index_admin.php">Retour à la page d'accueil</a>
     <?php
     include '../../lib/connect.php';
 	include 'Rune.crud.php';
     ?>
-    <h1>Toutes les Runes : </h1>
 </header>
 
 
@@ -100,11 +99,11 @@
 
 	<?php
 
-	$result=mysqli_query($conn,"SELECT * FROM `rune`");
+	$result=mysqli_query($conn,"SELECT * FROM `matchup`");
 		
 		echo("<table>");
 		echo("<tr>");
-    echo("<td>Id de la Rune : </td>");
+    	echo("<td>Id de la Rune : </td>");
 		echo("<td>Nom de la Rune : </td>");
 		echo("<td>Description de la Rune : </td>");
 		echo("</tr>");

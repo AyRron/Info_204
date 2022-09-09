@@ -1,10 +1,3 @@
-/* Color Theme Swatches in Hex /
-.Mecha-Studio-Website-1-hex { color: #AB04D9; }
-.Mecha-Studio-Website-2-hex { color: #8303A6; }
-.Mecha-Studio-Website-3-hex { color: #AB05F2; }
-.Mecha-Studio-Website-4-hex { color: #0CF2B1; }
-.Mecha-Studio-Website-5-hex { color: #0D0D0D; }*/
-
 :root {
   --main: #0d0d0d;
   --second: #ab05f2;
@@ -19,8 +12,16 @@
   box-sizing: inherit;
 }
 
+#fond {
+  object-fit: cover;
+  height: 100vh;
+  width: calc(100% - 50px);
+  margin: 25px;
+  border-radius: 5px;
+}
+
 html {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -28,7 +29,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: var(--main);
-  color: white;
+  color: var(--second);
 }
 
 .navigation {
@@ -71,8 +72,8 @@ body {
 }
 
 img {
-  width: 30px;
-  height: 30px;
+  width: 100px;
+  height: 100px;
 }
 
 header {
@@ -131,10 +132,10 @@ footer > a {
   color: black;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 2000px) {
   .nav-lien:link,
   .nav-lien:visited {
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px;
   }
   .navigation {
@@ -146,7 +147,7 @@ footer > a {
   }
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 940px) {
   .navigation {
     flex-direction: column;
   }
@@ -154,9 +155,18 @@ footer > a {
   .logo-lien {
     margin-right: 0px;
   }
+
+  .head-group h2 {
+    width: fit-content;
+    position: relative;
+    font-family: "BEYNO";
+    font-size: 60px;
+    z-index: 1;
+    color: var(--second);
+  }
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 790px) {
   .nav-lien:link,
   .nav-lien:visited {
     display: block;
@@ -170,24 +180,27 @@ footer > a {
 
 @media screen and (min-width: 1024px) {
   img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
   }
 
   .select {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 25px;
     color: white;
     text-decoration: none;
+  }
+
+  .head-group h2 {
+    width: fit-content;
+    position: relative;
+    font-family: "BEYNO";
+    font-size: 80px;
+    z-index: 1;
+    color: var(--second);
   }
 }
 
 @media screen and (max-width: 1023px) {
   .select {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 25px;
     color: white;
     text-decoration: none;
   }
@@ -196,6 +209,15 @@ footer > a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  .head-group h2 {
+    width: fit-content;
+    position: relative;
+    font-family: "BEYNO";
+    font-size: 70px;
+    z-index: 1;
+    color: var(--second);
   }
 }
 
@@ -226,6 +248,7 @@ footer > a {
   filter: blur(5px) grayscale(90%);
   pointer-events: none;
 }
+
 .popup h2 {
   font-size: 38px;
   font-weight: 500;
@@ -246,50 +269,120 @@ footer > a {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-/*.hexagone {
-  position: relative;
-  Pour rendre responsive mettre width à 100% 
-  width: 100%;
-  visibility: hidden;
-  overflow: hidden;
-}
-.hexagone:after {
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  content: "";
-  display: block;
-  margin-top: 28.86751%;
-  padding-bottom: 86.602%;
-}
-.hexagone .hexagonemain {
-  display: block;
+.icon {
+  width: 150px;
+  height: 150px;
   position: absolute;
-  width: 100%;
-  padding-bottom: 115.47005%;
-  overflow: hidden;
-  visibility: hidden;
-  -webkit-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
-  -ms-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
-  transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
-  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
 }
-.hexagone .hexagonemainbefore {
-  content: "";
-  display: block;
-  position: absolute;
-  visibility: visible;
-  display: block;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: #cccccc;
-  -webkit-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
-  -ms-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
-  transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
-}*/
 
-.sorts {
-	width: 50em;
-	height: 15em;
+.head-group {
+  max-width: 1200px;
+  margin: 50px auto;
+  height: 228px;
+  position: relative;
+}
+
+.line {
+  max-width: 1200px;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  bottom: 0;
+  position: absolute;
+}
+
+.cls-1 {
+  fill: none;
+  stroke: var(--second);
+  stroke-linejoin: bevel;
+  stroke-width: 10px;
+}
+
+.petit {
+  height: 36%;
+  width: 36%;
+}
+
+.contenu img {
+  cursor: pointer;
+}
+
+#runes {
+  border: 1px solid var(--second);
+  padding: 1em;
+  margin: 1em;
+}
+
+#items {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  padding: 1em;
+  margin: 1em;
+  right: 15%;
+  top: 11.2%;
+}
+
+#sorts {
+  border: 1px solid var(--second);
+  padding: 1em;
+  margin: 1em;
+}
+
+#sorts th,
+#sorts td {
+  padding: 5px;
+}
+
+#sorts tr td {
+  padding-left: 5px;
+}
+
+#matchups {
+  position: absolute;
+  padding: 1em;
+  margin: 1em;
+  right: 15%;
+  top: 55%;
+}
+
+#tab_item {
+  border-collapse: collapse;
+  min-width: 400px;
+  width: auto;
+  box-shadow: 0 5px 50px rgba(171, 5, 242, 1);
+  cursor: pointer;
+  margin: 1.2em;
+  border: 2px solid var(--second);
+}
+
+thead tr,
+#gauche1,
+#gauche2 {
+  background-color: var(--second);
+  text-align: left;
+  color: black;
+}
+
+#tab_item th,
+td {
+  padding: 5px 7px;
+}
+
+#body_item .tr_item,
+.th_item,
+.td_item {
+  border: 1px solid var(--second);
+}
+
+#tab_item img {
+  padding: 4px;
+}
+
+#tab_rune {
+  width: 100%;
+  margin: auto;
 }

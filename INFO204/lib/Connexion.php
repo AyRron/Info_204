@@ -13,11 +13,11 @@ if(isset($_POST["login"])){
 	
 		
 		if($_POST["password"] == $ret['Mdp'] && $ret['Droit'] == 1 ){
-			$_SESSION["admin"]=time() ; 
+			$_SESSION["admin"] = $pseudo; 
 			header("Location: ../index.php") ; 
 
 		} elseif ($_POST["password"] == $ret['Mdp'] && $ret['Droit'] == 0 ){
-			$_SESSION["user"]=time() ; 
+			$_SESSION["user"] = $pseudo; 
 			header("Location: ../index.php") ; 
 		}
 	} else{
@@ -29,16 +29,25 @@ if(isset($_POST["login"])){
 
 include 'disconnect.php';
 ?>
-<html>
-	<head>
-	<meta charset="UTF-8">
-	</head>
 
-	<body>
-	<form method="POST" action="Connexion.php">
-	Login:	<input type="text" name="login">
-	Password:	<input type="password" name="password">
-		<input type="submit" value="Envoyer" >
-	</form>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="../CSS/style_connexion.css">
+    <title>Connexion</title>
+</head>
+
+<body>
+
+<div class="container">
+<form method="POST" action="Connexion.php">
+	<p>Connexion</p>
+	<input type="text" name="login" placeholder="Identifiant">
+	<input type="password" name="password" placeholder="Mot de passe">
+	<input type="submit" value="Envoyer">
+</form>
+
+
+</body>
 </html>

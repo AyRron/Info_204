@@ -21,18 +21,59 @@ body {
   width: 100%;
 }
 
+header {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--second);
+  border-radius: 5px;
+  margin: 25px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+}
+
 #newbuild,
 #updatebuild,
 #deletebuild,
-#searchbuild {
-  background-color: rgb(33, 33, 33);
+#searchbuild,
+#newitem,
+#updateitem,
+#deleteitem,
+#searchitem,
+#deletesort,
+#newuser,
+#updateuser,
+#deleteuser,
+#searchuser,
+#newsort,
+#updatesort,
+#searchsort {
   padding: 25px 0;
 }
 
 #newbuild .container,
 #updatebuild .container,
 #deletebuild .container,
-#searchbuild .container {
+#searchbuild .container,
+#newitem .container,
+#updateitem .container,
+#deleteitem .container,
+#deletesort .container,
+#searchitem .container,
+#newuser .container,
+#updateuser .container,
+#deleteuser .container,
+#searchuser .container,
+#newsort .container,
+#updatesort .container,
+#searchsort .container {
   max-width: 1100px;
   margin: 0px auto;
   display: flex;
@@ -49,7 +90,20 @@ body {
 #newbuild .container .title,
 #updatebuild .container .title,
 #deletebuild .container .title,
-#searchbuild .container .title {
+#searchbuild .container .title,
+#newitem .container .title,
+#updateitem .container .title,
+#update .container .title,
+#deleteitem .container .title,
+#deletesort .container .title,
+#searchitem .container .title,
+#newuser .container .title,
+#updateuser .container .title,
+#deleteuser .container .title,
+#searchuser .container .title,
+#newsort .container .title,
+#updatesort .container .title,
+#searchsort .container .title {
   font-size: 1.8em;
   text-align: center;
   margin-bottom: 50px;
@@ -58,7 +112,19 @@ body {
 #newbuild .container form,
 #updatebuild .container form,
 #deletebuild .container form,
-#searchbuild .container form {
+#searchbuild .container form,
+#newitem .container form,
+#updateitem .container form,
+#deleteitem .container form,
+#deletesort .container form,
+#searchitem .container form,
+#newbuild .container form,
+#updateuser .container form,
+#deleteuser .container form,
+#searchuser .container form,
+#newsort .container form,
+#updatesort .container form,
+#searchsort .container form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -67,44 +133,75 @@ body {
 
 #newbuild .container form .nom input,
 #deletebuild .container form .nom input,
-#searchbuild .container form .nom input {
+#searchbuild .container form .nom input,
+#newbuild .container form .creat input,
+#updatebuild .container form .creat input,
+#deletebuild .container form .delete input,
+#searchbuild .container form .search input,
+#newitem .container form .nom input,
+#newitem .container form .create input,
+#updateitem .container form .update input,
+#deleteitem .container form .nom input,
+#deleteitem .container form .delete input,
+#deletesort .container form .nom input,
+#deletesort .container form .delete input,
+#searchitem .container form .nom input,
+#searchitem .container form .search input,
+#newuser .container form .create input,
+#updateuser .container form .update input,
+#deleteuser .container form .form_delete input,
+#deleteuser .container form .delete input,
+#searchuser .container form .form_search input,
+#searchuser .container form .search input,
+#newsort .container form .nom input,
+#newsort .container form .create input,
+#updatesort .container form .nom input,
+#updatesort .container form .update input,
+#searchsort .container form .nom input,
+#searchsort .container form .search input {
   width: 100%;
   margin: 5px;
   padding: 5px;
 }
 
-#updatebuild .container form .idnom input {
-  width: 50%;
-  margin: 5px;
-  padding: 5px;
-}
-
 #newbuild .container form .fondament input,
-#updatebuild .container form .fondament input {
+#updatebuild .container form .fondament input,
+#updateuser .container form .form_update input,
+#newsort .container form .ordre1 input,
+#newsort .container form .ordre2 input,
+#newsort .container form .ordre3 input,
+#newsort .container form .ordre4 input,
+#updatesort .container form .ordre1 input,
+#updatesort .container form .ordre2 input,
+#updatesort .container form .ordre3 input,
+#updatesort .container form .ordre4 input {
   width: 25%;
   margin: 5px;
   padding: 5px;
 }
 
 #newbuild .container form .second input,
-#updatebuild .container form .second input {
+#updatebuild .container form .idnom input,
+#updatebuild .container form .second input,
+#newitem .container form .core input,
+#updateitem .container form .idnom input,
+#updateitem .container form .core input,
+#newsort .container form .ordre5 input,
+#updatesort .container form .idnom input,
+#updatesort .container form .ordre5 input {
   width: 50%;
   margin: 5px;
   padding: 5px;
 }
 
 #newbuild .container form .ajust input,
-#updatebuild .container form .ajust input {
+#updatebuild .container form .ajust input,
+#newitem .container form .start input,
+#newitem .container form .option input,
+#updateitem .container form .start input,
+#updateitem .container form .option input,
+#newuser .container form .form_create input {
   width: 33%;
-  margin: 5px;
-  padding: 5px;
-}
-
-#newbuild .container form .creat input,
-#updatebuild .container form .creat input,
-#deletebuild .container form .delete input,
-#searchbuild .container form .search input {
-  width: 100%;
   margin: 5px;
   padding: 5px;
 }
@@ -112,7 +209,19 @@ body {
 #newbuild .container form div,
 #updatebuild .container form div,
 #deletebuild .container form div,
-#searchbuild .container form div {
+#searchbuild .container form div,
+#newitem .container form div,
+#updateitem .container form div,
+#deleteitem .container form div,
+#deletesort .container form div,
+#searchitem .container form div,
+#newuser .container form div,
+#updateuser .container form div,
+#deleteuser .container form div,
+#searchuser .container form div,
+#newsort .container form div,
+#updatesort .container form div,
+#searchsort .container form div {
   margin: 10px 0;
   padding: 10px;
   border: none;
@@ -122,19 +231,59 @@ body {
 }
 
 #newbuild .container form .nom,
+#newbuild .container form .fondament,
+#newbuild .container form .second,
+#newbuild .container form .ajust,
+#newbuild .container form .creat,
 #updatebuild .container form .idnom,
 #deletebuild .container form .nom,
 #searchbuild .container form .nom,
-#newbuild .container form .fondament,
 #updatebuild .container form .fondament,
-#newbuild .container form .second,
 #updatebuild .container form .second,
-#newbuild .container form .ajust,
 #updatebuild .container form .ajust,
-#newbuild .container form .creat,
 #updatebuild .container form .creat,
 #deletebuild .container form .delete,
-#searchbuild .container form .search {
+#searchbuild .container form .search,
+#newitem .container form .nom,
+#newitem .container form .core,
+#newitem .container form .start,
+#newitem .container form .option,
+#newitem .container form .create,
+#updateitem .container form .idnom,
+#updateitem .container form .start,
+#updateitem .container form .core,
+#updateitem .container form .option,
+#updateitem .container form .update,
+#deleteitem .container form .nom,
+#deleteitem .container form .delete,
+#searchitem .container form .nom,
+#searchitem .container form .search,
+#newuser .container form .form_create,
+#newuser .container form .create,
+#updateuser .container form .form_update,
+#updateuser .container form .update,
+#deleteuser .container form .form_delete,
+#deleteuser .container form .delete,
+#searchuser .container form .form_search,
+#searchuser .container form .search,
+#newsort .container form .nom,
+#newsort .container form .ordre1,
+#newsort .container form .ordre2,
+#newsort .container form .ordre3,
+#newsort .container form .ordre4,
+#newsort .container form .ordre5,
+#newsort .container form .create,
+#updatesort .container form .idnom,
+#updatesort .container form .ordre1,
+#updatesort .container form .ordre2,
+#updatesort .container form .ordre3,
+#updatesort .container form .ordre4,
+#updatesort .container form .ordre5,
+#updatesort .container form .update,
+#deletesort .container form .nom,
+#deletesort .container form .delete,
+#searchsort .container form .nom,
+#searchsort .container form .search {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -142,35 +291,125 @@ body {
 }
 
 table {
-  background-color: #ab05f2;
+  width: 95%;
   border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 1em;
-  min-width: 40%;
-  border-radius: 5px 5px 0 0;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  margin-bottom: 25px;
+  background-color: #333333;
 }
 
-table thead tr {
-  background-color: red;
-  color: #fff;
+th,
+td {
+  padding: 10px;
   text-align: left;
-  font-weight: bold;
+  border: solid 2px var(--second);
 }
 
-table td {
-  padding: 2% 3%;
+th {
+  background-color: #181818;
+  color: white;
 }
 
-table tbody tr {
-  border-bottom: 1px solid rgb(163, 163, 163);
+tr:nth-child(odd) {
+  background-color: #505050;
 }
 
-table tbody tr:nth-of-type(even) {
-  background-color: green;
+@media only screen and (max-width: 840px) {
+  table,
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+  }
+
+  table {
+    background-color: var(--main);
+  }
+
+  thead {
+    display: none;
+  }
+
+  td {
+    padding-left: 220px;
+    position: relative;
+    background-color: #505050;
+  }
+
+  td:nth-child(odd) {
+    background-color: #909090;
+  }
+
+  td:nth-child(event) {
+    background-color: #505050;
+  }
+
+  td::before {
+    padding: 10px;
+    content: attr(data-label);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    bottom: 0;
+    background-color: var(--main);
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+  }
 }
 
-table tbody tr:last-of-type {
-  border-bottom: 2px solid blueviolet;
+#tabitem table,
+#tabitem thead,
+#tabitem tbody,
+#tabitem tr,
+#tabitem th,
+#tabitem td {
+  display: block;
+}
+
+#tabitem table {
+  background-color: var(--main);
+}
+
+#tabitem thead {
+  display: none;
+}
+
+#tabitem td {
+  padding-left: 220px;
+  position: relative;
+  background-color: #505050;
+}
+
+#tabitem td:nth-child(odd) {
+  background-color: #909090;
+}
+
+#tabitem td:nth-child(event) {
+  background-color: #505050;
+}
+
+#tabitem td::before {
+  padding: 10px;
+  content: attr(data-label);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  bottom: 0;
+  background-color: var(--main);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#tabitem tr {
+  margin-bottom: 1rem;
 }

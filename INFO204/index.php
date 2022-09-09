@@ -41,14 +41,15 @@ if(isset($_GET["action"])){
 <h2>Bienvenue sur BuildHub.</h2>
 <p> BuildHub est un outil de guides rapides pour les joueurs de league of legends. Sa fonction principale est de fournir à la communauté league of legends les meilleurs build du moment.</p>
 </span>
-	
+
+<video id="fond" src="image/Video_lol.webm" autoplay muted loop></video> 
+
 <section>
 	<div class="container">
 		<div class="popup" id="popup">
 			<h2>Connectez-vous</h2>
 			<button type="button" onclick="connexion()" onclick="closePopup()">Se Connecter</button>
 			<button type="button" onclick="creation()" onclick="closePopup()">Vous n'avez pas de compte ?</button>
-			<button type="button" onclick="closePopup()">Fermer la Popup</button>
 		</div>
 	</div>
 </section>
@@ -76,6 +77,7 @@ echo('	popup.classList.add("open-popup");');
 echo('	back1.classList.add("back");');
 echo('	back2.classList.add("back");');
 echo('	back3.classList.add("back");');
+echo('	fond.classList.add("back");');
 	
 echo('}');
 
@@ -93,6 +95,7 @@ echo('	popup.classList.remove("open-popup");');
 echo('	back1.classList.remove("back");');
 echo('	back2.classList.remove("back");');
 echo('	back3.classList.remove("back");');
+echo('	fond.classList.remove("back");');
 echo('}');
 echo('</script>');
 }
@@ -103,5 +106,6 @@ echo('</script>');
 <?php
 include 'lib/disconnect.php';
 ?>
+
 
 </html>
